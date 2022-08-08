@@ -7,45 +7,54 @@ import man from "../../assets/man.png";
 import mountain_left from "../../assets/mountain_left.png";
 import mountain_rigth from "../../assets/mountain_right.png";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Home.css";
+import { Card } from "../Card/Card";
 
 export const Home = () => {
+  gsap.registerPlugin(ScrollTrigger);
   React.useEffect(() => {
     gsap.to("#bg", {
-      ScrollTrigger: {
+      scrollTrigger: {
         scrub: 1,
       },
       scale: 1.5,
     });
     gsap.to("#man", {
-      ScrollTrigger: {
+      scrollTrigger: {
         scrub: 1,
       },
       scale: 0.5,
     });
     gsap.to("#clouds_1", {
-      ScrollTrigger: {
+      scrollTrigger: {
         scrub: 1,
       },
-      scale: 1.5,
+      x: 200,
     });
     gsap.to("#clouds_2", {
-      ScrollTrigger: {
+      scrollTrigger: {
         scrub: 1,
       },
-      scale: 1.5,
+      x: -200,
     });
     gsap.to("#mountain_left", {
-      ScrollTrigger: {
+      scrollTrigger: {
         scrub: 1,
       },
-      scale: 1.5,
+      x: -500,
     });
     gsap.to("#mountain_rigth", {
-      ScrollTrigger: {
+      scrollTrigger: {
         scrub: 1,
       },
-      scale: 1.5,
+      x: 500,
+    });
+    gsap.to("#text", {
+      scrollTrigger: {
+        scrub: 1,
+      },
+      x: 500,
     });
   });
   return (
@@ -77,6 +86,7 @@ export const Home = () => {
           et malorum (Sobre los límites del bien y del mal) que comienza con:
         </p>
       </div>
+      <Card />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/scrollTrigger.min.js"></script>
     </div>
