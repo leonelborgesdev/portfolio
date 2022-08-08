@@ -1,8 +1,8 @@
-import { getSpaceUntilMaxLength } from "@testing-library/user-event/dist/utils";
 import React, { useEffect } from "react";
 import bg from "../../assets/bg.jpg";
 import clouds_1 from "../../assets/clouds_1.png";
 import clouds_2 from "../../assets/clouds_2.png";
+import { useSelector } from "react-redux";
 import man from "../../assets/man.png";
 import mountain_left from "../../assets/mountain_left.png";
 import mountain_rigth from "../../assets/mountain_right.png";
@@ -12,6 +12,7 @@ import "./Home.css";
 import { Card } from "../Card/Card";
 
 export const Home = () => {
+  const { cards } = useSelector((state) => state);
   gsap.registerPlugin(ScrollTrigger);
   React.useEffect(() => {
     gsap.to("#bg", {
@@ -86,7 +87,13 @@ export const Home = () => {
           et malorum (Sobre los límites del bien y del mal) que comienza con:
         </p>
       </div>
-      <Card />
+      {cards.map((card) => {
+        return (
+          <div>
+            <Card card={card} />
+          </div>
+        );
+      })}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/scrollTrigger.min.js"></script>
     </div>
