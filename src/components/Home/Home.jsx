@@ -87,13 +87,11 @@ export const Home = () => {
           et malorum (Sobre los límites del bien y del mal) que comienza con:
         </p>
       </div>
-      {cards.map((card) => {
-        return (
-          <div>
-            <Card card={card} />
-          </div>
-        );
-      })}
+      <div className="container_cards">
+        {cards.map((card) => {
+          return <Card card={card} key={card.title} />;
+        })}
+      </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/scrollTrigger.min.js"></script>
     </div>

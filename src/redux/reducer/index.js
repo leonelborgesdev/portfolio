@@ -6,9 +6,30 @@ const initialState = {
     {
       img: proy1,
       img2: proy1_2,
-      title: "Breeds",
+      title: "BREEDS",
       detail:
         "Desarrollo de un SPA ( Single Page Application) encargada de crear, modificar, listar, ordenar y filtrar la información de las diferentes razas de perros. Dicha información se obtiene desde una API ( The Dog ) y de una Base de Datos Local",
+    },
+    {
+      img: proy1,
+      img2: proy1_2,
+      title: "BARBERAPP",
+      detail:
+        "Desarrollo de una pagina web responsive para una barberia. La cual permite al usuario reservar sus citas con un barbero en especifico, mas un mini ecomerce que le permite al usuario comprar productos de la barberia.",
+    },
+    {
+      img: proy1,
+      img2: proy1_2,
+      title: "MUNDOMARKET",
+      detail:
+        "Participe en el desarrollo de una pagina web e-comerce en la que cada usuario puede realizar compras de productos y ofrecer o vender sus productos.",
+    },
+    {
+      img: proy1,
+      img2: proy1_2,
+      title: "COUNTRIES",
+      detail:
+        "Desarrollo de un SPA ( Single Page Application) encargada de crear, eliminar, listar, ordenar y filtrar la información de diferentes paises. Dicha información se obtiene desde una API ( Restcountries ) y de una Base de Datos Local",
     },
   ],
 };

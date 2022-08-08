@@ -53,3 +53,9 @@ section img#man{
     font-size: 1.2em;
     color: #20496a;
 }
+.container_cards{
+     /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    align-items: center; 
+}
