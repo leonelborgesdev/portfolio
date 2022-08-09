@@ -10,6 +10,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Home.css";
 import { Card } from "../Card/Card";
+import { Skils } from "../Skils/Skils";
 
 export const Home = () => {
   const { cards } = useSelector((state) => state);
@@ -91,6 +92,9 @@ export const Home = () => {
         {cards.map((card) => {
           return <Card card={card} key={card.title} />;
         })}
+      </div>
+      <div className="container_all_skills">
+        <Skils />
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/scrollTrigger.min.js"></script>
