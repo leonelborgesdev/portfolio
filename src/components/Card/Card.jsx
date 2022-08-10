@@ -12,7 +12,7 @@ export const Card = ({ card }) => {
           </div>
           <div className="details">
             <div>
-              <img src={card.img2} alt="pr1" />
+              <img src={card.img2} alt="pr1" width={"380px"} height={"236px"} />
               <h3>{card.title}</h3>
               <h2>{card.detail}</h2>
               <a href="#">Detail</a>

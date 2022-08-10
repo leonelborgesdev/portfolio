@@ -1,5 +1,7 @@
 import proy1 from "../../assets/proy1.png";
 import proy1_2 from "../../assets/proy1_2.png";
+import BarberApp_2 from "../../assets/BarberApp_2.png";
+import Countries_2 from "../../assets/Countries_2.png";
 
 const initialState = {
   cards: [
@@ -12,7 +14,7 @@ const initialState = {
     },
     {
       img: proy1,
-      img2: proy1_2,
+      img2: BarberApp_2,
       title: "BARBERAPP",
       detail:
         "Desarrollo de una pagina web responsive para una barberia. La cual permite al usuario reservar sus citas con un barbero en especifico, mas un mini ecomerce que le permite al usuario comprar productos de la barberia.",
@@ -26,7 +28,7 @@ const initialState = {
     },
     {
       img: proy1,
-      img2: proy1_2,
+      img2: Countries_2,
       title: "COUNTRIES",
       detail:
         "Desarrollo de un SPA ( Single Page Application) encargada de crear, eliminar, listar, ordenar y filtrar la información de diferentes paises. Dicha información se obtiene desde una API ( Restcountries ) y de una Base de Datos Local",
