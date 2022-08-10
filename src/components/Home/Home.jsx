@@ -12,6 +12,7 @@ import "./Home.css";
 import { Card } from "../Card/Card";
 import { Skils } from "../Skils/Skils";
 import { PageFooter } from "../Footer/PageFooter";
+import Foto from "../../assets/Foto.jpg";
 
 export const Home = () => {
   const { cards } = useSelector((state) => state);
@@ -73,21 +74,25 @@ export const Home = () => {
       </section>
       <div className="sec">
         <h2> ScrollTrigger is Awesome</h2>
-        <p>
-          Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en
-          demostraciones de tipografías o de borradores de diseño para probar el
-          diseño visual antes de insertar el texto final. Aunque no posee
-          actualmente fuentes para justificar sus hipótesis, el profesor de
-          filología clásica Richard McClintock asegura que su uso se remonta a
-          los impresores de comienzos del siglo xvi.1​ Su uso en algunos
-          editores de texto muy conocidos en la actualidad ha dado al texto
-          lorem ipsum nueva popularidad. El texto en sí no tiene sentido, aunque
-          no es aleatorio, sino que deriva de un texto de Cicerón en lengua
-          latina, a cuyas palabras se les han eliminado sílabas o letras. El
-          significado del mismo no tiene importancia, ya que solo es una
-          demostración o prueba. El texto procede de la obra De finibus bonorum
-          et malorum (Sobre los límites del bien y del mal) que comienza con:
-        </p>
+        <div className="container_about_me">
+          <p>
+            Lorem ipsum es el texto que se usa habitualmente en diseño gráfico
+            en demostraciones de tipografías o de borradores de diseño para
+            probar el diseño visual antes de insertar el texto final. Aunque no
+            posee actualmente fuentes para justificar sus hipótesis, el profesor
+            de filología clásica Richard McClintock asegura que su uso se
+            remonta a los impresores de comienzos del siglo xvi.1​ Su uso en
+            algunos editores de texto muy conocidos en la actualidad ha dado al
+            texto lorem ipsum nueva popularidad. El texto en sí no tiene
+            sentido, aunque no es aleatorio, sino que deriva de un texto de
+            Cicerón en lengua latina, a cuyas palabras se les han eliminado
+            sílabas o letras. El significado del mismo no tiene importancia, ya
+            que solo es una demostración o prueba. El texto procede de la obra
+            De finibus bonorum et malorum (Sobre los límites del bien y del mal)
+            que comienza con:
+          </p>
+          <img src={Foto} alt="image.jpg" width={"400px"} height={"400px"} />
+        </div>
       </div>
       <div className="separadores">
         <h2> Proyects</h2>
