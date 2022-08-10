@@ -8,7 +8,6 @@ export const Card = ({ card }) => {
       <div className="container_card">
         <div className="card">
           <div className="cover">
-            {" "}
             <img src={card.img} alt="pr1" />{" "}
           </div>
           <div className="details">

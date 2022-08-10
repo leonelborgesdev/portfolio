@@ -11,6 +11,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Home.css";
 import { Card } from "../Card/Card";
 import { Skils } from "../Skils/Skils";
+import { PageFooter } from "../Footer/PageFooter";
 
 export const Home = () => {
   const { cards } = useSelector((state) => state);
@@ -88,14 +89,20 @@ export const Home = () => {
           et malorum (Sobre los límites del bien y del mal) que comienza con:
         </p>
       </div>
+      <h2 className="separadores"> Proyects</h2>
       <div className="container_cards">
-        {cards.map((card) => {
-          return <Card card={card} key={card.title} />;
-        })}
+        <Card card={cards[0]} key={cards[0].title} />;
+        <Card card={cards[1]} key={cards[1].title} />;
       </div>
+      <div className="container_cards">
+        <Card card={cards[2]} key={cards[2].title} />;
+        <Card card={cards[3]} key={cards[3].title} />;
+      </div>
+      <h2 className="separadores"> Skills</h2>
       <div className="container_all_skills">
         <Skils />
       </div>
+      <PageFooter />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/scrollTrigger.min.js"></script>
     </div>

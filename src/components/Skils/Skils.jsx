@@ -19,14 +19,14 @@ export const Skils = () => {
                 <h2>
                   85<span>%</span>
                 </h2>
-                <p>Html</p>
+                <p>JAVA</p>
               </div>
             </div>
           </div>
           <div className="cardSkill">
             <div
               className="percent"
-              style={{ "--clr": "#f00c05", "--num": "72" }}
+              style={{ "--clr": "#f00c05", "--num": "70" }}
             >
               <div className="dot"></div>
               <svg>
@@ -35,16 +35,16 @@ export const Skils = () => {
               </svg>
               <div className="number">
                 <h2>
-                  72<span>%</span>
+                  70<span>%</span>
                 </h2>
-                <p>PHOTOSOP</p>
+                <p>HTML</p>
               </div>
             </div>
           </div>
           <div className="cardSkill">
             <div
               className="percent"
-              style={{ "--clr": "#fee800", "--num": "60" }}
+              style={{ "--clr": "#77CEF4 ", "--num": "80" }}
             >
               <div className="dot"></div>
               <svg>
@@ -53,7 +53,43 @@ export const Skils = () => {
               </svg>
               <div className="number">
                 <h2>
-                  60<span>%</span>
+                  80<span>%</span>
+                </h2>
+                <p>POSTGRES</p>
+              </div>
+            </div>
+          </div>
+          <div className="cardSkill">
+            <div
+              className="percent"
+              style={{ "--clr": "#1450B9", "--num": "55" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx={"70"} cy={"70"} r={"70"}></circle>
+                <circle cx={"70"} cy={"70"} r={"70"}></circle>
+              </svg>
+              <div className="number">
+                <h2>
+                  55<span>%</span>
+                </h2>
+                <p>PHOTOSHOP</p>
+              </div>
+            </div>
+          </div>
+          <div className="cardSkill">
+            <div
+              className="percent"
+              style={{ "--clr": "#ff00be", "--num": "78" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx={"70"} cy={"70"} r={"70"}></circle>
+                <circle cx={"70"} cy={"70"} r={"70"}></circle>
+              </svg>
+              <div className="number">
+                <h2>
+                  78<span>%</span>
                 </h2>
                 <p>CSS</p>
               </div>
@@ -62,7 +98,7 @@ export const Skils = () => {
           <div className="cardSkill">
             <div
               className="percent"
-              style={{ "--clr": "#ff00be", "--num": "95" }}
+              style={{ "--clr": "#fee800", "--num": "95" }}
             >
               <div className="dot"></div>
               <svg>
@@ -80,7 +116,7 @@ export const Skils = () => {
           <div className="cardSkill">
             <div
               className="percent"
-              style={{ "--clr": "#06ccff", "--num": "40" }}
+              style={{ "--clr": "#12FF9A", "--num": "90" }}
             >
               <div className="dot"></div>
               <svg>
@@ -89,9 +125,63 @@ export const Skils = () => {
               </svg>
               <div className="number">
                 <h2>
-                  40<span>%</span>
+                  90<span>%</span>
+                </h2>
+                <p>REACT</p>
+              </div>
+            </div>
+          </div>
+          <div className="cardSkill">
+            <div
+              className="percent"
+              style={{ "--clr": "#80887D", "--num": "75" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx={"70"} cy={"70"} r={"70"}></circle>
+                <circle cx={"70"} cy={"70"} r={"70"}></circle>
+              </svg>
+              <div className="number">
+                <h2>
+                  75<span>%</span>
+                </h2>
+                <p>EXPRESS</p>
+              </div>
+            </div>
+          </div>
+          <div className="cardSkill">
+            <div
+              className="percent"
+              style={{ "--clr": "#06ccff", "--num": "72" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx={"70"} cy={"70"} r={"70"}></circle>
+                <circle cx={"70"} cy={"70"} r={"70"}></circle>
+              </svg>
+              <div className="number">
+                <h2>
+                  72<span>%</span>
                 </h2>
                 <p>TYPESCRIPT</p>
+              </div>
+            </div>
+          </div>
+          <div className="cardSkill">
+            <div
+              className="percent"
+              style={{ "--clr": "#40B517", "--num": "62" }}
+            >
+              <div className="dot"></div>
+              <svg>
+                <circle cx={"70"} cy={"70"} r={"70"}></circle>
+                <circle cx={"70"} cy={"70"} r={"70"}></circle>
+              </svg>
+              <div className="number">
+                <h2>
+                  62<span>%</span>
+                </h2>
+                <p>MONGODB</p>
               </div>
             </div>
           </div>
