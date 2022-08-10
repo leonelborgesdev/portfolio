@@ -1,7 +1,8 @@
 import proy1 from "../../assets/proy1.png";
 import proy1_2 from "../../assets/proy1_2.png";
 import BarberApp_2 from "../../assets/BarberApp_2.png";
-import Countries_2 from "../../assets/Countries_2.png";
+import Countries_2 from "../../assets/Countries_2.png"; //Countries
+import Countries from "../../assets/Countries.png";
 
 const initialState = {
   cards: [
@@ -27,7 +28,7 @@ const initialState = {
         "Participe en el desarrollo de una pagina web e-comerce en la que cada usuario puede realizar compras de productos y ofrecer o vender sus productos.",
     },
     {
-      img: proy1,
+      img: Countries,
       img2: Countries_2,
       title: "COUNTRIES",
       detail:

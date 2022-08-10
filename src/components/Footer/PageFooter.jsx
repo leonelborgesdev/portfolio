@@ -18,12 +18,12 @@ export const PageFooter = () => {
           </div>
           <ul className="social_icon">
             <li>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/leonelborgesdev">
                 <img src={logo_linkedin} width={"30px"} height={"30px"} />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/leonelborgesdev">
                 <img src={logo_github} width={"30px"} height={"30px"} />
               </a>
             </li>
