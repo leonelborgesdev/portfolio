@@ -51,7 +51,8 @@ section img#man{
 }
 .sec{
     position: relative;
-    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .sec h2{
     font-size: 3.5em;
@@ -93,7 +94,7 @@ section img#man{
     justify-content: center;
     align-items: center;
     font-size: 1.8em;
-    color: #fff;
+    color: #20496a;;
     /* background: #222; */
     background: #fff;
 }
