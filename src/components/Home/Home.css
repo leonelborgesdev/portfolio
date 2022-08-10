@@ -66,3 +66,11 @@ section img#man{
     align-items: center;    
     background:#222;
 }
+.separadores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    color: #fff;
+    background: #222;
+}

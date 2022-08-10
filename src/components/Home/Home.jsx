@@ -89,7 +89,9 @@ export const Home = () => {
           et malorum (Sobre los límites del bien y del mal) que comienza con:
         </p>
       </div>
-      <h2 className="separadores"> Proyects</h2>
+      <div className="separadores">
+        <h2> Proyects</h2>
+      </div>
       <div className="container_cards">
         <Card card={cards[0]} key={cards[0].title} />;
         <Card card={cards[1]} key={cards[1].title} />;
@@ -98,7 +100,9 @@ export const Home = () => {
         <Card card={cards[2]} key={cards[2].title} />;
         <Card card={cards[3]} key={cards[3].title} />;
       </div>
-      <h2 className="separadores"> Skills</h2>
+      <div className="separadores">
+        <h2> Skills</h2>
+      </div>
       <div className="container_all_skills">
         <Skils />
       </div>
