@@ -73,25 +73,33 @@ export const Home = () => {
         <img src={mountain_rigth} id="mountain_rigth" />
       </section>
       <div className="sec">
-        <h2> ScrollTrigger is Awesome</h2>
+        <h2>PORTFOLIO</h2>
         <div className="container_about_me">
-          <p>
-            Lorem ipsum es el texto que se usa habitualmente en diseño gráfico
-            en demostraciones de tipografías o de borradores de diseño para
-            probar el diseño visual antes de insertar el texto final. Aunque no
-            posee actualmente fuentes para justificar sus hipótesis, el profesor
-            de filología clásica Richard McClintock asegura que su uso se
-            remonta a los impresores de comienzos del siglo xvi.1​ Su uso en
-            algunos editores de texto muy conocidos en la actualidad ha dado al
-            texto lorem ipsum nueva popularidad. El texto en sí no tiene
-            sentido, aunque no es aleatorio, sino que deriva de un texto de
-            Cicerón en lengua latina, a cuyas palabras se les han eliminado
-            sílabas o letras. El significado del mismo no tiene importancia, ya
-            que solo es una demostración o prueba. El texto procede de la obra
-            De finibus bonorum et malorum (Sobre los límites del bien y del mal)
-            que comienza con:
-          </p>
-          <img src={Foto} alt="image.jpg" width={"400px"} height={"400px"} />
+          <div className="container_about_me_text">
+            <p>👋🏻Hola😃</p>
+            <p>
+              Mi nombre es Leonel Borges, soy de la desarrollador web de
+              Bolivia, mis hobies son el voley, la natacion y los deportes. Soy
+              Graduado Full Stack developer, con aptitudes en Backend y
+              Frontend. Me gusta programar, me gusta aprender mas dia a dia y
+              trato de mejorar mis habilidades estudiando, practicando y
+              participando en proyectos de tecnilogia.
+            </p>
+            <p>
+              🔥Fortalezas: El trabajo en equipo se me da muy bien, me adapto
+              facilmente a los cambios, soy participativo, consulto y también
+              doy asesoría a mis compañeros de equipo, si hay algo que no se, lo
+              investigo y me esfuerzo mucho por encontrar la respuesta.
+            </p>
+            <p>
+              🧑‍💻💼Experiencia: Por ahora mi experiencia es netamente academica,
+              participando en proyectos individuales y grupales como ser los
+              proyectos en henry y otros, tambien he sido ayudante de catedra en
+              la UAJMS, ayudando a los chicos con sus practicos, tareas y
+              preparandolos para sus examenes de programacion en Java
+            </p>
+          </div>
+          <img src={Foto} alt="image.jpg" />
         </div>
       </div>
       <div className="separadores">

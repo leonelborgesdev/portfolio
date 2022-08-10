@@ -62,6 +62,17 @@ section img#man{
     flex-direction: row;
     gap: 3.5rem;
 }
+.container_about_me > img{
+    width: 400px;
+    border-radius: 50% ;
+}
+.container_about_me_text{
+    color: #20496a;
+}
+.container_about_me_text > p{
+    text-align: left;
+    font-size: 1.2em;
+}
 .sec p{
     font-size: 1.2em;
     color: #20496a;
