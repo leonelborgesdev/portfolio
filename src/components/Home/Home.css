@@ -91,8 +91,7 @@ section img#man{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; 
-    background: #fff;   
+    align-items: center;   
     /* background:#222; */
 }
 .separadores{
@@ -108,5 +107,12 @@ section img#man{
     background: #fff;
 }
 #dark .container_home .separadores{
+    background: #222;
+}
+
+#light .container_home .container_cards{
+    background: #fff;
+}
+#dark .container_home .container_cards{
     background: #222;
 }
