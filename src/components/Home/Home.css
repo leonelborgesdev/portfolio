@@ -102,5 +102,11 @@ section img#man{
     font-size: 1.8em;
     color: #20496a;;
     /* background: #222; */
+}
+
+#light .container_home .separadores{
     background: #fff;
+}
+#dark .container_home .separadores{
+    background: #222;
 }
