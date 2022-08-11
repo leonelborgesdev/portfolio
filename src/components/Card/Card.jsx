@@ -8,11 +8,11 @@ export const Card = ({ card }) => {
       <div className="container_card">
         <div className="card">
           <div className="cover">
-            <img src={card.img} alt="pr1" width={"280px"} height={"280px"} />{" "}
+            <img src={card.img} alt="pr1" width={"280px"} />{" "}
           </div>
           <div className="details">
             <div>
-              <img src={card.img2} alt="pr1" width={"380px"} height={"236px"} />
+              <img src={card.img2} alt="pr1" width={"380px"} />
               <h3>{card.title}</h3>
               <h2>{card.detail}</h2>
               <a href="#">Detail</a>

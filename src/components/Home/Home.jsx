@@ -63,7 +63,7 @@ export const Home = () => {
   });
   return (
     <div className="container_home">
-      <section>
+      <section className="container_section">
         <img src={bg} id="bg" />
         <h2 id="text">Mountains</h2>
         <img src={man} id="man" />

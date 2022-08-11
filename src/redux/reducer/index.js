@@ -3,6 +3,7 @@ import proy1_2 from "../../assets/proy1_2.png";
 import BarberApp_2 from "../../assets/BarberApp_2.png";
 import Countries_2 from "../../assets/Countries_2.png"; //Countries
 import Countries from "../../assets/Countries.png";
+import BarberApp from "../../assets/BarberApp.png";
 
 const initialState = {
   cards: [
@@ -14,7 +15,7 @@ const initialState = {
         "Desarrollo de un SPA ( Single Page Application) encargada de crear, modificar, listar, ordenar y filtrar la información de las diferentes razas de perros. Dicha información se obtiene desde una API ( The Dog ) y de una Base de Datos Local",
     },
     {
-      img: proy1,
+      img: BarberApp,
       img2: BarberApp_2,
       title: "BARBERAPP",
       detail:

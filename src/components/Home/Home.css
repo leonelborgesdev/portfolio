@@ -4,11 +4,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.sec{
-    background: #fff;
-    /* background:#222; */
-    /* background: rgb(201, 197, 197); */
-}
+/* .sec{
+     background: #f00; 
+     background:#222; 
+     background: rgb(201, 197, 197); 
+} */
 section{
     position: relative;
     width: 100%;
@@ -53,6 +53,12 @@ section img#man{
     position: relative;
     padding-left: 100px;
     padding-right: 100px;
+}
+#light .container_home .sec{
+    background: #fff;
+}
+#dark .container_home .sec{
+    background: #222;
 }
 .sec h2{
     font-size: 3.5em;
