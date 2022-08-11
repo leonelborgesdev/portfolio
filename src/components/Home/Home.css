@@ -116,3 +116,9 @@ section img#man{
 #dark .container_home .container_all_skills{
     background: #222;
 }
+#light .container_home .container_footer{
+    background: #fff;
+}
+#dark .container_home .container_footer{
+    background: #222;
+}

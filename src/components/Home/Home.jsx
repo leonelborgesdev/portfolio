@@ -119,7 +119,9 @@ export const Home = () => {
       <div className="container_all_skills">
         <Skils />
       </div>
-      <PageFooter />
+      <div className="container_footer">
+        <PageFooter />
+      </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/scrollTrigger.min.js"></script>
     </div>
