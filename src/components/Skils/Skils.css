@@ -23,8 +23,6 @@
     width: 220px;
     height: 250px;
     border-radius: 10px;
-    background: rgb(219, 217, 217);
-    /* background: #2a2a2a; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +43,7 @@
     height: 100%;
     fill: transparent;
     stroke-width: 2;
-    stroke: #191919;
+    stroke: #222;
     transform: translate(5px,5px);
 }
 .container_s .cardSkill .percent svg circle:nth-child(2){
@@ -104,13 +102,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #222;
     font-weight: 700;
     font-size: 2.5em;
     margin: 0px;
 }
 .number span{
-    color: #222;
     font-weight: 300;
     font-size: 0.5em;
     margin: 0px;
@@ -120,6 +116,22 @@
     font-size: 0.75em;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #222;
     margin: 0px;
+}
+
+#light .container_home .container_all_skills .container_s .cardSkill{
+    background: rgb(197, 196, 196);
+}
+#dark .container_home .container_all_skills .container_s .cardSkill{
+    background: #191919;
+}
+#light .container_home .container_all_skills .number p,
+#light .container_home .container_all_skills .number span,
+#light .container_home .container_all_skills .number h2{
+    color: #191919;
+}
+#dark .container_home .container_all_skills .number p,
+#dark .container_home .container_all_skills .number span,
+#dark .container_home .container_all_skills .number h2{
+    color: #fff;
 }
