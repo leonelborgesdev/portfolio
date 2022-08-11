@@ -4,11 +4,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/* .sec{
-     background: #f00; 
-     background:#222; 
-     background: rgb(201, 197, 197); 
-} */
 section{
     position: relative;
     width: 100%;
@@ -109,10 +104,15 @@ section img#man{
 #dark .container_home .separadores{
     background: #222;
 }
-
 #light .container_home .container_cards{
     background: #fff;
 }
 #dark .container_home .container_cards{
+    background: #222;
+}
+#light .container_home .container_all_skills{
+    background: #fff;
+}
+#dark .container_home .container_all_skills{
     background: #222;
 }
