@@ -106,12 +106,12 @@ export const Home = () => {
         <h2> Proyects</h2>
       </div>
       <div className="container_cards">
-        <Card card={cards[0]} key={cards[0].title} />;
-        <Card card={cards[1]} key={cards[1].title} />;
+        <Card card={cards[0]} key={cards[0].title} id={"blue"} />;
+        <Card card={cards[1]} key={cards[1].title} id={"yellow"} />;
       </div>
       <div className="container_cards">
-        <Card card={cards[2]} key={cards[2].title} />;
-        <Card card={cards[3]} key={cards[3].title} />;
+        <Card card={cards[2]} key={cards[2].title} id={"grey"} />;
+        <Card card={cards[3]} key={cards[3].title} id={"purple"} />;
       </div>
       <div className="separadores">
         <h2> Skills</h2>

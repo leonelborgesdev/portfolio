@@ -2,10 +2,10 @@ import React from "react";
 import "./Card.css";
 import proy1 from "../../assets/proy1.png";
 import proy1_2 from "../../assets/proy1_2.png";
-export const Card = ({ card }) => {
+export const Card = ({ card, id }) => {
   return (
     <div className="container_card_all">
-      <div className="container_card">
+      <div className="container_card" id={id}>
         <div className="card">
           <div className="cover">
             <img src={card.img} alt="pr1" width={"280px"} />{" "}

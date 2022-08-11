@@ -32,7 +32,6 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: #fff;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -41,6 +40,18 @@
     overflow: hidden;
     transition: 1s ease-in-out;
     transform-origin: left;
+}
+#dark .card .cover{
+    background: rgb(17, 16, 16);
+}
+#dark .card .cover::before{
+    background: rgb(17, 16, 16);
+}
+#light .card .cover{
+    background: #fff;
+}
+#light .card .cover::before{
+    background: #fff;
 }
 .card:hover .cover{
     transform: rotateY(-180deg);
@@ -55,16 +66,62 @@
     position: absolute;
     width: 10px;
     height: 150%;
-    background: #fff;
     transform: rotate(36.5deg);
-    box-shadow: 0 0 0 20px #47bfce;
     transition: 0.5s;
     transition-delay: 1s;
 }
 .card:hover .cover::before{
     width: 0;
-    box-shadow: 0 0 0 350px #47bfce;
     transform: rotate(143.5deg);
+}
+
+#blue .card .cover::before{
+    box-shadow: 0 0 0 20px #47bfce;
+}
+#blue .card:hover .cover::before{
+    box-shadow: 0 0 0 350px #47bfce;
+}
+#blue .card .details a{
+    background: #47bfce;
+}
+#blue .card .details h2{
+    color: #47bfce;
+}
+#yellow .card .cover::before{
+    box-shadow: 0 0 0 20px rgb(138, 138, 33);
+}
+#yellow .card:hover .cover::before{
+    box-shadow: 0 0 0 350px rgb(138, 138, 33);
+}
+#yellow .card .details a{
+    background: rgb(138, 138, 33);
+}
+#yellow .card .details h2{
+    color: rgb(138, 138, 33);
+}
+#grey .card .cover::before{
+    box-shadow: 0 0 0 20px rgb(139, 138, 138);
+}
+#grey .card:hover .cover::before{
+    box-shadow: 0 0 0 350px rgb(139, 138, 138);
+}
+#grey .card .details a{
+    background: rgb(139, 138, 138);
+}
+#grey .card .details h2{
+    color: rgb(139, 138, 138);
+}
+#purple .card .cover::before{
+    box-shadow: 0 0 0 20px #1F1D36;
+}
+#purple .card:hover .cover::before{
+    box-shadow: 0 0 0 350px #1F1D36;
+}
+#purple .card .details a{
+    background: #1F1D36;
+}
+#purple .card .details h2{
+    color: #1F1D36;
 }
 .card .details{
     position: absolute;
@@ -85,13 +142,11 @@
 }
 .card .details h2{
     font-size: 1em;
-    color: #3fabb9;
     font-weight: 600;
 }
 .card .details a{
     display: inline;
     padding: 8px 20px;
-    background: #47bfce;
     color: #fff;
     margin-top: 5px;
     letter-spacing: 1px;

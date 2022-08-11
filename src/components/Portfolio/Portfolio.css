@@ -1,0 +1,24 @@
+.switch{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    bottom: 0px;
+    right: 10px;
+    position: fixed;
+}
+.switch label{
+    width: 100px;
+    height: 24px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#light .switch label{
+    color: #222;
+    background: #fff;
+}
+#dark .switch label{
+    color: #fff;
+    background: #222;
+}
