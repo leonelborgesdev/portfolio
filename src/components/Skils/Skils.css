@@ -121,17 +121,21 @@
 
 #light .container_home .container_all_skills .container_s .cardSkill{
     background: rgb(197, 196, 196);
+    transition: 1s;
 }
 #dark .container_home .container_all_skills .container_s .cardSkill{
     background: #191919;
+    transition: 1s;
 }
 #light .container_home .container_all_skills .number p,
 #light .container_home .container_all_skills .number span,
 #light .container_home .container_all_skills .number h2{
     color: #191919;
+    transition: 1s;
 }
 #dark .container_home .container_all_skills .number p,
 #dark .container_home .container_all_skills .number span,
 #dark .container_home .container_all_skills .number h2{
     color: #fff;
+    transition: 1s;
 }

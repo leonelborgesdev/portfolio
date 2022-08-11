@@ -13,7 +13,6 @@ section{
     justify-content: center;
     align-items: center;
     /* background: rgb(126, 125, 125); */
-    background: #fff;
     /* background:#222; */
 }
 section::before{
@@ -48,12 +47,6 @@ section img#man{
     position: relative;
     padding-left: 100px;
     padding-right: 100px;
-}
-#light .container_home .sec{
-    background: #fff;
-}
-#dark .container_home .sec{
-    background: #222;
 }
 .sec h2{
     font-size: 3.5em;
@@ -97,28 +90,43 @@ section img#man{
     color: #20496a;;
     /* background: #222; */
 }
-
+#light .container_home .sec{
+    background: #fff;
+    transition: 1s;
+}
+#dark .container_home .sec{
+    background: #222;
+    transition: 1s;
+}
 #light .container_home .separadores{
     background: #fff;
+    transition: 1s;
 }
 #dark .container_home .separadores{
     background: #222;
+    transition: 1s;
 }
 #light .container_home .container_cards{
     background: #fff;
+    transition: 1s;
 }
 #dark .container_home .container_cards{
     background: #222;
+    transition: 1s;
 }
 #light .container_home .container_all_skills{
     background: #fff;
+    transition: 1s;
 }
 #dark .container_home .container_all_skills{
     background: #222;
+    transition: 1s;
 }
 #light .container_home .container_footer{
     background: #fff;
+    transition: 1s;
 }
 #dark .container_home .container_footer{
     background: #222;
+    transition: 1s;
 }
