@@ -50,7 +50,9 @@ export const PageFooter = () => {
               );
             })}
           </ul>
-          <p>{company_footer}</p>
+          <div className="footer_año">
+            <p>{company_footer}</p>
+          </div>
         </footer>
       </div>
     </div>
