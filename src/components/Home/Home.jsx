@@ -15,7 +15,9 @@ import { PageFooter } from "../Footer/PageFooter";
 import Foto from "../../assets/Foto.jpg";
 
 export const Home = () => {
-  const { cards, about_me } = useSelector((state) => state);
+  const { cards, about_me, separadores_portfolio } = useSelector(
+    (state) => state
+  );
   gsap.registerPlugin(ScrollTrigger);
   React.useEffect(() => {
     gsap.to("#bg", {
@@ -73,7 +75,7 @@ export const Home = () => {
         <img src={mountain_rigth} id="mountain_rigth" />
       </section>
       <div className="sec">
-        <h2>PORTFOLIO</h2>
+        <h2>Portfolio</h2>
         <div className="container_about_me">
           <div className="container_about_me_text">
             {about_me.map((parrafo) => {
@@ -84,7 +86,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="separadores">
-        <h2> Proyects</h2>
+        <h2>{separadores_portfolio[0]}</h2>
       </div>
       <div className="container_cards">
         <Card card={cards[0]} key={cards[0].title} id={"blue"} />;
@@ -95,7 +97,7 @@ export const Home = () => {
         <Card card={cards[3]} key={cards[3].title} id={"purple"} />;
       </div>
       <div className="separadores">
-        <h2> Skills</h2>
+        <h2>{separadores_portfolio[1]}</h2>
       </div>
       <div className="container_all_skills">
         <Skils />
