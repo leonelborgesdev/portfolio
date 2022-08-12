@@ -15,7 +15,7 @@ import { PageFooter } from "../Footer/PageFooter";
 import Foto from "../../assets/Foto.jpg";
 
 export const Home = () => {
-  const { cards } = useSelector((state) => state);
+  const { cards, about_me } = useSelector((state) => state);
   gsap.registerPlugin(ScrollTrigger);
   React.useEffect(() => {
     gsap.to("#bg", {
@@ -76,28 +76,9 @@ export const Home = () => {
         <h2>PORTFOLIO</h2>
         <div className="container_about_me">
           <div className="container_about_me_text">
-            <p>👋🏻Hola😃</p>
-            <p>
-              Me llamo Leonel Borges, soy de la desarrollador web, vivo en la
-              ciudad de Bermejo, de Tarija Bolivia, mis hobies son el voley, la
-              natacion y los deportes. Soy Graduado Full Stack Developer, con
-              aptitudes en Backend y Frontend. Me gusta programar, me gusta
-              aprender mas dia a dia y trato de mejorar mis habilidades
-              estudiando, practicando y participando en proyectos de tecnilogia.
-            </p>
-            <p>
-              🔥Fortalezas: El trabajo en equipo se me da muy bien, me adapto
-              facilmente a los cambios, soy participativo, consulto y también
-              doy asesoría a mis compañeros de equipo, si hay algo que no se, lo
-              investigo y me esfuerzo mucho por encontrar la respuesta.
-            </p>
-            <p>
-              🧑‍💻💼Experiencia: Por ahora mi experiencia es netamente academica,
-              participando en proyectos individuales y grupales como ser los
-              proyectos en henry y otros, tambien he sido ayudante de catedra en
-              la UAJMS, ayudando a los chicos con sus practicos, tareas y
-              preparandolos para sus examenes de programacion en Java
-            </p>
+            {about_me.map((parrafo) => {
+              return <p>{parrafo}</p>;
+            })}
           </div>
           <img src={Foto} alt="image.jpg" />
         </div>
