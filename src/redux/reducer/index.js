@@ -4,6 +4,8 @@ import BarberApp_2 from "../../assets/BarberApp_2.png";
 import Countries_2 from "../../assets/Countries_2.png"; //Countries
 import Countries from "../../assets/Countries.png";
 import BarberApp from "../../assets/BarberApp.png";
+import { CHANGE_MODE } from "../action/types";
+import { act } from "@testing-library/react";
 
 const initialState = {
   cards: [
@@ -36,10 +38,18 @@ const initialState = {
         "Desarrollo de un SPA ( Single Page Application) encargada de crear, eliminar, listar, ordenar y filtrar la información de diferentes paises. Dicha información se obtiene desde una API ( Restcountries ) y de una Base de Datos Local",
     },
   ],
+  mode: "light",
+  languaje: "español",
 };
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
+    case CHANGE_MODE: {
+      return {
+        ...state,
+        mode: action.payload,
+      };
+    }
     default:
       return {
         ...state,

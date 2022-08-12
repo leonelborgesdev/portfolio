@@ -78,12 +78,12 @@ export const Home = () => {
           <div className="container_about_me_text">
             <p>👋🏻Hola😃</p>
             <p>
-              Mi nombre es Leonel Borges, soy de la desarrollador web de
-              Bolivia, mis hobies son el voley, la natacion y los deportes. Soy
-              Graduado Full Stack developer, con aptitudes en Backend y
-              Frontend. Me gusta programar, me gusta aprender mas dia a dia y
-              trato de mejorar mis habilidades estudiando, practicando y
-              participando en proyectos de tecnilogia.
+              Me llamo Leonel Borges, soy de la desarrollador web, vivo en la
+              ciudad de Bermejo, de Tarija Bolivia, mis hobies son el voley, la
+              natacion y los deportes. Soy Graduado Full Stack Developer, con
+              aptitudes en Backend y Frontend. Me gusta programar, me gusta
+              aprender mas dia a dia y trato de mejorar mis habilidades
+              estudiando, practicando y participando en proyectos de tecnilogia.
             </p>
             <p>
               🔥Fortalezas: El trabajo en equipo se me da muy bien, me adapto

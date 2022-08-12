@@ -48,10 +48,10 @@
     background: rgb(17, 16, 16);
 }
 #light .card .cover{
-    background: #fff;
+    background: rgb(197, 196, 196);
 }
 #light .card .cover::before{
-    background: #fff;
+    background: rgb(197, 196, 196);
 }
 .card:hover .cover{
     transform: rotateY(-180deg);
