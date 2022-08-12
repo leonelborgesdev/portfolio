@@ -23,3 +23,28 @@
     color: #fff;
     background: #222;
 }
+.switchLanguaje{    
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    bottom: 50px;
+    right: 10px;
+    position: fixed;
+    z-index: 1001;
+}
+.switchLanguaje label{
+    width: 100px;
+    height: 24px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#light .switchLanguaje label{
+    color: #222;
+    background: #fff;
+}
+#dark .switchLanguaje label{
+    color: #fff;
+    background: #222;
+}

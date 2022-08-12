@@ -4,7 +4,7 @@ import BarberApp_2 from "../../assets/BarberApp_2.png";
 import Countries_2 from "../../assets/Countries_2.png"; //Countries
 import Countries from "../../assets/Countries.png";
 import BarberApp from "../../assets/BarberApp.png";
-import { CHANGE_MODE } from "../action/types";
+import { CHANGE_LANGUAJE, CHANGE_MODE } from "../action/types";
 import { act } from "@testing-library/react";
 
 const initialState = {
@@ -54,6 +54,12 @@ const rootReducer = (state = initialState, action) => {
       return {
         ...state,
         mode: action.payload,
+      };
+    }
+    case CHANGE_LANGUAJE: {
+      return {
+        ...state,
+        languaje: action.payload,
       };
     }
     default:
