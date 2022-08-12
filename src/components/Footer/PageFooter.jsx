@@ -5,8 +5,10 @@ import logo_github from "../../assets/logo-github.svg";
 import logo_linkedin from "../../assets/logo-linkedin.svg";
 import logo_twitter from "../../assets/logo-twitter.svg";
 import { IonIcon } from "@ionic/react";
+import { useSelector } from "react-redux";
 
 export const PageFooter = () => {
+  const { menu_footer, company_footer } = useSelector((state) => state);
   return (
     <div className="container_all_footer">
       <div className="body_footer">
@@ -36,28 +38,19 @@ export const PageFooter = () => {
             <li>
               <a href="#">
                 <IonIcon src={logo_twitter} />
-                {/* <img src={logo_twitter} width={"30px"} height={"30px"} /> */}
               </a>
             </li>
           </ul>
           <ul className="menu">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Team</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+            {menu_footer.map((item) => {
+              return (
+                <li key={menu_footer.indexOf(item)}>
+                  <a href="#">{item}</a>
+                </li>
+              );
+            })}
           </ul>
-          <p>©2022 Borges | All Rights Reserved</p>
+          <p>{company_footer}</p>
         </footer>
       </div>
     </div>
