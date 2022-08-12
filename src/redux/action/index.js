@@ -8,7 +8,7 @@ export const changeMode = (mode) => {
     });
   };
 };
-export const changeLanguaje = (languaje) => {
+export const changeLanguaje = (languaje, cards) => {
   return function (dispatch) {
     dispatch({
       type: CHANGE_LANGUAJE,
@@ -16,8 +16,29 @@ export const changeLanguaje = (languaje) => {
       payloadAboutMe: aboutMe(languaje),
       payloadMenu: menuFooter(languaje),
       payloadCompany: compañiaFooter(languaje),
+      payloadCards: CardsHome(languaje, cards),
     });
   };
+};
+const CardsHome = (languaje, cards) => {
+  if (cards !== false) {
+    if (languaje === "español") {
+      cards[0].detail =
+        "Desarrollo de un SPA ( Single Page Application) encargada de crear, modificar, listar, ordenar y filtrar la información de las diferentes razas de perros. Dicha información se obtiene desde una API ( The Dog ) y de una Base de Datos Local";
+      cards[1].detail =
+        "Desarrollo de una pagina web responsive para una barberia. La cual permite al usuario reservar sus citas con un barbero en especifico, mas un mini ecomerce que le permite al usuario comprar productos de la barberia.";
+      cards[2].detail =
+        "Participe en el desarrollo de una pagina web e-comerce en la que cada usuario puede realizar compras de productos y ofrecer o vender sus productos.";
+      cards[3].detail =
+        "Desarrollo de un SPA ( Single Page Application) encargada de crear, eliminar, listar, ordenar y filtrar la información de diferentes paises. Dicha información se obtiene desde una API ( Restcountries ) y de una Base de Datos Local";
+    } else {
+      cards[0].detail = "Texto en ingles";
+      cards[1].detail = "Texto en ingles";
+      cards[2].detail = "Texto en ingles";
+      cards[3].detail = "Texto en ingles";
+    }
+    return cards;
+  }
 };
 const aboutMe = (languaje) => {
   if (languaje === "español") {

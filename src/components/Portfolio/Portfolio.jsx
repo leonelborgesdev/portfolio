@@ -10,12 +10,14 @@ export const ThemeContext = createContext(null);
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
-  const { mode, languaje } = useSelector((state) => state);
+  const { mode, languaje, cards } = useSelector((state) => state);
   const toggleTheme = () => {
     dispatch(changeMode(mode === "light" ? "dark" : "light"));
   };
   const handleLanguaje = () => {
-    dispatch(changeLanguaje(languaje === "español" ? "ingles" : "español"));
+    dispatch(
+      changeLanguaje(languaje === "español" ? "ingles" : "español", cards)
+    );
   };
   return (
     <ThemeContext.Provider value={{ mode, toggleTheme }}>
