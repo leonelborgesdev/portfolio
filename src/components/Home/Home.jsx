@@ -77,7 +77,7 @@ export const Home = () => {
         <div className="container_about_me">
           <div className="container_about_me_text">
             {about_me.map((parrafo) => {
-              return <p>{parrafo}</p>;
+              return <p key={about_me.indexOf(parrafo)}>{parrafo}</p>;
             })}
           </div>
           <img src={Foto} alt="image.jpg" />
