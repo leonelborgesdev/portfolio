@@ -81,7 +81,6 @@ export const Home = () => {
           <FondoOscuro />
         )}
       </section>
-
       <div className="sec">
         <h2>Portfolio</h2>
         <div className="container_about_me">

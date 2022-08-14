@@ -31,13 +31,13 @@
     animation-duration: calc(125s / var(--i));
 }
 .bubbles span:nth-child(even){
-    background: #ff2d75;
+    background: rgb(138, 138, 33);
     box-shadow: 0 0 0 10px #4fc3dc44,
-    0 0 50px #ff2d75,
-    0 0 100px #ff2d75;
+    0 0 50px rgb(138, 138, 33),
+    0 0 100px rgb(138, 138, 33);
 }
 .title{
-    color: #fff;
+    color: cyan;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,6 +46,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.title > h2{
+    font-size: 70px;
+    font-family: 'Poppins', Aboreto;
+}
+.title > h3{
+    font-size: 50px;
+    font-family: 'Poppins', Saira;
 }
 @keyframes animate {
     0%{
