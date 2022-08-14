@@ -13,9 +13,10 @@ import { Card } from "../Card/Card";
 import { Skils } from "../Skils/Skils";
 import { PageFooter } from "../Footer/PageFooter";
 import Foto from "../../assets/Foto.jpg";
+import { FondoOscuro } from "../FondoOscuro/FondoOscuro";
 
 export const Home = () => {
-  const { cards, about_me, separadores_portfolio } = useSelector(
+  const { cards, about_me, separadores_portfolio, mode } = useSelector(
     (state) => state
   );
   gsap.registerPlugin(ScrollTrigger);
@@ -66,14 +67,21 @@ export const Home = () => {
   return (
     <div className="container_home">
       <section className="container_section">
-        <img src={bg} id="bg" />
-        <h2 id="text">Mountains</h2>
-        <img src={man} id="man" />
-        <img src={clouds_1} id="clouds_1" />
-        <img src={clouds_2} id="clouds_2" />
-        <img src={mountain_left} id="mountain_left" />
-        <img src={mountain_rigth} id="mountain_rigth" />
+        {mode === "light" ? (
+          <>
+            <img src={bg} id="bg" />
+            <h2 id="text">Mountains</h2>
+            <img src={man} id="man" />
+            <img src={clouds_1} id="clouds_1" />
+            <img src={clouds_2} id="clouds_2" />
+            <img src={mountain_left} id="mountain_left" />
+            <img src={mountain_rigth} id="mountain_rigth" />
+          </>
+        ) : (
+          <FondoOscuro />
+        )}
       </section>
+
       <div className="sec">
         <h2>Portfolio</h2>
         <div className="container_about_me">

@@ -2,13 +2,12 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { Portfolio } from "./components/Portfolio/Portfolio";
-import { FondoOscuro } from "./components/FondoOscuro/FondoOscuro";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<FondoOscuro />} />
+        <Route exact path="/" element={<Portfolio />} />
       </Routes>
     </div>
   );

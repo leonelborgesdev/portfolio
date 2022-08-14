@@ -4,6 +4,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+#dark .container_home{
+    background: #222;
+}
+#light .container_home{
+    background: #fff;
+}
 section{
     position: relative;
     width: 100%;
@@ -23,8 +29,13 @@ section::before{
     width: 100%;
     height: 200px;
     /* background: linear-gradient(to top, #222, transparent); */
-    background: linear-gradient(to top, #fff, transparent);
     z-index: 10000;
+}
+#light .container_home section::before{
+    background: linear-gradient(to top, #fff, transparent);
+}
+#dark .container_home section::before{
+    background: linear-gradient(to top, #222, transparent);
 }
 section img{
     position: absolute;
