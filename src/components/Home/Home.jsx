@@ -89,7 +89,9 @@ export const Home = () => {
               return <p key={about_me.indexOf(parrafo)}>{parrafo}</p>;
             })}
           </div>
-          <img src={Foto} alt="image.jpg" />
+          <div className="container_image">
+            <img src={Foto} alt="image.jpg" />
+          </div>
         </div>
       </div>
       <div className="separadores">

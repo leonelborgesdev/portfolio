@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: flex-end;
     bottom: 0px;
-    right: 10px;
+    right: 40px;
     position: fixed;
     z-index: 1001;
 }
@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: flex-end;
     bottom: 50px;
-    right: 10px;
+    right: 40px;
     position: fixed;
     z-index: 1001;
 }

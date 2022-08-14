@@ -13,12 +13,10 @@ export const Card = ({ card, id }) => {
             <img src={card.img} alt="pr1" width={"280px"} />{" "}
           </div>
           <div className="details">
-            <div>
-              <img src={card.img2} alt="pr1" width={"380px"} />
-              <h3>{card.title}</h3>
-              <h2>{card.detail}</h2>
-              <a href="#">{languaje === "español" ? "Detalle" : "Detail"}</a>
-            </div>
+            <img src={card.img2} alt="pr1" width={"380px"} />
+            <h2>{card.title}</h2>
+            <h3>{card.detail}</h3>
+            <a href="#">{languaje === "español" ? "Detalle" : "Detail"}</a>
           </div>
         </div>
       </div>

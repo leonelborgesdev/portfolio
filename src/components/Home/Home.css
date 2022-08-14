@@ -69,9 +69,14 @@ section img#man{
     flex-direction: row;
     gap: 3.5rem;
 }
-.container_about_me > img{
+.container_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_image img{
+    border-radius: 50%;
     width: 400px;
-    border-radius: 50% ;
 }
 .container_about_me_text > p{
     text-align: left;
@@ -143,4 +148,20 @@ section img#man{
 #dark .container_home .container_footer{
     background: #0c192c;
     transition: 1s;
+}
+@media screen and (max-width: 1300px) {
+    .container_cards{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .container_about_me{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 900px) {
+
 }

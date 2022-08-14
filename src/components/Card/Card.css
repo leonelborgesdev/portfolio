@@ -129,18 +129,18 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     overflow: hidden;
     text-align: center;
     z-index: 1;
 }
-.card .details h3{
-    font-weight: 750;
-    margin: 5px 0;
-}
 .card .details h2{
-    font-size: 1em;
-    font-weight: 600;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.card .details h3{
+    font-size: 15px;
 }
 .card .details a{
     display: inline;
@@ -151,4 +151,39 @@
     border-radius: 25px;
     font-weight: 500;
     text-decoration: none;
+}
+@media screen and (max-width: 900px) {
+
+    .card .details img{
+        max-width: 100%;
+    }
+    .card{
+        width: 260px;
+        height: 400px;
+    }
+    .card .details h2{
+        font-size: 17px;
+    }
+    .card .details h3{
+        font-size: 12px;
+    }
+    .card .details a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .card{
+        width: 160px;
+        height: 300px;
+    }
+    .card .details h2{
+        font-size: 15px;
+    }
+    .card .details h3{
+        font-size: 10px;
+    }
+    .card .details a{
+        font-size: 10px;
+    }
 }
