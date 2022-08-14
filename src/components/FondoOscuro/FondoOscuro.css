@@ -36,6 +36,17 @@
     0 0 50px #ff2d75,
     0 0 100px #ff2d75;
 }
+.title{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 @keyframes animate {
     0%{
         transform: translateY(100vh) scale(0);

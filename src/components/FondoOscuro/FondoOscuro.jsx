@@ -6,6 +6,10 @@ export const FondoOscuro = () => {
     <div className="container_dark_all">
       <div className="container_body">
         <div className="container_dark">
+          <div className="title">
+            <h2>Leonel Borges</h2>
+            <h3>Full Stack Developmen</h3>
+          </div>
           <div className="bubbles">
             <span style={{ "--i": "11" }}></span>
             <span style={{ "--i": "12" }}></span>
