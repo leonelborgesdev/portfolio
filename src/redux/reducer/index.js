@@ -48,7 +48,12 @@ const initialState = {
     "🧑‍💻💼Experiencia: Por ahora mi experiencia es netamente academica, participando en proyectos individuales y grupales como ser los proyectos en henry y otros, tambien he sido ayudante de catedra en la UAJMS, ayudando a los chicos con sus practicos, tareas y preparandolos para sus examenes de programacion en Java",
   ],
   separadores_portfolio: ["Proyectos", "Habilidades"],
-  menu_footer: ["Inicio", "About", "Servicios", "Equipo", "Contacto"],
+  menu_footer: [
+    { id: "inicio", name: "Inicio" },
+    { id: "about", name: "About" },
+    { id: "servicios", name: "Servicios" },
+    { id: "contacto", name: "Contacto" },
+  ],
   company_footer: "©2022 Borges | Todos los Derechos Reservados",
   mode: "light",
   languaje: "español",

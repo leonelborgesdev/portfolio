@@ -64,9 +64,19 @@ const aboutMe = (languaje) => {
 };
 const menuFooter = (languaje) => {
   if (languaje === "español") {
-    return ["Inicio", "About", "Servicios", "Equipo", "Contacto"];
+    return [
+      { id: "inicio", name: "Inicio" },
+      { id: "about", name: "Acerca de mi" },
+      { id: "servicios", name: "Servicios" },
+      { id: "contacto", name: "Contacto" },
+    ];
   } else {
-    return ["Home", "About", "Services", "Team", "Contact"];
+    return [
+      { id: "inicio", name: "Home" },
+      { id: "about", name: "About" },
+      { id: "servicios", name: "Services" },
+      { id: "contacto", name: "Contact" },
+    ];
   }
 };
 const compañiaFooter = (languaje) => {

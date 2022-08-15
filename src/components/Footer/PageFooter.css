@@ -25,12 +25,13 @@ footer{
 footer .social_icon,
 footer .menu{
     position: relative;
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
+    z-index: 10002;
 }
 footer .social_icon li,
 footer .menu li{
@@ -98,12 +99,13 @@ footer .wave#wave4{
     animation: animateWave_2 3s linear infinite;
 }
 .footer_año{
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left:40px;
     flex-wrap: wrap;
+    z-index: 10002;
 }
 @keyframes animateWave {
     0%{

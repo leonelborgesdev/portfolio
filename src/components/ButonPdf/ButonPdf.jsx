@@ -2,26 +2,17 @@ import React from "react";
 import CVLeonelBorges from "../../doc/CVLeonelBorges.pdf";
 import { useRef } from "react";
 import "./ButonPdf.css";
+import { useState } from "react";
 
 const ButonPdf = () => {
   const btnRef = useRef();
-  const btnId = document.getElementById("btn");
-  //   console.log(btnRef.current);
-
-  //   btn.onMouseMove = (e) => {};
-  //   (e) => {
-  //     const x = e.pageX - btn.offsetLeft;
-  //     const y = e.pageY - btn.offsetTop;
-  //     btn.getElementsByClassName.setProperty("--x", x + "px");
-  //     btn.getElementsByClassName.setProperty("--y", y + "px");
-  //   }
+  const [posicionX, setPosicionX] = useState("0px");
+  const [posicionY, setPosicionY] = useState("0px");
   const handelOnMouseMove = (e) => {
-    console.log(btnRef.current);
-    console.log("id", btnId);
     const x = e.pageX - btnRef.current.offsetLeft;
     const y = e.pageY - btnRef.current.offsetTop;
-    // btnRef.current.setProperty("--x", x + "px");
-    // btnRef.current.setProperty("--y", y + "px");
+    setPosicionX(`${x}px`);
+    setPosicionY(`${y}px`);
   };
   return (
     <div className="container_all_button">
@@ -30,6 +21,7 @@ const ButonPdf = () => {
           id="btn"
           href={CVLeonelBorges}
           target={"_blank"}
+          style={{ "--y": posicionY, "--x": posicionX }}
           className="btn"
           onMouseMove={handelOnMouseMove}
           ref={btnRef}

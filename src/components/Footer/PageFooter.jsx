@@ -21,12 +21,15 @@ export const PageFooter = () => {
           </div>
           <ul className="social_icon">
             <li>
-              <a href="https://www.linkedin.com/in/leonelborgesdev">
+              <a
+                href="https://www.linkedin.com/in/leonelborgesdev"
+                target={"_blank"}
+              >
                 <IonIcon src={logo_linkedin} />
               </a>
             </li>
             <li>
-              <a href="https://github.com/leonelborgesdev">
+              <a href="https://github.com/leonelborgesdev" target={"_blank"}>
                 <IonIcon src={logo_github} />
               </a>
             </li>
@@ -45,7 +48,7 @@ export const PageFooter = () => {
             {menu_footer.map((item) => {
               return (
                 <li key={menu_footer.indexOf(item)}>
-                  <a href="#">{item}</a>
+                  <a href={`#${item.id}`}>{item.name}</a>
                 </li>
               );
             })}

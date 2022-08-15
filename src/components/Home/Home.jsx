@@ -14,6 +14,7 @@ import { Skils } from "../Skils/Skils";
 import { PageFooter } from "../Footer/PageFooter";
 import Foto from "../../assets/Foto.jpg";
 import { FondoOscuro } from "../FondoOscuro/FondoOscuro";
+import ButonPdf from "../ButonPdf/ButonPdf";
 
 export const Home = () => {
   const { cards, about_me, separadores_portfolio, mode } = useSelector(
@@ -65,7 +66,7 @@ export const Home = () => {
     });
   });
   return (
-    <div className="container_home">
+    <div id="inicio" className="container_home">
       <section className="container_section">
         {mode === "light" ? (
           <>
@@ -81,7 +82,7 @@ export const Home = () => {
           <FondoOscuro />
         )}
       </section>
-      <div className="sec">
+      <div id="about" className="sec">
         <h2>Portfolio</h2>
         <div className="container_about_me">
           <div className="container_about_me_text">
@@ -110,6 +111,9 @@ export const Home = () => {
       </div>
       <div className="container_all_skills">
         <Skils />
+      </div>
+      <div className="container_curriculum">
+        <ButonPdf />
       </div>
       <div className="container_footer">
         <PageFooter />
