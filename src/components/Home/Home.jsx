@@ -17,8 +17,7 @@ import { FondoOscuro } from "../FondoOscuro/FondoOscuro";
 import ButonPdf from "../ButonPdf/ButonPdf";
 
 export const Home = () => {
-  const { cards, about_me, separadores_portfolio, mode, languaje } =
-    useSelector((state) => state);
+  const { cards, about_me, languaje } = useSelector((state) => state);
   // gsap.registerPlugin(ScrollTrigger);
   // React.useEffect(() => {
   //   gsap.to("#bg", {

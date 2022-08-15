@@ -17,7 +17,7 @@ export const Card = ({ card, id }) => {
             <h2>{card.title}</h2>
             <h3>{card.detail}</h3>
             <a href="/loQueSea">
-              {languaje === "español" ? "Detalle" : "Detail"}
+              {languaje === "español" ? "Ir a Video" : "Go to Video"}
             </a>
           </div>
         </div>
