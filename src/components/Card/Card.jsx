@@ -16,7 +16,9 @@ export const Card = ({ card, id }) => {
             <img src={card.img2} alt="pr1" width={"380px"} />
             <h2>{card.title}</h2>
             <h3>{card.detail}</h3>
-            <a href="#">{languaje === "español" ? "Detalle" : "Detail"}</a>
+            <a href="/loQueSea">
+              {languaje === "español" ? "Detalle" : "Detail"}
+            </a>
           </div>
         </div>
       </div>

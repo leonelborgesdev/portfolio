@@ -25,11 +25,16 @@ export const Portfolio = () => {
         <Home />
         <div className="switch">
           <label>{mode === "light" ? "Ligth Mode" : "Dark Mode"}</label>
-          <ReactSwitch onChange={toggleTheme} checked={mode === "dark"} />
+          <ReactSwitch
+            onColor="#22d4d4"
+            onChange={toggleTheme}
+            checked={mode === "dark"}
+          />
         </div>
         <div className="switchLanguaje">
           <label>{languaje === "español" ? "Español" : "Ingles"}</label>
           <ReactSwitch
+            onColor="#22d4d4"
             onChange={handleLanguaje}
             checked={languaje === "español"}
           />
