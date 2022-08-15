@@ -9,7 +9,7 @@ export const FondoOscuro = () => {
         <div className="container_dark">
           <div className="title">
             <h2>Leonel Borges</h2>
-            <h3>Full Stack Developmen</h3>
+            <h3>Full Stack Developer</h3>
           </div>
           <div className="bubbles">
             <span style={{ "--i": "11" }}></span>

@@ -25,17 +25,17 @@ footer{
 footer .social_icon,
 footer .menu{
     position: relative;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;
-    z-index: 10002;
 }
 footer .social_icon li,
 footer .menu li{
     list-style: none;
+    z-index: 10002;
 }
 footer .social_icon li a{
     font-size: 2em;
@@ -99,12 +99,14 @@ footer .wave#wave4{
     animation: animateWave_2 3s linear infinite;
 }
 .footer_año{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left:40px;
     flex-wrap: wrap;
+}
+.footer_año p{
     z-index: 10002;
 }
 @keyframes animateWave {

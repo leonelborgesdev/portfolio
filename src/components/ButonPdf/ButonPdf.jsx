@@ -26,7 +26,7 @@ const ButonPdf = () => {
           onMouseMove={handelOnMouseMove}
           ref={btnRef}
         >
-          <span>Curriculum</span>
+          <span>Ver Curriculum</span>
         </a>
       </div>
     </div>
