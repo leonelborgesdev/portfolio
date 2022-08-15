@@ -1,10 +1,11 @@
-import React from "react";
 import CVLeonelBorges from "../../doc/CVLeonelBorges.pdf";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import "./ButonPdf.css";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const ButonPdf = () => {
+  const { languaje } = useSelector((state) => state);
   const btnRef = useRef();
   const [posicionX, setPosicionX] = useState("0px");
   const [posicionY, setPosicionY] = useState("0px");
@@ -26,7 +27,7 @@ const ButonPdf = () => {
           onMouseMove={handelOnMouseMove}
           ref={btnRef}
         >
-          <span>Ver Curriculum</span>
+          <span>{languaje === "español" ? "Ver CV" : "View CV"}</span>
         </a>
       </div>
     </div>

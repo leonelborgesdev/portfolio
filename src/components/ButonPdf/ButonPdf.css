@@ -9,14 +9,29 @@
     justify-content: center;
     align-items: center;
     min-height: 40vh;
-    background: #222;
+}
+#dark .container_body_button{    
+    background: #0c192c;
+    transition: 1s;
+}
+#light .container_body_button{
+    background: #fff;
+    transition: 1s;
+}
+#dark .btn{    
+    background: #111010;
+    color: #fff;
+    transition: 1s;
+}
+#light .btn{
+    background: #c5c4c4;
+    color: #0c192c;
+    transition: 1s;
 }
 .btn{
     position: relative;
     display: inline-block;
     padding: 10px 30px;
-    background: #363636;
-    color: #fff;
     text-decoration: none;
     letter-spacing: 1px;
     overflow: hidden;
