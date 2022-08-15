@@ -15,9 +15,7 @@ export const changeLanguaje = (languaje, cards) => {
       payload: languaje,
       payloadAboutMe: aboutMe(languaje),
       payloadMenu: menuFooter(languaje),
-      payloadCompany: compañiaFooter(languaje),
       payloadCards: CardsHome(languaje, cards),
-      payloadSeparadores: separadoresPortfolio(languaje),
     });
   };
 };
@@ -77,19 +75,5 @@ const menuFooter = (languaje) => {
       { id: "servicios", name: "Services" },
       { id: "contacto", name: "Contact" },
     ];
-  }
-};
-const compañiaFooter = (languaje) => {
-  if (languaje === "español") {
-    return "©2022 Borges | Todos los Derechos Reservados";
-  } else {
-    return "©2022 Borges | All Rights Reserved";
-  }
-};
-const separadoresPortfolio = (languaje) => {
-  if (languaje === "español") {
-    return ["Proyectos", "Habilidades"];
-  } else {
-    return ["Projects", "Skills"];
   }
 };

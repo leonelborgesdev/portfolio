@@ -8,7 +8,7 @@ import { IonIcon } from "@ionic/react";
 import { useSelector } from "react-redux";
 
 export const PageFooter = () => {
-  const { menu_footer, company_footer } = useSelector((state) => state);
+  const { menu_footer, languaje } = useSelector((state) => state);
   return (
     <div className="container_all_footer">
       <div className="body_footer">
@@ -54,7 +54,11 @@ export const PageFooter = () => {
             })}
           </ul>
           <div className="footer_año">
-            <p>{company_footer}</p>
+            <p>
+              {languaje === "español"
+                ? "©2022 Borges | Todos los Derechos Reservados"
+                : "©2022 Borges | All Rights Reserved"}
+            </p>
           </div>
         </footer>
       </div>

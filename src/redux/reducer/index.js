@@ -47,14 +47,12 @@ const initialState = {
     "🔥Fortalezas: El trabajo en equipo se me da muy bien, me adapto facilmente a los cambios, soy participativo, consulto y también doy asesoría a mis compañeros de equipo, si hay algo que no se, lo investigo y me esfuerzo mucho por encontrar la respuesta.",
     "🧑‍💻💼Experiencia: Por ahora mi experiencia es netamente academica, participando en proyectos individuales y grupales como ser los proyectos en henry y otros, tambien he sido ayudante de catedra en la UAJMS, ayudando a los chicos con sus practicos, tareas y preparandolos para sus examenes de programacion en Java",
   ],
-  separadores_portfolio: ["Proyectos", "Habilidades"],
   menu_footer: [
     { id: "inicio", name: "Inicio" },
-    { id: "about", name: "About" },
+    { id: "about", name: "Acerca de mi" },
     { id: "servicios", name: "Servicios" },
     { id: "contacto", name: "Contacto" },
   ],
-  company_footer: "©2022 Borges | Todos los Derechos Reservados",
   mode: "light",
   languaje: "español",
 };
@@ -73,8 +71,6 @@ const rootReducer = (state = initialState, action) => {
         languaje: action.payload,
         about_me: action.payloadAboutMe,
         menu_footer: action.payloadMenu,
-        company_footer: action.payloadCompany,
-        separadores_portfolio: action.payloadSeparadores,
       };
     }
     default:
