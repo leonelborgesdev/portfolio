@@ -8,7 +8,6 @@
 }
 .container_body{
     min-height: 100vh;
-    background: #0c192c;
 }
 .container_dark{
     position: relative;
@@ -40,7 +39,6 @@
     0 0 100px rgb(138, 138, 33);
 }
 .title{
-    color: cyan;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,6 +46,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
 }
 .title > h2{
@@ -61,6 +60,22 @@
     text-transform: uppercase;
     font-size: 50px;
     font-family: 'Saira', sans-serif;
+}
+#dark .title{    
+    color: cyan;
+    transition: 1s;
+}
+#light .title{
+    color: #20496a;
+    transition: 1s;
+}
+#dark .container_body{    
+    background: #0c192c;
+    transition: 1s;
+}
+#light .container_body{
+    background: #fff;
+    transition: 1s;
 }
 @keyframes animate {
     0%{

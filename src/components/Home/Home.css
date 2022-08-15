@@ -28,14 +28,14 @@ section::before{
     height: 200px;
     z-index: 10000;
 }
-#light .container_home section::before{
+/* #light .container_home section::before{
     background: linear-gradient(to top, #fff, transparent);
     transition: 1s;
 }
 #dark .container_home section::before{
     background: linear-gradient(to top, #0c192c, transparent);
     transition: 1s;
-}
+} */
 section img{
     position: absolute;
     top: 0;
@@ -60,7 +60,7 @@ section img#man{
 }
 .sec h2{
     font-size: 3.5em;
-    margin-bottom: 10px;
+    margin: 0px;
 }
 .container_about_me{
     display: flex;
