@@ -67,6 +67,6 @@
 }
 @media (max-width: 901px){
     .clip iframe{
-        
+        max-width: 90%;
     }
 }
