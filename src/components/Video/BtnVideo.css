@@ -54,16 +54,34 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) scale(1);
+    transform: translate(-50%,-50%) scale(0);
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10000;
+    transition: 0.5s;
+}
+.clip.active{
+    transition-delay: 0.5s;
+    transform: translate(-50%,-50%) scale(1);
 }
 .clip iframe{
     max-width: 900px;
+    outline: none;
+    border: 10px solid #fff;
+    box-shadow: 0 15px 35px rgba(0 , 0, 0, 0.25);
+}
+.clip .close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
 }
 @media (max-width: 901px){
     .clip iframe{
