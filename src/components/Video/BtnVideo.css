@@ -8,7 +8,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn_play a{
+    display: inline;
+    padding: 8px 20px;
+    color: #fff;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-decoration: none;
+}
+#blue .btn_play a{
+    background: #47bfce;
 }
 .btn_play{
     position: relative;

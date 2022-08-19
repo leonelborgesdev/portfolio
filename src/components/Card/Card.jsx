@@ -1,8 +1,7 @@
 import React from "react";
 import "./Card.css";
-import proy1 from "../../assets/proy1.png";
-import proy1_2 from "../../assets/proy1_2.png";
 import { useSelector } from "react-redux";
+
 export const Card = ({ card, id }) => {
   const { languaje } = useSelector((state) => state);
   return (
@@ -16,8 +15,8 @@ export const Card = ({ card, id }) => {
             <img src={card.img2} alt="pr1" width={"380px"} />
             <h2>{card.title}</h2>
             <h3>{card.detail}</h3>
-            <a href="/loQueSea">
-              {languaje === "español" ? "Ir a Video" : "Go to Video"}
+            <a href={`/${card.id}`}>
+              {languaje === "español" ? "Detalle" : "Detail"}
             </a>
           </div>
         </div>

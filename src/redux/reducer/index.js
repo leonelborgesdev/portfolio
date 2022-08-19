@@ -9,6 +9,7 @@ import { CHANGE_LANGUAJE, CHANGE_MODE } from "../action/types";
 const initialState = {
   cards: [
     {
+      id: "1",
       color: "blue",
       img: proy1,
       img2: proy1_2,
@@ -17,6 +18,7 @@ const initialState = {
         "Desarrollo de un SPA ( Single Page Application) encargada de crear, modificar, listar, ordenar y filtrar la información de las diferentes razas de perros. Dicha información se obtiene desde una API ( The Dog ) y de una Base de Datos Local",
     },
     {
+      id: "2",
       color: "yellow",
       img: BarberApp,
       img2: BarberApp_2,
@@ -25,6 +27,7 @@ const initialState = {
         "Desarrollo de una pagina web responsive para una barberia. La cual permite al usuario reservar sus citas con un barbero en especifico, mas un mini ecomerce que le permite al usuario comprar productos de la barberia.",
     },
     {
+      id: "3",
       color: "grey",
       img: proy1,
       img2: proy1_2,
@@ -33,6 +36,7 @@ const initialState = {
         "Participe en el desarrollo de una pagina web e-comerce en la que cada usuario puede realizar compras de productos y ofrecer o vender sus productos.",
     },
     {
+      id: "4",
       color: "purple",
       img: Countries,
       img2: Countries_2,
