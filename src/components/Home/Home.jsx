@@ -15,6 +15,7 @@ import { PageFooter } from "../Footer/PageFooter";
 import Foto from "../../assets/Foto.jpg";
 import { FondoOscuro } from "../FondoOscuro/FondoOscuro";
 import ButonPdf from "../ButonPdf/ButonPdf";
+import { SoftSkills } from "../SoftSkills/SoftSkills";
 
 export const Home = () => {
   const { cards, about_me, languaje } = useSelector((state) => state);
@@ -111,6 +112,12 @@ export const Home = () => {
       </div>
       <div className="container_all_skills">
         <Skils />
+      </div>
+      <div className="separadores">
+        <h2>{languaje === "español" ? "Habilidades Blandas" : "SoftSkills"}</h2>
+      </div>
+      <div className="container_all_skills">
+        <SoftSkills />
       </div>
       <div className="container_curriculum">
         <ButonPdf />

@@ -2,11 +2,109 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c192c;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 .softskills_body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    border-radius: 20px;
+    height: 380px;
+    width: 280px;
     background: #000;
+}
+.softskills_container{
+    position: relative;
+    width: 75%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, #0005);
+}
+.softskills_container .loader{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: animateRotate 2s linear infinite;
+}
+.softskills_container .loader:nth-child(2),
+.softskills_container .loader:nth-child(4){
+    animation-delay: -1s;
+    filter: hue-rotate(290deg);
+}
+@keyframes animateRotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.container_keyword{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+    position: absolute;
+}
+.keyword{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.keyword h4{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.softskills_container .loader:nth-child(1)::before,
+.softskills_container .loader:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #00fff966);
+    background-size: 100px 180px;
+    background-repeat: no-repeat;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.softskills_container .loader i{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: #00fff9;
+    z-index: 100;
+    box-shadow: 0 0 10px #00fff9,
+    0 0 20px #00fff9,
+    0 0 30px #00fff9,
+    0 0 40px #00fff9,
+    0 0 50px #00fff9,
+    0 0 60px #00fff9,
+    0 0 70px #00fff9,
+    0 0 80px #00fff9,
+    0 0 90px #00fff9,
+    0 0 100px #00fff9;
+}
+.softskills_container .loader span{
+    position: absolute;
+    inset: 20px;
+    background: #000;
+    border-radius: 50%;
+    z-index: 1;
+    
 }
