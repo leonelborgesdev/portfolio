@@ -19,7 +19,7 @@
     transition: 1s;
 }
 #dark .btn{    
-    background: #111010;
+    background: #000;
     color: #fff;
     transition: 1s;
 }
@@ -31,7 +31,7 @@
 .btn{
     position: relative;
     display: inline-block;
-    padding: 10px 30px;
+    padding: 15px 40px;
     text-decoration: none;
     letter-spacing: 1px;
     overflow: hidden;

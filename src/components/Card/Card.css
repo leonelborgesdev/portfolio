@@ -40,10 +40,10 @@
     transform-origin: left;
 }
 #dark .card .cover{
-    background: rgb(17, 16, 16);
+    background: #000;
 }
 #dark .card .cover::before{
-    background: rgb(17, 16, 16);
+    background: #000;
 }
 #light .card .cover{
     background: rgb(197, 196, 196);
