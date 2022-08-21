@@ -24,6 +24,7 @@ export const PageFooter = () => {
               <a
                 href="https://www.linkedin.com/in/leonelborgesdev"
                 target={"_blank"}
+                rel="noreferrer"
               >
                 <IonIcon src={logo_linkedin} />
               </a>
