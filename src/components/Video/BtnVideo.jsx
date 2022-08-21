@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import "./BtnVideo.css";
 
 export const BtnVideo = () => {
-  const { cards, languaje } = useSelector((state) => state);
+  const { cards, languaje, mode } = useSelector((state) => state);
   const { id } = useParams();
   const card = cards.filter((card) => card.id === id);
   const btnPlayRef = useRef();
@@ -24,18 +24,21 @@ export const BtnVideo = () => {
     clipRefNode.classList.remove("active");
   };
   return (
-    <div className="container_all_video">
+    <div className="container_all_video" id={mode}>
       <div className="container_body_video" id={card[0].color}>
         <div className="detail">
           <h1>{card[0].title}</h1>
           <img src={card[0].img2} alt="pr1" />
           <h4>{card[0].detail}</h4>
+          {card[0].description.map((descriptio) => (
+            <h5>{descriptio}</h5>
+          ))}
         </div>
-        <div className="btn_play" ref={btnPlayRef} onClick={handleAddClass}>
+        {/* <div className="btn_play" ref={btnPlayRef} onClick={handleAddClass}>
           <div className="play"></div>
           <p>Play Video</p>
-          <a href={`/`}>{languaje === "español" ? "Volver" : "Back"}</a>
-        </div>
+        </div> */}
+        <a href={`/`}>{languaje === "español" ? "Volver" : "Back"}</a>
         <div className="clip" ref={clipRef}>
           <div>Video {card[0].title}</div>
           {/* <iframe

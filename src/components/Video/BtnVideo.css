@@ -18,10 +18,13 @@
     flex-direction: column;
 }
 .detail img,
-.detail h4{
+.detail h4,
+.detail h5{
     width: 95%;
+    margin: 10px;
+    text-align: start;
 }
-.btn_play a{
+.container_body_video a{
     display: inline;
     padding: 8px 20px;
     color: #fff;
@@ -30,17 +33,18 @@
     border-radius: 25px;
     font-weight: 500;
     text-decoration: none;
+    margin-bottom: 30px;
 }
-#blue .btn_play a{
+#blue  a{
     background: #47bfce;
 }
-#yellow .btn_play a{
+#yellow  a{
     background: #8a8a21;
 }
-#grey .btn_play a{
+#grey  a{
     background: #8b8a8a;
 }
-#purple .btn_play a{
+#purple a{
     background: #1F1D36;
 }
 .btn_play{
@@ -115,6 +119,22 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #fff;
+}
+#dark .container_body_video{
+    background: #0c192c;
+}
+#light .container_body_video{
+    background: #fff;
+}
+#dark .container_body_video .detail h1,
+#dark .container_body_video .detail h5,
+#dark .container_body_video .detail h4{
+    color: #fff;
+}
+#light .container_body_video .detail h1,
+#light .container_body_video .detail h5,
+#light .container_body_video .detail h4{
+    color: #000;
 }
 @media (max-width: 901px){
     .clip iframe{
