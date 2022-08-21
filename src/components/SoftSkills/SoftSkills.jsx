@@ -94,7 +94,7 @@ export const SoftSkills = () => {
             <h4>Responsabilidad</h4>
           </div>
         </div>
-        <div className="softskills_container" id="pink">
+        <div className="softskills_container" id="grey">
           <div className="loader">
             <span />
           </div>
@@ -116,6 +116,27 @@ export const SoftSkills = () => {
           </div>
         </div>
         <div className="softskills_container" id="purple">
+          <div className="loader">
+            <span />
+          </div>
+          <div className="loader">
+            <span />
+          </div>
+          <div className="loader">
+            <i />
+          </div>
+          <div className="loader">
+            <i />
+          </div>
+        </div>
+      </div>
+      <div className="softskills_body">
+        <div className="container_keyword">
+          <div className="keyword">
+            <h4>Resolucion de Problemas</h4>
+          </div>
+        </div>
+        <div className="softskills_container" id="pink">
           <div className="loader">
             <span />
           </div>

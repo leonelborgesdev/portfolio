@@ -120,7 +120,7 @@
 }
 
 #light .container_home .container_all_skills .container_s .cardSkill{
-    background: rgb(197, 196, 196);
+    background: #c5c4c4;
     transition: 1s;
 }
 #dark .container_home .container_all_skills .container_s .cardSkill{

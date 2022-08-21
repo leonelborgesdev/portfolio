@@ -11,6 +11,38 @@
     gap: 40px;    
     font-family: 'Roboto', sans-serif;
 }
+#dark .softskills_all{
+    background: #0c192c;
+    transition: 1s;
+}
+#light .softskills_all{
+    background: #fff;
+    transition: 1s;
+}
+#dark .softskills_body{
+    background: #000;
+    transition: 1s;
+}
+#light .softskills_body{
+    background: #c5c4c4;
+    transition: 1s;
+}
+#dark .softskills_container .loader span{
+    background: #000;
+    transition: 1s;
+}
+#light .softskills_container .loader span{
+    background: #c5c4c4;
+    transition: 1s;
+}
+#dark .keyword h4{
+    color: #fff;
+    transition: 1s;
+}
+#light .keyword h4{
+    color: #000;
+    transition: 1s;
+}
 .softskills_body{
     display: flex;
     justify-content: center;
@@ -18,7 +50,6 @@
     border-radius: 20px;
     height: 380px;
     width: 280px;
-    background: #000;
 }
 .softskills_container{
     position: relative;
@@ -54,8 +85,7 @@
     inset: 15px;
     background: #000;
     border-radius: 50%;
-    z-index: 1;
-    
+    z-index: 1;    
 }
 .container_keyword{
     display: flex;
@@ -72,7 +102,6 @@
     align-items: center;
 }
 .keyword h4{
-    color: #fff;
     font-weight: 50;
     font-size: 0.9em;
     letter-spacing: 2px;
@@ -98,8 +127,9 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
     background: #00fff9;
     z-index: 100;
     box-shadow: 0 0 10px #00fff9,
@@ -163,6 +193,23 @@
 #blue .loader:nth-child(1)::before,
 #blue .loader:nth-child(2)::before{
     background: linear-gradient(to top, transparent, #001aff66);
+}
+#grey .loader i{
+    background: #484d46;
+    box-shadow: 0 0 10px #484d46,
+    0 0 20px #484d46,
+    0 0 30px #484d46,
+    0 0 40px #484d46,
+    0 0 50px #484d46,
+    0 0 60px #484d46,
+    0 0 70px #484d46,
+    0 0 80px #484d46,
+    0 0 90px #484d46,
+    0 0 100px #484d46;
+}
+#grey .loader:nth-child(1)::before,
+#grey .loader:nth-child(2)::before{
+    background: linear-gradient(to top, transparent, #484d4666);
 }
 #pink .loader i{
     background: #ff00be;
