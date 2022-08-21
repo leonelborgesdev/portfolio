@@ -3,7 +3,7 @@ import "./Card.css";
 import { useSelector } from "react-redux";
 
 export const Card = ({ card, id }) => {
-  const { languaje } = useSelector((state) => state);
+  const { language } = useSelector((state) => state);
   return (
     <div className="container_card_all">
       <div className="container_card" id={id}>
@@ -16,7 +16,7 @@ export const Card = ({ card, id }) => {
             <h2>{card.title}</h2>
             <h3>{card.detail}</h3>
             <a href={`/${card.id}`}>
-              {languaje === "español" ? "Detalle" : "Detail"}
+              {language === "español" ? "Detalle" : "Detail"}
             </a>
           </div>
         </div>

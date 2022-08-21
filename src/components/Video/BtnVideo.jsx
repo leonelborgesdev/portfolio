@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import "./BtnVideo.css";
 
 export const BtnVideo = () => {
-  const { cards, languaje, mode } = useSelector((state) => state);
+  const { cards, language, mode } = useSelector((state) => state);
   const { id } = useParams();
   const card = cards.filter((card) => card.id === id);
   const btnPlayRef = useRef();
@@ -38,7 +38,7 @@ export const BtnVideo = () => {
           <div className="play"></div>
           <p>Play Video</p>
         </div> */}
-        <a href={`/`}>{languaje === "español" ? "Volver" : "Back"}</a>
+        <a href={`/`}>{language === "español" ? "Volver" : "Back"}</a>
         <div className="clip" ref={clipRef}>
           <div>Video {card[0].title}</div>
           {/* <iframe
@@ -48,7 +48,7 @@ export const BtnVideo = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           ></iframe> */}
           <b className="close" ref={closeRef} onClick={handleRemove}>
-            {languaje === "español" ? "Cerrar" : "Close"}
+            {language === "español" ? "Cerrar" : "Close"}
           </b>
         </div>
       </div>

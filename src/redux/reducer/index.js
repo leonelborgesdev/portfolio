@@ -79,7 +79,7 @@ const initialState = {
     { id: "contacto", name: "Contacto" },
   ],
   mode: "dark",
-  languaje: "español",
+  language: "español",
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -93,7 +93,7 @@ const rootReducer = (state = initialState, action) => {
     case CHANGE_LANGUAJE: {
       return {
         ...state,
-        languaje: action.payload,
+        language: action.payload,
         about_me: action.payloadAboutMe,
         menu_footer: action.payloadMenu,
       };

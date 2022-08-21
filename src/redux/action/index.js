@@ -8,20 +8,20 @@ export const changeMode = (mode) => {
     });
   };
 };
-export const changeLanguaje = (languaje, cards) => {
+export const changeLanguaje = (language, cards) => {
   return function (dispatch) {
     dispatch({
       type: CHANGE_LANGUAJE,
-      payload: languaje,
-      payloadAboutMe: aboutMe(languaje),
-      payloadMenu: menuFooter(languaje),
-      payloadCards: CardsHome(languaje, cards),
+      payload: language,
+      payloadAboutMe: aboutMe(language),
+      payloadMenu: menuFooter(language),
+      payloadCards: CardsHome(language, cards),
     });
   };
 };
-const CardsHome = (languaje, cards) => {
+const CardsHome = (language, cards) => {
   if (cards !== false) {
-    if (languaje === "español") {
+    if (language === "español") {
       cards[0].detail =
         "Desarrollo de un SPA ( Single Page Application) encargada de Crear, Modificar, Listar, Ordenar y Filtrar la información de las diferentes razas de perros. Dicha información se obtiene desde una API ( The Dog ) y de una Base de Datos Local";
       cards[1].detail =
@@ -43,8 +43,8 @@ const CardsHome = (languaje, cards) => {
     return cards;
   }
 };
-const aboutMe = (languaje) => {
-  if (languaje === "español") {
+const aboutMe = (language) => {
+  if (language === "español") {
     return [
       "👋🏻Hola !!!😃",
       "Me llamo Leonel Borges, soy desarrollador web, vivo en la ciudad de Bermejo, de Tarija Bolivia, mis hobies son el voley, la natacion y los deportes. Soy Graduado Full Stack Developer, con aptitudes en Backend y Frontend. Me gusta programar, me gusta aprender mas dia a dia y trato de mejorar mis habilidades estudiando, practicando y participando en proyectos de tecnilogia.",
@@ -60,8 +60,8 @@ const aboutMe = (languaje) => {
     ];
   }
 };
-const menuFooter = (languaje) => {
-  if (languaje === "español") {
+const menuFooter = (language) => {
+  if (language === "español") {
     return [
       { id: "inicio", name: "Inicio" },
       { id: "about", name: "Acerca de mi" },

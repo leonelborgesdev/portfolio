@@ -9,13 +9,13 @@ export const ThemeContext = createContext(null);
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
-  const { mode, languaje, cards } = useSelector((state) => state);
+  const { mode, language, cards } = useSelector((state) => state);
   const toggleTheme = () => {
     dispatch(changeMode(mode === "light" ? "dark" : "light"));
   };
   const handleLanguaje = () => {
     dispatch(
-      changeLanguaje(languaje === "español" ? "ingles" : "español", cards)
+      changeLanguaje(language === "español" ? "ingles" : "español", cards)
     );
   };
   return (
@@ -31,11 +31,11 @@ export const Portfolio = () => {
           />
         </div>
         <div className="switchLanguaje">
-          <label>{languaje === "español" ? "Español" : "Ingles"}</label>
+          <label>{language === "español" ? "Español" : "Ingles"}</label>
           <ReactSwitch
             onColor="#22d4d4"
             onChange={handleLanguaje}
-            checked={languaje === "español"}
+            checked={language === "español"}
           />
         </div>
       </div>

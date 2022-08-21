@@ -10,12 +10,12 @@ import ButonPdf from "../ButonPdf/ButonPdf";
 import { SoftSkills } from "../SoftSkills/SoftSkills";
 
 export const Home = () => {
-  const { cards, about_me, languaje } = useSelector((state) => state);
+  const { cards, about_me, language } = useSelector((state) => state);
   return (
     <div id="inicio" className="container_home">
       <FondoOscuro />
       <div id="about" className="sec">
-        <h2>{languaje === "español" ? "Acerca de Mi" : "About Me"}</h2>
+        <h2>{language === "español" ? "Acerca de Mi" : "About Me"}</h2>
         <div className="container_about_me">
           <div className="container_about_me_text">
             {about_me.map((parrafo) => {
@@ -28,7 +28,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="separadores">
-        <h2>{languaje === "español" ? "Proyectos" : "Projects"}</h2>
+        <h2>{language === "español" ? "Proyectos" : "Projects"}</h2>
       </div>
       <div className="container_cards">
         <Card card={cards[0]} key={cards[0].title} id={"blue"} />;
@@ -40,14 +40,14 @@ export const Home = () => {
       </div>
       <div className="separadores">
         <h2>
-          {languaje === "español" ? "Habilidades Tecnicas" : "Technical Skills"}
+          {language === "español" ? "Habilidades Tecnicas" : "Technical Skills"}
         </h2>
       </div>
       <div className="container_all_skills">
         <Skils />
       </div>
       <div className="separadores">
-        <h2>{languaje === "español" ? "Habilidades Blandas" : "SoftSkills"}</h2>
+        <h2>{language === "español" ? "Habilidades Blandas" : "SoftSkills"}</h2>
       </div>
       <div className="container_all_skills">
         <SoftSkills />

@@ -1,13 +1,17 @@
 import React from "react";
 import "./SoftSkills.css";
+import { useSelector } from "react-redux";
 
 export const SoftSkills = () => {
+  const { language } = useSelector((state) => {
+    state;
+  });
   return (
     <div className="softskills_all">
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>Trabajo en equipo</h4>
+            <h4>{language === "español" ? "Trabajo en equipo" : "Teamwork"}</h4>
           </div>
         </div>
         <div className="softskills_container">
@@ -28,7 +32,11 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>Capacidad de análisis</h4>
+            <h4>
+              {language === "español"
+                ? "Capacidad de análisis"
+                : "Analysis capacity"}
+            </h4>
           </div>
         </div>
         <div className="softskills_container" id="red">
@@ -49,7 +57,7 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>Comunicación</h4>
+            <h4>{language === "español" ? "Comunicación" : "Communication"}</h4>
           </div>
         </div>
         <div className="softskills_container" id="yellow">
@@ -70,7 +78,7 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>Compañerismo</h4>
+            <h4>{language === "español" ? "Compañerismo" : "Fellowship"}</h4>
           </div>
         </div>
         <div className="softskills_container" id="blue">
@@ -91,7 +99,9 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>Responsabilidad</h4>
+            <h4>
+              {language === "español" ? "Responsabilidad" : "Responsibility"}
+            </h4>
           </div>
         </div>
         <div className="softskills_container" id="grey">
@@ -112,7 +122,7 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>Perseverancia</h4>
+            <h4>{language === "español" ? "Perseverancia" : "Perseverance"}</h4>
           </div>
         </div>
         <div className="softskills_container" id="purple">
@@ -133,7 +143,11 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>Resolucion de Problemas</h4>
+            <h4>
+              {language === "español"
+                ? "Resolucion de Problemas"
+                : "Problem resolution"}
+            </h4>
           </div>
         </div>
         <div className="softskills_container" id="pink">

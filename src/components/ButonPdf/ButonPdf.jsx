@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 
 const ButonPdf = () => {
-  const { languaje } = useSelector((state) => state);
+  const { language } = useSelector((state) => state);
   const btnRef = useRef();
   const [posicionX, setPosicionX] = useState("0px");
   const [posicionY, setPosicionY] = useState("0px");
@@ -28,7 +28,7 @@ const ButonPdf = () => {
           onMouseMove={handelOnMouseMove}
           ref={btnRef}
         >
-          <span>{languaje === "español" ? "Ver CV" : "View CV"}</span>
+          <span>{language === "español" ? "Ver CV" : "View CV"}</span>
         </a>
       </div>
     </div>
