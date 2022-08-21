@@ -1,13 +1,5 @@
-import React, { useEffect } from "react";
-import bg from "../../assets/bg.jpg";
-import clouds_1 from "../../assets/clouds_1.png";
-import clouds_2 from "../../assets/clouds_2.png";
+import React from "react";
 import { useSelector } from "react-redux";
-import man from "../../assets/man.png";
-import mountain_left from "../../assets/mountain_left.png";
-import mountain_rigth from "../../assets/mountain_right.png";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Home.css";
 import { Card } from "../Card/Card";
 import { Skils } from "../Skils/Skils";
@@ -19,69 +11,8 @@ import { SoftSkills } from "../SoftSkills/SoftSkills";
 
 export const Home = () => {
   const { cards, about_me, languaje } = useSelector((state) => state);
-  // gsap.registerPlugin(ScrollTrigger);
-  // React.useEffect(() => {
-  //   gsap.to("#bg", {
-  //     scrollTrigger: {
-  //       scrub: 1,
-  //     },
-  //     scale: 1.5,
-  //   });
-  //   gsap.to("#man", {
-  //     scrollTrigger: {
-  //       scrub: 1,
-  //     },
-  //     scale: 0.5,
-  //   });
-  //   gsap.to("#clouds_1", {
-  //     scrollTrigger: {
-  //       scrub: 1,
-  //     },
-  //     x: 200,
-  //   });
-  //   gsap.to("#clouds_2", {
-  //     scrollTrigger: {
-  //       scrub: 1,
-  //     },
-  //     x: -200,
-  //   });
-  //   gsap.to("#mountain_left", {
-  //     scrollTrigger: {
-  //       scrub: 1,
-  //     },
-  //     x: -500,
-  //   });
-  //   gsap.to("#mountain_rigth", {
-  //     scrollTrigger: {
-  //       scrub: 1,
-  //     },
-  //     x: 500,
-  //   });
-  //   gsap.to("#text", {
-  //     scrollTrigger: {
-  //       scrub: 1,
-  //     },
-  //     x: 500,
-  //   });
-  // });
   return (
     <div id="inicio" className="container_home">
-      {/* <section className="container_section">
-        {mode === "light" ? (
-          <>
-            <img src={bg} id="bg" />
-            <h2 id="text">Mountains</h2>
-            <img src={man} id="man" />
-            <img src={clouds_1} id="clouds_1" />
-            <img src={clouds_2} id="clouds_2" />
-            <img src={mountain_left} id="mountain_left" />
-            <img src={mountain_rigth} id="mountain_rigth" />
-          </>
-        ) : (
-          <FondoOscuro />
-        )}
-      </section> */}
-
       <FondoOscuro />
       <div id="about" className="sec">
         <h2>{languaje === "español" ? "Acerca de Mi" : "About Me"}</h2>
