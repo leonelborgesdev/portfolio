@@ -108,7 +108,9 @@ export const Home = () => {
         <Card card={cards[3]} key={cards[3].title} id={"purple"} />;
       </div>
       <div className="separadores">
-        <h2>{languaje === "español" ? "Habilidades" : "Skills"}</h2>
+        <h2>
+          {languaje === "español" ? "Habilidades Tecnicas" : "Technical Skills"}
+        </h2>
       </div>
       <div className="container_all_skills">
         <Skils />
