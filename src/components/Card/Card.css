@@ -86,7 +86,7 @@
     color: #47bfce;
 }
 #yellow .card .cover::before{
-    box-shadow: 0 0 0 20px rgb(138, 138, 33);
+    box-shadow: 0 0 0 20px #8a8a21;
 }
 #yellow .card:hover .cover::before{
     box-shadow: 0 0 0 350px rgb(138, 138, 33);
@@ -101,7 +101,7 @@
     box-shadow: 0 0 0 20px rgb(139, 138, 138);
 }
 #grey .card:hover .cover::before{
-    box-shadow: 0 0 0 350px rgb(139, 138, 138);
+    box-shadow: 0 0 0 350px #8b8a8a;
 }
 #grey .card .details a{
     background: rgb(139, 138, 138);

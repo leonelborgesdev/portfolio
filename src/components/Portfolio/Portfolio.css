@@ -1,5 +1,5 @@
 .switch{
-    width: 100vw;
+    /* width: 100vw; */
     height: 100px;
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@
     background: #222;
 }
 .switchLanguaje{    
-    width: 100vw;
+    /* width: 100vw; */
     height: 100px;
     display: flex;
     align-items: center;

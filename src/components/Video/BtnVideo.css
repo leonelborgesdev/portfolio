@@ -30,6 +30,15 @@
 #blue .btn_play a{
     background: #47bfce;
 }
+#yellow .btn_play a{
+    background: #8a8a21;
+}
+#grey .btn_play a{
+    background: #8b8a8a;
+}
+#purple .btn_play a{
+    background: #1F1D36;
+}
 .btn_play{
     position: relative;
     cursor: pointer;

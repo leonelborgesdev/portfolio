@@ -90,6 +90,7 @@ section img#man{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 .separadores{
     display: flex;
