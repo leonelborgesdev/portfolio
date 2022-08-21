@@ -1,9 +1,9 @@
 import React from "react";
 import "./PageFooter.css";
-import logo_instagram from "../../assets/logo-instagram.svg";
+// import logo_instagram from "../../assets/logo-instagram.svg";
+// import logo_twitter from "../../assets/logo-twitter.svg";
 import logo_github from "../../assets/logo-github.svg";
 import logo_linkedin from "../../assets/logo-linkedin.svg";
-import logo_twitter from "../../assets/logo-twitter.svg";
 import { IonIcon } from "@ionic/react";
 import { useSelector } from "react-redux";
 

@@ -23,7 +23,7 @@ export const Home = () => {
             })}
           </div>
           <div className="container_image">
-            <img src={Foto} />
+            <img src={Foto} alt="jpg" />
           </div>
         </div>
       </div>
