@@ -1,6 +1,5 @@
 import React from "react";
 import { useRef } from "react";
-import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import "./BtnVideo.css";
@@ -19,7 +18,6 @@ export const BtnVideo = () => {
     clipRefNode.classList.add("active");
   };
   const handleRemove = () => {
-    const closeRefNode = closeRef.current;
     const btnPlayRefNode = btnPlayRef.current;
     const clipRefNode = clipRef.current;
     btnPlayRefNode.classList.remove("active");

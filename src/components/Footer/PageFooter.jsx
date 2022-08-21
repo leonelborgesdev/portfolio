@@ -30,11 +30,15 @@ export const PageFooter = () => {
               </a>
             </li>
             <li>
-              <a href="https://github.com/leonelborgesdev" target={"_blank"}>
+              <a
+                href="https://github.com/leonelborgesdev"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <IonIcon src={logo_github} />
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#">
                 <IonIcon src={logo_instagram} />
               </a>
@@ -43,7 +47,7 @@ export const PageFooter = () => {
               <a href="#">
                 <IonIcon src={logo_twitter} />
               </a>
-            </li>
+            </li> */}
           </ul>
           <ul className="menu">
             {menu_footer.map((item) => {
