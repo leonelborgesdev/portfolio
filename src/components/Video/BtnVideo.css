@@ -17,6 +17,10 @@
     align-items: center;
     flex-direction: column;
 }
+.detail img,
+.detail h4{
+    width: 95%;
+}
 .btn_play a{
     display: inline;
     padding: 8px 20px;
