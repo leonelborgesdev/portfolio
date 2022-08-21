@@ -28,10 +28,10 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>Trabajo en equipo</h4>
+            <h4>Capacidad de análisis</h4>
           </div>
         </div>
-        <div className="softskills_container">
+        <div className="softskills_container" id="red">
           <div className="loader">
             <span />
           </div>
@@ -49,10 +49,10 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>Trabajo en equipo</h4>
+            <h4>Comunicación</h4>
           </div>
         </div>
-        <div className="softskills_container">
+        <div className="softskills_container" id="yellow">
           <div className="loader">
             <span />
           </div>
@@ -70,10 +70,10 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>Trabajo en equipo</h4>
+            <h4>Compañerismo</h4>
           </div>
         </div>
-        <div className="softskills_container">
+        <div className="softskills_container" id="blue">
           <div className="loader">
             <span />
           </div>
@@ -91,10 +91,10 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>Trabajo en equipo</h4>
+            <h4>Responsabilidad</h4>
           </div>
         </div>
-        <div className="softskills_container">
+        <div className="softskills_container" id="pink">
           <div className="loader">
             <span />
           </div>
@@ -112,10 +112,10 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>Trabajo en equipo</h4>
+            <h4>Perseverancia</h4>
           </div>
         </div>
-        <div className="softskills_container">
+        <div className="softskills_container" id="purple">
           <div className="loader">
             <span />
           </div>

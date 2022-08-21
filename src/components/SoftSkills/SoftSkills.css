@@ -8,7 +8,8 @@
     background: #0c192c;
     min-height: 100vh;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 40px;    
+    font-family: 'Roboto', sans-serif;
 }
 .softskills_body{
     display: flex;
@@ -48,6 +49,14 @@
         transform: rotate(360deg);
     }
 }
+.softskills_container .loader span{
+    position: absolute;
+    inset: 15px;
+    background: #000;
+    border-radius: 50%;
+    z-index: 1;
+    
+}
 .container_keyword{
     display: flex;
     justify-content: center;
@@ -64,7 +73,11 @@
 }
 .keyword h4{
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 50;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0px;
 }
 .softskills_container .loader:nth-child(1)::before,
 .softskills_container .loader:nth-child(2)::before{
@@ -100,11 +113,88 @@
     0 0 90px #00fff9,
     0 0 100px #00fff9;
 }
-.softskills_container .loader span{
-    position: absolute;
-    inset: 20px;
-    background: #000;
-    border-radius: 50%;
-    z-index: 1;
-    
+#red .loader i{
+    background: #ff0000;
+    box-shadow: 0 0 10px #ff0000,
+    0 0 20px #ff0000,
+    0 0 30px #ff0000,
+    0 0 40px #ff0000,
+    0 0 50px #ff0000,
+    0 0 60px #ff0000,
+    0 0 70px #ff0000,
+    0 0 80px #ff0000,
+    0 0 90px #ff0000,
+    0 0 100px #ff0000;
+}
+#red .loader:nth-child(1)::before,
+#red .loader:nth-child(2)::before{
+    background: linear-gradient(to top, transparent, #ff000066);
+}
+#yellow .loader i{
+    background: #fbff00;
+    box-shadow: 0 0 10px #fbff00,
+    0 0 20px #fbff00,
+    0 0 30px #fbff00,
+    0 0 40px #fbff00,
+    0 0 50px #fbff00,
+    0 0 60px #fbff00,
+    0 0 70px #fbff00,
+    0 0 80px #fbff00,
+    0 0 90px #fbff00,
+    0 0 100px #fbff00;
+}
+#yellow .loader:nth-child(1)::before,
+#yellow .loader:nth-child(2)::before{
+    background: linear-gradient(to top, transparent, #fbff0066);
+}
+#blue .loader i{
+    background: #001aff;
+    box-shadow: 0 0 10px #001aff,
+    0 0 20px #001aff,
+    0 0 30px #001aff,
+    0 0 40px #001aff,
+    0 0 50px #001aff,
+    0 0 60px #001aff,
+    0 0 70px #001aff,
+    0 0 80px #001aff,
+    0 0 90px #001aff,
+    0 0 100px #001aff;
+}
+#blue .loader:nth-child(1)::before,
+#blue .loader:nth-child(2)::before{
+    background: linear-gradient(to top, transparent, #001aff66);
+}
+#pink .loader i{
+    background: #ff00be;
+    box-shadow: 0 0 10px #ff00be,
+    0 0 20px #ff00be,
+    0 0 30px #ff00be,
+    0 0 40px #ff00be,
+    0 0 50px #ff00be,
+    0 0 60px #ff00be,
+    0 0 70px #ff00be,
+    0 0 80px #ff00be,
+    0 0 90px #ff00be,
+    0 0 100px #ff00be;
+}
+#pink .loader:nth-child(1)::before,
+#pink .loader:nth-child(2)::before{
+    background: linear-gradient(to top, transparent, #ff00be66);
+}
+#purple .loader i{
+    background: #02ff2c;
+    box-shadow: 0 0 10px #02ff2c,
+    0 0 20px #02ff2c,
+    0 0 30px #02ff2c,
+    0 0 40px #02ff2c,
+    0 0 50px #02ff2c,
+    0 0 60px #02ff2c,
+    0 0 70px #02ff2c,
+    0 0 80px #02ff2c,
+    0 0 90px #02ff2c,
+    0 0 100px #02ff2c;
+}
+#purple .loader:nth-child(1)::before,
+#purple .loader:nth-child(2)::before{
+    background: linear-gradient(to top, transparent, #02ff2c66);
 }
