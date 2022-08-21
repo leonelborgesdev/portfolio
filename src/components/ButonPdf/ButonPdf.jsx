@@ -24,6 +24,7 @@ const ButonPdf = () => {
           target={"_blank"}
           style={{ "--y": posicionY, "--x": posicionX }}
           className="btn"
+          rel="noreferrer"
           onMouseMove={handelOnMouseMove}
           ref={btnRef}
         >
