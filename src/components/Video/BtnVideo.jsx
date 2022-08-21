@@ -11,12 +11,12 @@ export const BtnVideo = () => {
   const btnPlayRef = useRef();
   const clipRef = useRef();
   const closeRef = useRef();
-  const handleAddClass = () => {
-    const btnPlayRefNode = btnPlayRef.current;
-    const clipRefNode = clipRef.current;
-    btnPlayRefNode.classList.add("active");
-    clipRefNode.classList.add("active");
-  };
+  // const handleAddClass = () => {
+  //   const btnPlayRefNode = btnPlayRef.current;
+  //   const clipRefNode = clipRef.current;
+  //   btnPlayRefNode.classList.add("active");
+  //   clipRefNode.classList.add("active");
+  // };
   const handleRemove = () => {
     const btnPlayRefNode = btnPlayRef.current;
     const clipRefNode = clipRef.current;
