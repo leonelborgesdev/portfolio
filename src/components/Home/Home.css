@@ -164,5 +164,8 @@ section img#man{
     }
 }
 @media screen and (max-width: 900px) {
-
+    .sec{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
