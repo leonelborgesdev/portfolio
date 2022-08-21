@@ -28,7 +28,7 @@ const ButonPdf = () => {
           onMouseMove={handelOnMouseMove}
           ref={btnRef}
         >
-          <span>{language === "español" ? "Ver CV" : "View CV"}</span>
+          <span>{language === "español" ? "Descargar CV" : "Download CV"}</span>
         </a>
       </div>
     </div>
