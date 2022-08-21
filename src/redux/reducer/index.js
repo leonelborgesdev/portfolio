@@ -75,8 +75,9 @@ const initialState = {
   menu_footer: [
     { id: "inicio", name: "Inicio" },
     { id: "about", name: "Acerca de mi" },
-    { id: "servicios", name: "Servicios" },
-    { id: "contacto", name: "Contacto" },
+    { id: "proyectos", name: "Proyectos" },
+    { id: "habilidadesTecnicas", name: "Habilidades Tecnicas" },
+    { id: "habilidadesBlandas", name: "Habilidades Blandas" },
   ],
   mode: "dark",
   language: "español",

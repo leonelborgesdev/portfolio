@@ -27,7 +27,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div className="separadores">
+      <div id="proyectos" className="separadores">
         <h2>{language === "español" ? "Proyectos" : "Projects"}</h2>
       </div>
       <div className="container_cards">
@@ -38,7 +38,7 @@ export const Home = () => {
         <Card card={cards[2]} key={cards[2].title} id={"grey"} />;
         <Card card={cards[3]} key={cards[3].title} id={"purple"} />;
       </div>
-      <div className="separadores">
+      <div id="habilidadesTecnicas" className="separadores">
         <h2>
           {language === "español" ? "Habilidades Tecnicas" : "Technical Skills"}
         </h2>
@@ -46,7 +46,7 @@ export const Home = () => {
       <div className="container_all_skills">
         <Skils />
       </div>
-      <div className="separadores">
+      <div id="habilidadesBlandas" className="separadores">
         <h2>{language === "español" ? "Habilidades Blandas" : "SoftSkills"}</h2>
       </div>
       <div className="container_all_skills">

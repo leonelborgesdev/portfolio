@@ -3,9 +3,7 @@ import "./SoftSkills.css";
 import { useSelector } from "react-redux";
 
 export const SoftSkills = () => {
-  const { language } = useSelector((state) => {
-    state;
-  });
+  const { language } = useSelector((state) => state);
   return (
     <div className="softskills_all">
       <div className="softskills_body">

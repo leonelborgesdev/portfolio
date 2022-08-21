@@ -65,15 +65,17 @@ const menuFooter = (language) => {
     return [
       { id: "inicio", name: "Inicio" },
       { id: "about", name: "Acerca de mi" },
-      { id: "servicios", name: "Servicios" },
-      { id: "contacto", name: "Contacto" },
+      { id: "proyectos", name: "Proyectos" },
+      { id: "habilidadesTecnicas", name: "Habilidades Tecnicas" },
+      { id: "habilidadesBlandas", name: "Habilidades Blandas" },
     ];
   } else {
     return [
       { id: "inicio", name: "Home" },
       { id: "about", name: "About" },
-      { id: "servicios", name: "Services" },
-      { id: "contacto", name: "Contact" },
+      { id: "proyectos", name: "Projects" },
+      { id: "habilidadesTecnicas", name: "Technical Skills" },
+      { id: "habilidadesBlandas", name: "Soft Skills" },
     ];
   }
 };
