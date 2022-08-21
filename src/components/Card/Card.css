@@ -106,7 +106,7 @@
 #grey .card .details a{
     background: rgb(139, 138, 138);
 }
-#grey .card .details h2{
+#grey .card .details h2{ 
     color: rgb(139, 138, 138);
 }
 #purple .card .cover::before{
