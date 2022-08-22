@@ -53,6 +53,6 @@
     transition: width 0.5s, height 0.5s;
 }
 .btn:hover::before{
-    width: 310px;
-    height: 310px;
+    width: 450px;
+    height: 450px;
 }

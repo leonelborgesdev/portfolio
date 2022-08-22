@@ -34,6 +34,32 @@
     position: fixed;
     z-index: 10001;
 }
+.switch_bajar{    
+    width: 100px; 
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    bottom: 90px;
+    right: 40px;
+    position: fixed;
+    z-index: 10001;
+}
+.switch_bajar{    
+    width: 100px; 
+    height: 100px;
+}
+.switch_bajar li{
+    list-style: none;
+    z-index: 10002;
+}
+.switch_bajar li a{
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
 .switchLanguaje label{
     width: 100px;
     height: 24px;

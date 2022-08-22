@@ -5,6 +5,9 @@ import ReactSwitch from "react-switch";
 import "./Portfolio.css";
 import { useDispatch, useSelector } from "react-redux";
 import { changeLanguaje, changeMode } from "../../redux/action";
+import arrow_down_outline from "../../assets/arrow-down-outline.svg";
+import { IonIcon } from "@ionic/react";
+
 export const ThemeContext = createContext(null);
 
 export const Portfolio = () => {
@@ -22,6 +25,13 @@ export const Portfolio = () => {
     <ThemeContext.Provider value={{ mode, toggleTheme }}>
       <div className="App_portfoliio" id={mode}>
         <Home />
+        <ul className="switch_bajar">
+          <li>
+            <a href="#menu">
+              <IonIcon src={arrow_down_outline} />
+            </a>
+          </li>
+        </ul>
         <div className="switch">
           <label>{mode === "light" ? "Ligth Mode" : "Dark Mode"}</label>
           <ReactSwitch

@@ -55,7 +55,7 @@ export const Home = () => {
       <div className="container_curriculum">
         <ButonPdf />
       </div>
-      <div className="container_footer">
+      <div id="menu" className="container_footer">
         <PageFooter />
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
