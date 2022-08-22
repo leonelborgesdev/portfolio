@@ -8,6 +8,7 @@ import Foto from "../../assets/Foto.jpg";
 import { FondoOscuro } from "../FondoOscuro/FondoOscuro";
 import ButonPdf from "../ButonPdf/ButonPdf";
 import { SoftSkills } from "../SoftSkills/SoftSkills";
+import Typewriter from "typewriter-effect";
 
 export const Home = () => {
   const { cards, about_me, language } = useSelector((state) => state);
@@ -19,7 +20,16 @@ export const Home = () => {
         <div className="container_about_me">
           <div className="container_about_me_text">
             {about_me.map((parrafo) => {
-              return <p key={about_me.indexOf(parrafo)}>{parrafo}</p>;
+              return (
+                <div className="text_animation" key={about_me.indexOf(parrafo)}>
+                  <Typewriter
+                    onInit={(typewriter) => {
+                      typewriter.typeString(parrafo).pauseFor(1000).start();
+                    }}
+                  />
+                  {/* <p key={about_me.indexOf(parrafo)}></p>; */}
+                </div>
+              );
             })}
           </div>
           <div className="container_image">

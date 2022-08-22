@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.text_animation{
+    text-align: start;
+    margin-bottom: 10px;
+}
 #dark .container_home{
     background: #0c192c;
 }
