@@ -55,10 +55,15 @@
 }
 .switch_bajar li a{
     font-size: 2.5em;
-    color: #fff;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
+}
+#dark .switch_bajar li a{
+    color: #fff;
+}
+#light .switch_bajar li a{
+    color: #000;
 }
 .switchLanguaje label{
     width: 100px;
