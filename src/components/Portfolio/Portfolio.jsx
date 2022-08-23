@@ -17,7 +17,6 @@ export const Portfolio = () => {
     dispatch(changeMode(mode === "light" ? "dark" : "light"));
   };
   const handleLanguaje = () => {
-    // window.location.reload();
     dispatch(
       changeLanguaje(language === "español" ? "ingles" : "español", cards)
     );
@@ -41,14 +40,14 @@ export const Portfolio = () => {
             checked={mode === "dark"}
           />
         </div>
-        <div className="switchLanguaje">
+        {/* <div className="switchLanguaje">
           <label>{language === "español" ? "Español" : "Ingles"}</label>
           <ReactSwitch
             onColor="#22d4d4"
             onChange={handleLanguaje}
             checked={language === "español"}
           />
-        </div>
+        </div> */}
       </div>
     </ThemeContext.Provider>
   );
