@@ -4,7 +4,7 @@ import { Home } from "../Home/Home";
 import ReactSwitch from "react-switch";
 import "./Portfolio.css";
 import { useDispatch, useSelector } from "react-redux";
-import { changeLanguaje, changeMode } from "../../redux/action";
+import { changeMode } from "../../redux/action";
 import arrow_down_outline from "../../assets/arrow-down-outline.svg";
 import { IonIcon } from "@ionic/react";
 
@@ -12,7 +12,7 @@ export const ThemeContext = createContext(null);
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
-  const { mode, language, cards } = useSelector((state) => state);
+  const { mode } = useSelector((state) => state);
   const toggleTheme = () => {
     dispatch(changeMode(mode === "light" ? "dark" : "light"));
   };
