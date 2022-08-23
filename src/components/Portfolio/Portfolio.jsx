@@ -17,6 +17,7 @@ export const Portfolio = () => {
     dispatch(changeMode(mode === "light" ? "dark" : "light"));
   };
   const handleLanguaje = () => {
+    // window.location.reload();
     dispatch(
       changeLanguaje(language === "español" ? "ingles" : "español", cards)
     );
