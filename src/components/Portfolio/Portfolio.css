@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    bottom: 90px;
+    bottom: 40px;
     right: 40px;
     position: fixed;
     z-index: 10001;
