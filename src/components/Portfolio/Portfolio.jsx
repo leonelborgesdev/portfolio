@@ -16,11 +16,11 @@ export const Portfolio = () => {
   const toggleTheme = () => {
     dispatch(changeMode(mode === "light" ? "dark" : "light"));
   };
-  const handleLanguaje = () => {
-    dispatch(
-      changeLanguaje(language === "español" ? "ingles" : "español", cards)
-    );
-  };
+  // const handleLanguaje = () => {
+  //   dispatch(
+  //     changeLanguaje(language === "español" ? "ingles" : "español", cards)
+  //   );
+  // };
   return (
     <ThemeContext.Provider value={{ mode, toggleTheme }}>
       <div className="App_portfoliio" id={mode}>
