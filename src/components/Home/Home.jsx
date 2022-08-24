@@ -17,7 +17,9 @@ export const Home = () => {
     <div id="inicio" className="container_home">
       <FondoOscuro />
       <div id="about" className="sec">
-        <h2>{language === "español" ? "Acerca de Mi" : "About Me"}</h2>
+        <div id="contact" className="separadores">
+          <h1>{language === "español" ? "Acerca de Mi" : "About Me"}</h1>
+        </div>
         <div className="container_about_me">
           <div className="container_about_me_text">
             {about_me.map((parrafo) => {
@@ -65,7 +67,9 @@ export const Home = () => {
       </div>
       <div className="container_direccion">
         <div className="container_correo">
-          <h2>Contactame</h2>
+          <div id="contact" className="separadores">
+            <h2>{language === "español" ? "Contacto" : "Contact"}</h2>
+          </div>
           <Contacto />
         </div>
       </div>

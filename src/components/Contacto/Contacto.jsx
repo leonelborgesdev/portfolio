@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
+import { useSelector } from "react-redux";
 import emailjs from "emailjs-com";
 import "./Contacto.css";
 
 export const Contacto = () => {
+  const { mode } = useSelector((state) => state);
   const form = useRef();
   const handleEnviarEmail = (e) => {
     e.preventDefault();
@@ -25,7 +27,7 @@ export const Contacto = () => {
   };
   return (
     <form ref={form} onSubmit={handleEnviarEmail}>
-      <div className="container_all_contact">
+      <div className="container_all_contact" id={mode}>
         <div className="container_body_contact">
           <div className="inputBox">
             <input type="text" required="required" name="name" />
@@ -39,7 +41,7 @@ export const Contacto = () => {
             <textarea name="message" />
             <span>Mensaje</span>
           </div>
-          <div>
+          <div className="buton_submit_send">
             <input type="submit" />
           </div>
         </div>
