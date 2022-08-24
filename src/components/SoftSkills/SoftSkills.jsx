@@ -76,7 +76,7 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>{language === "español" ? "Compañerismo" : "Fellowship"}</h4>
+            <h4>{language === "español" ? "Perseverancia" : "Perseverance"}</h4>
           </div>
         </div>
         <div className="softskills_container" id="blue">
@@ -120,7 +120,7 @@ export const SoftSkills = () => {
       <div className="softskills_body">
         <div className="container_keyword">
           <div className="keyword">
-            <h4>{language === "español" ? "Perseverancia" : "Perseverance"}</h4>
+            <h4>{language === "español" ? "Compañerismo" : "Fellowship"}</h4>
           </div>
         </div>
         <div className="softskills_container" id="purple">

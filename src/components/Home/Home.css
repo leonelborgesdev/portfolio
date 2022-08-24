@@ -18,8 +18,9 @@
 .container_correo{
     width: 50%;
     margin: 30px;
+    margin-right: 70px;
 }
-.container_mapa{
+.container_map{
     width: 50%;
     height: 100%;
 }
@@ -211,7 +212,7 @@ section img#man{
     .container_correo{
         width: 80%;
     }
-    .container_mapa{
+    .container_map{
         width: 90%;
     }
 }

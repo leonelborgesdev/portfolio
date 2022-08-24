@@ -67,7 +67,7 @@ export const Home = () => {
         <SoftSkills />
       </div>
       <div id="contactame" className="container_correo_mapa">
-        <div className="container_mapa">
+        <div className="container_map">
           <Mapa />
         </div>
         <div className="container_correo" id={mode}>
