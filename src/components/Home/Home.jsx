@@ -13,7 +13,7 @@ import { Contacto } from "../Contacto/Contacto";
 import { Mapa } from "../Mapa/Mapa";
 
 export const Home = () => {
-  const { cards, about_me, language } = useSelector((state) => state);
+  const { cards, about_me, language, mode } = useSelector((state) => state);
   return (
     <div id="inicio" className="container_home">
       <FondoOscuro />
@@ -70,9 +70,16 @@ export const Home = () => {
         <div className="container_mapa">
           <Mapa />
         </div>
-        <div className="container_correo">
+        <div className="container_correo" id={mode}>
           <div id="contact" className="separadores">
             <h2>{language === "español" ? "Contacto" : "Contact"}</h2>
+          </div>
+          <div className="container_hi_send">
+            <h5>👋🏻Hola de Nuevo😃</h5>
+            <h5>
+              Enviame un correo en el siguiente formulario y con gusto lo leere
+              🙂
+            </h5>
           </div>
           <Contacto />
         </div>
