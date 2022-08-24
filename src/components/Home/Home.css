@@ -14,6 +14,10 @@
     width: 50%;
     margin: 30px;
 }
+.container_mapa{
+    width: 50%;
+    height: 100%;
+}
 .text_animation{
     text-align: start;
     margin-bottom: 10px;
@@ -184,5 +188,11 @@ section img#man{
     }
     .container_correo_mapa{
         flex-direction: column-reverse;
+    }
+    .container_correo{
+        width: 80%;
+    }
+    .container_mapa{
+        width: 90%;
     }
 }
