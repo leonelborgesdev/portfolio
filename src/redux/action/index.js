@@ -68,6 +68,7 @@ const menuFooter = (language) => {
       { id: "proyectos", name: "Proyectos" },
       { id: "habilidadesTecnicas", name: "Habilidades Tecnicas" },
       { id: "habilidadesBlandas", name: "Habilidades Blandas" },
+      { id: "contactame", name: "Contactame" },
     ];
   } else {
     return [
@@ -76,6 +77,7 @@ const menuFooter = (language) => {
       { id: "proyectos", name: "Projects" },
       { id: "habilidadesTecnicas", name: "Technical Skills" },
       { id: "habilidadesBlandas", name: "Soft Skills" },
+      { id: "contactame", name: "Contact me" },
     ];
   }
 };

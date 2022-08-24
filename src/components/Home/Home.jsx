@@ -66,13 +66,13 @@ export const Home = () => {
       <div className="container_all_skills">
         <SoftSkills />
       </div>
-      <div className="container_correo_mapa">
+      <div id="contactame" className="container_correo_mapa">
         <div className="container_mapa">
           <Mapa />
         </div>
         <div className="container_correo" id={mode}>
           <div id="contact" className="separadores">
-            <h2>{language === "español" ? "Contacto" : "Contact"}</h2>
+            <h2>{language === "español" ? "Contactame" : "Contact me"}</h2>
           </div>
           <div className="container_hi_send">
             <h5>👋🏻Hola de Nuevo😃</h5>

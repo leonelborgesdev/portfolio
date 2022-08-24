@@ -78,6 +78,7 @@ const initialState = {
     { id: "proyectos", name: "Proyectos" },
     { id: "habilidadesTecnicas", name: "Habilidades Tecnicas" },
     { id: "habilidadesBlandas", name: "Habilidades Blandas" },
+    { id: "contactame", name: "Contactame" },
   ],
   mode: "dark",
   language: "español",
