@@ -10,6 +10,7 @@ import ButonPdf from "../ButonPdf/ButonPdf";
 import { SoftSkills } from "../SoftSkills/SoftSkills";
 import Typewriter from "typewriter-effect";
 import { Contacto } from "../Contacto/Contacto";
+import { Mapa } from "../Mapa/Mapa";
 
 export const Home = () => {
   const { cards, about_me, language } = useSelector((state) => state);
@@ -65,7 +66,10 @@ export const Home = () => {
       <div className="container_all_skills">
         <SoftSkills />
       </div>
-      <div className="container_direccion">
+      <div className="container_correo_mapa">
+        <div className="container_mapa">
+          <Mapa />
+        </div>
         <div className="container_correo">
           <div id="contact" className="separadores">
             <h2>{language === "español" ? "Contacto" : "Contact"}</h2>
