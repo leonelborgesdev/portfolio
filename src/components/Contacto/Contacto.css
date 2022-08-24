@@ -12,6 +12,59 @@
     gap: 30px;
     background: #0c192c;
 }
+.buton_submit_send input{
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    color: #0c192c;
+    background: #00dfc4;
+    border: 1px solid #00dfc4;
+    cursor: pointer;
+}
+.inputBox{
+    position: relative;
+    width: 100%;
+}
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBox textarea{
+    min-width: 100%;
+    min-height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBox textarea:focus ~ span{
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.70em;
+    padding: 0 10px;
+    letter-spacing: 0.2em;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.70em;
+    padding: 0 10px;
+    letter-spacing: 0.2em;
+}
 #dark .container_body_contact .inputBox span{
     color: rgba(255, 255, 255, 0.25);
     transition: 1s;
@@ -100,57 +153,4 @@
 #light .container_body_contact {
     background: #fff;
     transition: 1s;
-}
-.buton_submit_send input{
-    width: 120px;
-    height: 30px;
-    border-radius: 5px;
-    color: #0c192c;
-    background: #00dfc4;
-    border: 1px solid #00dfc4;
-    cursor: pointer;
-}
-.inputBox{
-    position: relative;
-    width: 250px;
-}
-.inputBox input{
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    outline: none;
-    font-size: 1em;
-    transition: 0.5s;
-}
-.inputBox textarea{
-    min-width: 100%;
-    min-height: 50px;
-    padding: 10px;
-    border-radius: 5px;
-    outline: none;
-    font-size: 1em;
-    transition: 0.5s;
-}
-.inputBox textarea:focus ~ span{
-    transform: translateX(10px) translateY(-7px);
-    font-size: 0.70em;
-    padding: 0 10px;
-    letter-spacing: 0.2em;
-}
-.inputBox span{
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    pointer-events: none;
-    font-size: 1em;
-    text-transform: uppercase;
-    transition: 0.5s;
-}
-.inputBox input:valid ~ span,
-.inputBox input:focus ~ span{
-    transform: translateX(10px) translateY(-7px);
-    font-size: 0.70em;
-    padding: 0 10px;
-    letter-spacing: 0.2em;
 }
