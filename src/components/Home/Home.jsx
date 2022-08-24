@@ -9,6 +9,7 @@ import { FondoOscuro } from "../FondoOscuro/FondoOscuro";
 import ButonPdf from "../ButonPdf/ButonPdf";
 import { SoftSkills } from "../SoftSkills/SoftSkills";
 import Typewriter from "typewriter-effect";
+import { Contacto } from "../Contacto/Contacto";
 
 export const Home = () => {
   const { cards, about_me, language } = useSelector((state) => state);
@@ -61,6 +62,12 @@ export const Home = () => {
       </div>
       <div className="container_all_skills">
         <SoftSkills />
+      </div>
+      <div className="container_direccion">
+        <div className="container_correo">
+          <h2>Contactame</h2>
+          <Contacto />
+        </div>
       </div>
       <div className="container_curriculum">
         <ButonPdf />
