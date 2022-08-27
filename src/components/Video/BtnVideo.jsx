@@ -28,7 +28,7 @@ export const BtnVideo = () => {
       <div className="container_body_video" id={card[0].color}>
         <div className="detail">
           <h1>{card[0].title}</h1>
-          <img src={card[0].img2} alt="pr1" />
+          <img src={card[0].img2[0]} alt="pr1" />
           <h4>{card[0].detail}</h4>
           {card[0].description.map((descriptio) => (
             <h5>{descriptio}</h5>
