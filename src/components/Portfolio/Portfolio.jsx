@@ -4,23 +4,28 @@ import { Home } from "../Home/Home";
 import ReactSwitch from "react-switch";
 import "./Portfolio.css";
 import { useDispatch, useSelector } from "react-redux";
-import { changeMode } from "../../redux/action";
+import { changeLanguaje, changeMode } from "../../redux/action";
 import arrow_down_outline from "../../assets/arrow-down-outline.svg";
 import { IonIcon } from "@ionic/react";
+import { useNavigate } from "react-router-dom";
 
 export const ThemeContext = createContext(null);
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
-  const { mode } = useSelector((state) => state);
+  const navigate = useNavigate();
+  const { mode, language, cards } = useSelector((state) => state);
   const toggleTheme = () => {
     dispatch(changeMode(mode === "light" ? "dark" : "light"));
   };
-  // const handleLanguaje = () => {
-  //   dispatch(
-  //     changeLanguaje(language === "español" ? "ingles" : "español", cards)
-  //   );
-  // };
+  const handleLanguage = () => {
+    dispatch(
+      changeLanguaje(language === "español" ? "ingles" : "español", cards)
+    );
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
+  };
   return (
     <ThemeContext.Provider value={{ mode, toggleTheme }}>
       <div className="App_portfoliio" id={mode}>
@@ -40,14 +45,14 @@ export const Portfolio = () => {
             checked={mode === "dark"}
           />
         </div>
-        {/* <div className="switchLanguaje">
-          <label>{language === "español" ? "Español" : "Ingles"}</label>
+        <div className="switchLanguaje">
+          <label>{language}</label>
           <ReactSwitch
             onColor="#22d4d4"
-            onChange={handleLanguaje}
+            onChange={handleLanguage}
             checked={language === "español"}
           />
-        </div> */}
+        </div>
       </div>
     </ThemeContext.Provider>
   );

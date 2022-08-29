@@ -13,7 +13,6 @@ export const changeLanguaje = (language, cards) => {
     dispatch({
       type: CHANGE_LANGUAJE,
       payload: language,
-      payloadAboutMe: aboutMe(language),
       payloadMenu: menuFooter(language),
       payloadCards: CardsHome(language, cards),
     });
@@ -41,23 +40,6 @@ const CardsHome = (language, cards) => {
         "Development of a SPA (Single Page Application) responsible for creating, deleting, listing, ordering and filtering information from different countries. This information is obtained from an API ( Restcountries ) and a Local Database.";
     }
     return cards;
-  }
-};
-const aboutMe = (language) => {
-  if (language === "español") {
-    return [
-      "👋🏻Hola !!!😃",
-      "Me llamo Leonel Borges, soy desarrollador web, vivo en la ciudad de Bermejo, de Tarija Bolivia, mis hobies son el voley, la natacion y los deportes. Soy Graduado Full Stack Developer, con aptitudes en Backend y Frontend. Me gusta programar, me gusta aprender mas dia a dia y trato de mejorar mis habilidades estudiando, practicando y participando en proyectos de tecnilogia.",
-      "🔥Fortalezas: Soy perseverante, si hay algo que no se, hago todo lo posible por encontrar la solucion, investigo sobre el tema consulto con mis compañeros de equipo, acepto concejos, opiniones y criticas con la idea de mejorar y encontrar la mejor solucion posible. Trabajo en equipo, ayudo a mis compañeros si lo necesitan con tal de que todo el equipo pueda cumplir sus objetivos.",
-      "🧑‍💻💼Experiencia: Por ahora mi experiencia es netamente academica, participando en proyectos individuales y grupales como ser los proyectos en henry y otros, tambien he sido ayudante de catedra en la UAJMS, ayudando a los chicos con sus practicos, tareas y preparandolos para sus examenes de programacion en Java.",
-    ];
-  } else {
-    return [
-      "👋🏻Hi !!!😃",
-      "My name is Leonel Borges, I am a web developer, I live in the city of Bermejo, Tarija Bolivia, my hobbies are volleyball, swimming and sports. I am a Henry Full Stack Developer Graduate, with skills in Backend and Frontend. I like programming, I like to learn more every day and I try to improve my skills by studying, practicing and participating in technology projects.",
-      "🔥Strengths: I am persevering, if there is something I don't know, I do everything possible to find the solution, I investigate the subject, I consult with my teammates, I accept advice, opinions and criticism with the idea of improving and finding the best possible solution. I work as a team, I help my colleagues if they need it so that the whole team can meet its objectives.",
-      "🧑‍💻💼Experience: For now my experience is purely academic, participating in individual and group projects such as the projects in Henry and others, I have also been a teaching assistant at the UAJMS, helping the boys with their practices, homework and preparing them for their exams. Java programming.",
-    ];
   }
 };
 const menuFooter = (language) => {

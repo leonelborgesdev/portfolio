@@ -11,9 +11,17 @@ import { SoftSkills } from "../SoftSkills/SoftSkills";
 import Typewriter from "typewriter-effect";
 import { Contacto } from "../Contacto/Contacto";
 import { Mapa } from "../Mapa/Mapa";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export const Home = () => {
-  const { cards, about_me, language, mode } = useSelector((state) => state);
+  const { cards, about_me, about_me2, language, mode } = useSelector(
+    (state) => state
+  );
+  let [acercaDeMi, setAcercaDeMi] = useState(
+    language === "ingles" ? about_me2 : about_me
+  );
+  console.log(acercaDeMi);
   return (
     <div id="inicio" className="container_home">
       <FondoOscuro />
@@ -23,15 +31,14 @@ export const Home = () => {
         </div>
         <div className="container_about_me">
           <div className="container_about_me_text">
-            {about_me.map((parrafo) => {
+            {acercaDeMi.map((parrafo, index) => {
               return (
-                <div className="text_animation" key={about_me.indexOf(parrafo)}>
+                <div className="text_animation" key={index}>
                   <Typewriter
                     onInit={(typewriter) => {
-                      typewriter.typeString(parrafo).pauseFor(1000).start();
+                      typewriter.typeString(parrafo).pauseFor(9000).start();
                     }}
                   />
-                  {/* <p key={about_me.indexOf(parrafo)}></p>; */}
                 </div>
               );
             })}
