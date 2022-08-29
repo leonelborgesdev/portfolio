@@ -7,13 +7,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeLanguaje, changeMode } from "../../redux/action";
 import arrow_down_outline from "../../assets/arrow-down-outline.svg";
 import { IonIcon } from "@ionic/react";
-import { useNavigate } from "react-router-dom";
 
 export const ThemeContext = createContext(null);
 
 export const Portfolio = () => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const { mode, language, cards } = useSelector((state) => state);
   const toggleTheme = () => {
     dispatch(changeMode(mode === "light" ? "dark" : "light"));
