@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card.css";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 export const Card = ({ card, id }) => {
   const { language } = useSelector((state) => state);
@@ -15,9 +16,9 @@ export const Card = ({ card, id }) => {
             <img src={card.img2[0]} alt="pr1" width={"380px"} />
             <h2>{card.title}</h2>
             <h3>{card.detail}</h3>
-            <a href={`/${card.id}`}>
+            <Link to={`/${card.id}`}>
               {language === "español" ? "Detalle" : "Detail"}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

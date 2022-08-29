@@ -2,6 +2,7 @@ import React from "react";
 import { useRef } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./BtnVideo.css";
 
 export const BtnVideo = () => {
@@ -38,7 +39,7 @@ export const BtnVideo = () => {
           <div className="play"></div>
           <p>Play Video</p>
         </div> */}
-        <a href={`/`}>{language === "español" ? "Volver" : "Back"}</a>
+        <Link to={`/`}>{language === "español" ? "Volver" : "Back"}</Link>
         <div className="clip" ref={clipRef}>
           <div>Video {card[0].title}</div>
           {/* <iframe
