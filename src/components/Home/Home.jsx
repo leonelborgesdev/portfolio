@@ -12,16 +12,12 @@ import Typewriter from "typewriter-effect";
 import { Contacto } from "../Contacto/Contacto";
 import { Mapa } from "../Mapa/Mapa";
 import { useState } from "react";
-import { useEffect } from "react";
 
 export const Home = () => {
   const { cards, about_me, about_me2, language, mode } = useSelector(
     (state) => state
   );
-  let [acercaDeMi, setAcercaDeMi] = useState(
-    language === "ingles" ? about_me2 : about_me
-  );
-  console.log(acercaDeMi);
+  let [acercaDeMi] = useState(language === "ingles" ? about_me2 : about_me);
   return (
     <div id="inicio" className="container_home">
       <FondoOscuro />
