@@ -44,7 +44,7 @@ export const Portfolio = () => {
           />
         </div>
         <div className="switchLanguaje">
-          <label>{language}</label>
+          <label>{language === "español" ? "Español" : "Ingles"}</label>
           <ReactSwitch
             onColor="#22d4d4"
             onChange={handleLanguage}
