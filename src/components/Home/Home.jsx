@@ -39,7 +39,7 @@ const TypedReactHooksDemo = () => {
 
     // elRef refers to the <span> rendered below
     typed.current = new Typed(el.current, options);
-  }, []);
+  }, [element]);
 
   return (
     <div className="type-wrap">
