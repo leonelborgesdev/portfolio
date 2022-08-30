@@ -10,7 +10,7 @@ import BarberApp_7 from "../../assets/BarberApp/BarberApp_7.png";
 import Countries_2 from "../../assets/Countries_2.png"; //Countries
 import Countries from "../../assets/Countries.png";
 import proy3 from "../../assets/proy3.png";
-import marketplace1 from "../../assets/marketplace1.jpg";
+import marketplace2 from "../../assets/marketplace2.png";
 import { CHANGE_LANGUAJE, CHANGE_MODE } from "../action/types";
 
 const initialState = {
@@ -54,7 +54,7 @@ const initialState = {
       id: "3",
       color: "grey",
       img: proy3,
-      img2: [marketplace1],
+      img2: [marketplace2],
       title: "MUNDOMARKET",
       detail:
         "Participe en el desarrollo de una pagina web e-comerce en la que cada usuario puede realizar compras de productos y ofrecer o vender sus productos.",
