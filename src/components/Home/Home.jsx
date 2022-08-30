@@ -20,7 +20,11 @@ const TypedReactHooksDemo = () => {
   let [acercaDeMi] = useState(language === "ingles" ? about_me2 : acerca_de_mi);
   let element = "";
   for (let i = 0; i < acercaDeMi.length; i++) {
-    element = element + " " + acercaDeMi[i] + "<br><br>";
+    if (i !== acercaDeMi.length - 1) {
+      element = element + " " + acercaDeMi[i] + "<br><br>";
+    } else {
+      element = element + " " + acercaDeMi[i];
+    }
   }
   // Create reference to store the DOM element containing the animation
   const el = React.useRef(null);
@@ -52,7 +56,11 @@ export const Home = () => {
   let [acercaDeMi] = useState(language === "ingles" ? about_me2 : acerca_de_mi);
   let element = "";
   for (let i = 0; i < acercaDeMi.length; i++) {
-    element = element + " " + acercaDeMi[i] + "<br>";
+    if (i !== acercaDeMi.length - 1) {
+      element = element + " " + acercaDeMi[i] + "<br>";
+    } else {
+      element = element + " " + acercaDeMi[i];
+    }
   }
   return (
     <div id="inicio" className="container_home">
