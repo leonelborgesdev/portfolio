@@ -34,7 +34,7 @@ const TypedReactHooksDemo = () => {
   React.useEffect(() => {
     const options = {
       strings: [element],
-      typeSpeed: 30,
+      typeSpeed: 20,
     };
 
     // elRef refers to the <span> rendered below
