@@ -18,7 +18,7 @@ import Typed from "typed.js";
 const TypedReactHooksDemo = () => {
   const { about_me2, acerca_de_mi, language } = useSelector((state) => state);
   let [acercaDeMi] = useState(language === "ingles" ? about_me2 : acerca_de_mi);
-  let element = "";
+  let [element] = useState("");
   for (let i = 0; i < acercaDeMi.length; i++) {
     if (i !== acercaDeMi.length - 1) {
       element = element + " " + acercaDeMi[i] + "<br><br>";
