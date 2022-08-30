@@ -8,16 +8,52 @@ import Foto from "../../assets/Foto.jpg";
 import { FondoOscuro } from "../FondoOscuro/FondoOscuro";
 import ButonPdf from "../ButonPdf/ButonPdf";
 import { SoftSkills } from "../SoftSkills/SoftSkills";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import { Contacto } from "../Contacto/Contacto";
 import { Mapa } from "../Mapa/Mapa";
 import { useState } from "react";
 
+import Typed from "typed.js";
+
+const TypedReactHooksDemo = () => {
+  const { about_me2, acerca_de_mi, language } = useSelector((state) => state);
+  let [acercaDeMi] = useState(language === "ingles" ? about_me2 : acerca_de_mi);
+  let element = "";
+  for (let i = 0; i < acercaDeMi.length; i++) {
+    element = element + " " + acercaDeMi[i] + "<br><br>";
+  }
+  // Create reference to store the DOM element containing the animation
+  const el = React.useRef(null);
+  // Create reference to store the Typed instance itself
+  const typed = React.useRef(null);
+
+  React.useEffect(() => {
+    const options = {
+      strings: [element],
+      typeSpeed: 30,
+    };
+
+    // elRef refers to the <span> rendered below
+    typed.current = new Typed(el.current, options);
+  }, []);
+
+  return (
+    <div className="type-wrap">
+      <span ref={el} />
+    </div>
+  );
+};
+document.getElementById("react-root");
+
 export const Home = () => {
-  const { cards, about_me, about_me2, language, mode } = useSelector(
+  const { cards, about_me2, acerca_de_mi, language, mode } = useSelector(
     (state) => state
   );
-  let [acercaDeMi] = useState(language === "ingles" ? about_me2 : about_me);
+  let [acercaDeMi] = useState(language === "ingles" ? about_me2 : acerca_de_mi);
+  let element = "";
+  for (let i = 0; i < acercaDeMi.length; i++) {
+    element = element + " " + acercaDeMi[i] + "<br>";
+  }
   return (
     <div id="inicio" className="container_home">
       <FondoOscuro />
@@ -27,7 +63,10 @@ export const Home = () => {
         </div>
         <div className="container_about_me">
           <div className="container_about_me_text">
-            {acercaDeMi.map((parrafo, index) => {
+            <div className="text_animation">
+              <TypedReactHooksDemo />
+            </div>
+            {/* {acercaDeMi.map((parrafo, index) => {
               return (
                 <div className="text_animation" key={index}>
                   <Typewriter
@@ -37,7 +76,7 @@ export const Home = () => {
                   />
                 </div>
               );
-            })}
+            })} */}
           </div>
           <div className="container_image">
             <img src={Foto} alt="jpg" />
@@ -48,12 +87,12 @@ export const Home = () => {
         <h2>{language === "español" ? "Proyectos" : "Projects"}</h2>
       </div>
       <div className="container_cards">
-        <Card card={cards[0]} key={cards[0].title} id={"blue"} />;
-        <Card card={cards[1]} key={cards[1].title} id={"yellow"} />;
+        <Card card={cards[0]} key={cards[0].title} id={"blue"} />
+        <Card card={cards[1]} key={cards[1].title} id={"yellow"} />
       </div>
       <div className="container_cards">
-        <Card card={cards[2]} key={cards[2].title} id={"grey"} />;
-        <Card card={cards[3]} key={cards[3].title} id={"purple"} />;
+        <Card card={cards[2]} key={cards[2].title} id={"grey"} />
+        <Card card={cards[3]} key={cards[3].title} id={"purple"} />
       </div>
       <div id="habilidadesTecnicas" className="separadores">
         <h2>
@@ -78,7 +117,8 @@ export const Home = () => {
             <h2>{language === "español" ? "Contactame" : "Contact me"}</h2>
           </div>
           <div className="container_hi_send">
-            <h5>👋🏻Hola de Nuevo😃</h5>
+            <h4>😃¡Charlemos!</h4>
+            <h5>👋🏻Hola de Nuevo</h5>
             <h5>
               Enviame un correo en el siguiente formulario y con gusto lo leere
               🙂

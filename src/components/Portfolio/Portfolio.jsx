@@ -22,7 +22,7 @@ export const Portfolio = () => {
     );
     setTimeout(() => {
       window.location.reload();
-    }, 1000);
+    }, 500);
   };
   return (
     <ThemeContext.Provider value={{ mode, toggleTheme }}>

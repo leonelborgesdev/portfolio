@@ -10,7 +10,8 @@
     align-items: center;
     flex-direction: row;
 }
-.container_hi_send h5{
+.container_hi_send h5,
+.container_hi_send h4{
     text-align: start;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -36,9 +37,11 @@
 }
 #dark .container_home{
     background: #0c192c;
+    transition: 1s;
 }
 #light .container_home{
     background: #fff;
+    transition: 1s;
 }
 section{
     position: relative;
@@ -65,7 +68,7 @@ section::before{
 #dark .container_home section::before{
     background: linear-gradient(to top, #0c192c, transparent);
     transition: 1s;
-} */
+} container_about_me_text*/
 section img{
     position: absolute;
     top: 0;
@@ -121,6 +124,9 @@ section img#man{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+}
+#contact h2{
+    margin: 0px;
 }
 .separadores{
     display: flex;
