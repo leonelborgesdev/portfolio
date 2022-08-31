@@ -1,11 +1,9 @@
 import React from "react";
 import "./PageFooter.css";
-// import logo_instagram from "../../assets/logo-instagram.svg";
-// import logo_twitter from "../../assets/logo-twitter.svg";
 import logo_github from "../../assets/logo-github.svg";
 import logo_linkedin from "../../assets/logo-linkedin.svg";
 import logo_whatsapp from "../../assets/logo-whatsapp.svg";
-// import logo_gmail from "../../assets/mail-outline.svg";
+import logo_facebook from "../../assets/logo-facebook.svg";
 import { IonIcon } from "@ionic/react";
 import { useSelector } from "react-redux";
 
@@ -49,15 +47,15 @@ export const PageFooter = () => {
                 <IonIcon src={logo_whatsapp} />
               </a>
             </li>
-            {/* <li>
+            <li>
               <a
-                href="mailto:leonelbor06@gmail.com"
+                href="https://www.facebook.com/leonel.borges.311/"
                 target={"_blank"}
                 rel="noreferrer"
               >
-                <IonIcon src={logo_gmail} />
+                <IonIcon src={logo_facebook} />
               </a>
-            </li> */}
+            </li>
           </ul>
           <ul className="menu">
             {menu_footer.map((item) => {
