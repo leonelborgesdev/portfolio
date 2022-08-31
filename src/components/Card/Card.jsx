@@ -10,10 +10,10 @@ export const Card = ({ card, id }) => {
       <div className="container_card" id={id}>
         <div className="card">
           <div className="cover">
-            <img src={card.img} alt="pr1" width={"280px"} />{" "}
+            <img src={card.img} alt="png" width={"280px"} />
           </div>
           <div className="details">
-            <img src={card.img2[0]} alt="pr2" width={"380px"} />
+            <img src={card.img2[0]} alt="png" width={"380px"} />
             <h2>{card.title}</h2>
             <h3>{card.detail}</h3>
             <Link to={`/${card.id}`}>

@@ -20,9 +20,9 @@ export const Portfolio = () => {
     dispatch(
       changeLanguaje(language === "español" ? "ingles" : "español", cards)
     );
-    setTimeout(() => {
-      window.location.reload();
-    }, 500);
+    // setTimeout(() => {
+    //   window.location.reload();
+    // }, 500);
   };
   return (
     <ThemeContext.Provider value={{ mode, toggleTheme }}>

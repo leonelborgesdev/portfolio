@@ -1,5 +1,5 @@
-import proy1 from "../../assets/proy1.png";
-import proy1_2 from "../../assets/proy1_2.png";
+import breeds from "../../assets/breeds.png";
+import breeds2 from "../../assets/breeds2.png";
 import BarberApp from "../../assets/BarberApp.png";
 import BarberApp_2 from "../../assets/BarberApp/BarberApp_2.png";
 import BarberApp_3 from "../../assets/BarberApp/BarberApp_3.png";
@@ -7,9 +7,9 @@ import BarberApp_4 from "../../assets/BarberApp/BarberApp_4.png";
 import BarberApp_5 from "../../assets/BarberApp/BarberApp_5.png";
 import BarberApp_6 from "../../assets/BarberApp/BarberApp_6.png";
 import BarberApp_7 from "../../assets/BarberApp/BarberApp_7.png";
-import Countries_2 from "../../assets/Countries_2.png"; //Countries
 import Countries from "../../assets/Countries.png";
-import proy3 from "../../assets/proy3.png";
+import Countries2 from "../../assets/Countries2.png"; //Countries
+import marketplace from "../../assets/marketplace.png";
 import marketplace2 from "../../assets/marketplace2.png";
 import { CHANGE_LANGUAJE, CHANGE_MODE } from "../action/types";
 
@@ -18,8 +18,8 @@ const initialState = {
     {
       id: "1",
       color: "blue",
-      img: proy1,
-      img2: [proy1_2],
+      img: breeds,
+      img2: [breeds2],
       title: "BREEDS",
       detail:
         "Desarrollo de un SPA ( Single Page Application) encargada de crear, modificar, listar, ordenar y filtrar la información de las diferentes razas de perros. Dicha información se obtiene desde una API ( The Dog ) y de una Base de Datos Local",
@@ -53,7 +53,7 @@ const initialState = {
     {
       id: "3",
       color: "grey",
-      img: proy3,
+      img: marketplace,
       img2: [marketplace2],
       title: "MUNDOMARKET",
       detail:
@@ -68,7 +68,7 @@ const initialState = {
       id: "4",
       color: "purple",
       img: Countries,
-      img2: [Countries_2],
+      img2: [Countries2],
       title: "COUNTRIES",
       detail:
         "Desarrollo de un SPA ( Single Page Application) encargada de crear, eliminar, listar, ordenar y filtrar la información de diferentes paises. Dicha información se obtiene desde una API ( Restcountries ) y de una Base de Datos Local",

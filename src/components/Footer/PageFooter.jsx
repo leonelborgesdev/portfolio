@@ -4,6 +4,7 @@ import "./PageFooter.css";
 // import logo_twitter from "../../assets/logo-twitter.svg";
 import logo_github from "../../assets/logo-github.svg";
 import logo_linkedin from "../../assets/logo-linkedin.svg";
+import logo_whatsapp from "../../assets/logo-whatsapp.svg";
 // import logo_gmail from "../../assets/mail-outline.svg";
 import { IonIcon } from "@ionic/react";
 import { useSelector } from "react-redux";
@@ -37,6 +38,15 @@ export const PageFooter = () => {
                 rel="noreferrer"
               >
                 <IonIcon src={logo_github} />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/+59172906483"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <IonIcon src={logo_whatsapp} />
               </a>
             </li>
             {/* <li>

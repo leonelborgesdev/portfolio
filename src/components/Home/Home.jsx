@@ -50,18 +50,7 @@ const TypedReactHooksDemo = () => {
 document.getElementById("react-root");
 
 export const Home = () => {
-  const { cards, about_me2, acerca_de_mi, language, mode } = useSelector(
-    (state) => state
-  );
-  let [acercaDeMi] = useState(language === "ingles" ? about_me2 : acerca_de_mi);
-  let element = "";
-  for (let i = 0; i < acercaDeMi.length; i++) {
-    if (i !== acercaDeMi.length - 1) {
-      element = element + " " + acercaDeMi[i] + "<br>";
-    } else {
-      element = element + " " + acercaDeMi[i];
-    }
-  }
+  const { cards, language, mode } = useSelector((state) => state);
   return (
     <div id="inicio" className="container_home">
       <FondoOscuro />
@@ -74,17 +63,6 @@ export const Home = () => {
             <div className="text_animation">
               <TypedReactHooksDemo />
             </div>
-            {/* {acercaDeMi.map((parrafo, index) => {
-              return (
-                <div className="text_animation" key={index}>
-                  <Typewriter
-                    onInit={(typewriter) => {
-                      typewriter.typeString(parrafo).pauseFor(9000).start();
-                    }}
-                  />
-                </div>
-              );
-            })} */}
           </div>
           <div className="container_image">
             <img src={Foto} alt="jpg" />
