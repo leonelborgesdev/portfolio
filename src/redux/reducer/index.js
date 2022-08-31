@@ -1,16 +1,3 @@
-import breeds from "../../assets/breeds.png";
-import breeds2 from "../../assets/breeds2.png";
-import BarberApp from "../../assets/BarberApp.png";
-import BarberApp_2 from "../../assets/BarberApp/BarberApp_2.png";
-import BarberApp_3 from "../../assets/BarberApp/BarberApp_3.png";
-import BarberApp_4 from "../../assets/BarberApp/BarberApp_4.png";
-import BarberApp_5 from "../../assets/BarberApp/BarberApp_5.png";
-import BarberApp_6 from "../../assets/BarberApp/BarberApp_6.png";
-import BarberApp_7 from "../../assets/BarberApp/BarberApp_7.png";
-import Countries from "../../assets/Countries.png";
-import Countries2 from "../../assets/Countries2.png"; //Countries
-import marketplace from "../../assets/marketplace.png";
-import marketplace2 from "../../assets/marketplace2.png";
 import { CHANGE_LANGUAGE, CHANGE_MODE } from "../action/types";
 
 const initialState = {
@@ -18,8 +5,8 @@ const initialState = {
     {
       id: "1",
       color: "blue",
-      img: breeds,
-      img2: [breeds2],
+      img: "breeds.png",
+      img2: ["breeds2.png"],
       title: "BREEDS",
       detail:
         "Desarrollo de un SPA ( Single Page Application) encargada de crear, modificar, listar, ordenar y filtrar la información de las diferentes razas de perros. Dicha información se obtiene desde una API ( The Dog ) y de una Base de Datos Local",
@@ -31,14 +18,14 @@ const initialState = {
     {
       id: "2",
       color: "yellow",
-      img: BarberApp,
+      img: "BarberApp.png",
       img2: [
-        BarberApp_2,
-        BarberApp_3,
-        BarberApp_4,
-        BarberApp_5,
-        BarberApp_6,
-        BarberApp_7,
+        "BarberApp/BarberApp_2.png",
+        "BarberApp/BarberApp_3.png",
+        "BarberApp/BarberApp_4.png",
+        "BarberApp/BarberApp_5.png",
+        "BarberApp/BarberApp_6.png",
+        "BarberApp/BarberApp_7.png",
       ],
       title: "BARBERAPP",
       detail:
@@ -53,8 +40,8 @@ const initialState = {
     {
       id: "3",
       color: "grey",
-      img: marketplace,
-      img2: [marketplace2],
+      img: "marketplace.png",
+      img2: ["marketplace2.png"],
       title: "MUNDOMARKET",
       detail:
         "Participe en el desarrollo de una pagina web e-comerce en la que cada usuario puede realizar compras de productos y ofrecer o vender sus productos.",
@@ -67,8 +54,8 @@ const initialState = {
     {
       id: "4",
       color: "purple",
-      img: Countries,
-      img2: [Countries2],
+      img: "Countries.png",
+      img2: ["Countries2.png"],
       title: "COUNTRIES",
       detail:
         "Desarrollo de un SPA ( Single Page Application) encargada de crear, eliminar, listar, ordenar y filtrar la información de diferentes paises. Dicha información se obtiene desde una API ( Restcountries ) y de una Base de Datos Local",
