@@ -5,8 +5,6 @@ const initialState = {
     {
       id: "1",
       color: "blue",
-      img: "breeds.png",
-      img2: ["breeds2.png"],
       title: "BREEDS",
       detail:
         "Desarrollo de un SPA ( Single Page Application) encargada de crear, modificar, listar, ordenar y filtrar la información de las diferentes razas de perros. Dicha información se obtiene desde una API ( The Dog ) y de una Base de Datos Local",
@@ -18,15 +16,6 @@ const initialState = {
     {
       id: "2",
       color: "yellow",
-      img: "BarberApp.png",
-      img2: [
-        "BarberApp/BarberApp_2.png",
-        "BarberApp/BarberApp_3.png",
-        "BarberApp/BarberApp_4.png",
-        "BarberApp/BarberApp_5.png",
-        "BarberApp/BarberApp_6.png",
-        "BarberApp/BarberApp_7.png",
-      ],
       title: "BARBERAPP",
       detail:
         "Desarrollo de una pagina web responsive para una barberia. La cual permite al usuario reservar sus citas con un barbero en especifico, mas un mini ecomerce que le permite al usuario comprar productos de la barberia.",
@@ -40,8 +29,6 @@ const initialState = {
     {
       id: "3",
       color: "grey",
-      img: "marketplace.png",
-      img2: ["marketplace2.png"],
       title: "MUNDOMARKET",
       detail:
         "Participe en el desarrollo de una pagina web e-comerce en la que cada usuario puede realizar compras de productos y ofrecer o vender sus productos.",
@@ -54,8 +41,6 @@ const initialState = {
     {
       id: "4",
       color: "purple",
-      img: "Countries.png",
-      img2: ["Countries2.png"],
       title: "COUNTRIES",
       detail:
         "Desarrollo de un SPA ( Single Page Application) encargada de crear, eliminar, listar, ordenar y filtrar la información de diferentes paises. Dicha información se obtiene desde una API ( Restcountries ) y de una Base de Datos Local",
