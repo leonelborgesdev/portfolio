@@ -11,7 +11,7 @@ import Countries from "../../assets/Countries.png";
 import Countries2 from "../../assets/Countries2.png"; //Countries
 import marketplace from "../../assets/marketplace.png";
 import marketplace2 from "../../assets/marketplace2.png";
-import { CHANGE_LANGUAJE, CHANGE_MODE } from "../action/types";
+import { CHANGE_LANGUAGE, CHANGE_MODE } from "../action/types";
 
 const initialState = {
   cards: [
@@ -110,7 +110,7 @@ const rootReducer = (state = initialState, action) => {
         mode: action.payload,
       };
     }
-    case CHANGE_LANGUAJE: {
+    case CHANGE_LANGUAGE: {
       return {
         ...state,
         language: action.payload,

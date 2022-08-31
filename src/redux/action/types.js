@@ -1,2 +1,2 @@
 export const CHANGE_MODE = "CHANGE_MODE";
-export const CHANGE_LANGUAJE = "CHANGE_LANGUAJE";
+export const CHANGE_LANGUAGE = "CHANGE_LANGUAGE";

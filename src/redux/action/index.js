@@ -1,4 +1,4 @@
-import { CHANGE_LANGUAJE, CHANGE_MODE } from "./types";
+import { CHANGE_LANGUAGE, CHANGE_MODE } from "./types";
 
 export const changeMode = (mode) => {
   return function (dispatch) {
@@ -11,7 +11,7 @@ export const changeMode = (mode) => {
 export const changeLanguaje = (language, cards) => {
   return function (dispatch) {
     dispatch({
-      type: CHANGE_LANGUAJE,
+      type: CHANGE_LANGUAGE,
       payload: language,
       payloadMenu: menuFooter(language),
       payloadCards: CardsHome(language, cards),
