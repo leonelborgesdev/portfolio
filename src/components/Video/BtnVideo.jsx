@@ -42,9 +42,9 @@ export const BtnVideo = () => {
             src={
               card[0].id === "1"
                 ? breeds2
-                : card.id === "2"
+                : card[0].id === "2"
                 ? BarberApp2
-                : card.id === "3"
+                : card[0].id === "3"
                 ? marketplace2
                 : Countries2
             }
