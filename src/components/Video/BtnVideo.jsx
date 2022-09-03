@@ -60,7 +60,7 @@ export const BtnVideo = () => {
                 ? "Link del Proyecto: "
                 : "Project Link: "}
             </h4>
-            <a href={card[0].link_deploy} target={"_blank"}>
+            <a href={card[0].link_deploy} target={"_blank"} rel={"noreferrer"}>
               {card[0].link_deploy}
             </a>
           </div>
