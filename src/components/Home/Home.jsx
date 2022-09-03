@@ -8,7 +8,6 @@ import Foto from "../../assets/Foto.jpg";
 import { FondoOscuro } from "../FondoOscuro/FondoOscuro";
 import ButonPdf from "../ButonPdf/ButonPdf";
 import { SoftSkills } from "../SoftSkills/SoftSkills";
-// import Typewriter from "typewriter-effect";
 import { Contacto } from "../Contacto/Contacto";
 import { Mapa } from "../Mapa/Mapa";
 import { useState } from "react";
@@ -34,7 +33,7 @@ const TypedReactHooksDemo = () => {
   React.useEffect(() => {
     const options = {
       strings: [element],
-      typeSpeed: 20,
+      typeSpeed: 10,
     };
 
     // elRef refers to the <span> rendered below

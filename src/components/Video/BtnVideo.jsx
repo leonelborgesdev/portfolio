@@ -54,12 +54,24 @@ export const BtnVideo = () => {
           {card[0].description.map((descriptio, index) => (
             <h5 key={index}>{descriptio}</h5>
           ))}
+          <div className="link_deploy">
+            <h4>
+              {language === "español"
+                ? "Link del Proyecto: "
+                : "Project Link: "}
+            </h4>
+            <a href={card[0].link_deploy} target={"_blank"}>
+              {card[0].link_deploy}
+            </a>
+          </div>
         </div>
         {/* <div className="btn_play" ref={btnPlayRef} onClick={handleAddClass}>
           <div className="play"></div>
           <p>Play Video</p>
         </div> */}
-        <Link to={`/`}>{language === "español" ? "Volver" : "Back"}</Link>
+        <Link to={`/`} className="buton_back">
+          {language === "español" ? "Volver" : "Back"}
+        </Link>
         <div className="clip" ref={clipRef}>
           <div>Video {card[0].title}</div>
           {/* <iframe

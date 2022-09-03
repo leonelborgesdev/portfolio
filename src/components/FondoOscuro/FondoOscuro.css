@@ -6,6 +6,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+.word_const{
+    color: #245db3;
+}
+.word_llave{
+    color: #b324ac;
+}
+#dark .word_Profile{
+    color: #fff;
+}
+#light .word_Profile{
+    color: #000;
+}
+/* .word_attrib{
+    color: #00ffff;
+} */
+.word_string{
+    color: #c55911;
+}
 .container_body{
     min-height: 100vh;
 }
@@ -41,29 +59,30 @@
 .title{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
+    width: 96%;
     transform: translate(-50%, -50%);
 }
 .title > h2{
     font-weight: normal;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 70px;
     font-family: 'Lustria', serif;
-
 }
 .title > h3{
     font-weight: normal;
-    text-transform: uppercase;
-    font-size: 50px;
+    /* text-transform: uppercase; */
+    text-align: start;
+    font-size: 65px;
+    margin: 0px;
     font-family: 'Saira', sans-serif;
 }
-#dark .title{    
-    color: cyan;
+#dark .title{
+    color: #00ffff;
     transition: 1s;
 }
 #light .title{

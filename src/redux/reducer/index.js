@@ -12,6 +12,7 @@ const initialState = {
         "Frontend: React, Redux, JavaScript, CSS(PURO).",
         "Backend: Node, Express, PostgreSql, Sequelize.",
       ],
+      link_deploy: "https://leonelbreeds.vercel.app/",
     },
     {
       id: "2",
@@ -25,6 +26,7 @@ const initialState = {
         "Backend: Node, Express, PostgreSql, Sequelize.",
         "Frontend Graphics: Char.js",
       ],
+      link_deploy: "http://barber-app-henry.herokuapp.com",
     },
     {
       id: "3",
@@ -37,6 +39,7 @@ const initialState = {
         "Frontend: React, Redux, TypeScript, CSS, MaterialUI.",
         "Backend: Node, Express, Mongodb, Mongoose, Sequelize.",
       ],
+      link_deploy: "https://mundomarket.vercel.app/",
     },
     {
       id: "4",
@@ -48,6 +51,7 @@ const initialState = {
         "Frontend: React, Redux, JavaScript, CSS(PURO).",
         "Backend: Node, Express, PostgreSql, Sequelize.",
       ],
+      link_deploy: "https://leonelcountries.vercel.app",
     },
   ],
   about_me2: [

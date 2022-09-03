@@ -24,7 +24,7 @@
     margin: 10px;
     text-align: start;
 }
-.container_body_video a{
+.container_body_video  .buton_back{
     display: inline;
     padding: 8px 20px;
     color: #fff;
@@ -35,16 +35,16 @@
     text-decoration: none;
     margin-bottom: 30px;
 }
-#blue  a{
+#blue .buton_back{
     background: #47bfce;
 }
-#yellow  a{
+#yellow .buton_back{
     background: #8a8a21;
 }
-#grey  a{
+#grey .buton_back{
     background: #8b8a8a;
 }
-#purple a{
+#purple .buton_back{
     background: #1F1D36;
 }
 .btn_play{
@@ -135,6 +135,28 @@
 #light .container_body_video .detail h5,
 #light .container_body_video .detail h4{
     color: #000;
+}
+.link_deploy{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 95%;
+}
+.link_deploy h4{
+    margin: 0px;
+    width: 120px;
+}
+.link_deploy a{
+    width: 100%;
+    text-align: start;
+}
+#dark .container_body_video .detail .link_deploy a{
+    color: #07f7c3;
+}
+#light .container_body_video .detail .link_deploy a{
+    color: #25487c;
 }
 @media (max-width: 901px){
     .clip iframe{
