@@ -3,10 +3,6 @@ import React from "react";
 import "./FondoOscuro.css";
 
 export const FondoOscuro = () => {
-  const value = {
-    id: "1",
-    name: "hola",
-  };
   return (
     <div className="container_dark_all">
       <div className="container_body">
