@@ -222,3 +222,8 @@ section img#man{
         width: 90%;
     }
 }
+@media screen and (max-width: 436px) {   
+.container_image img{
+    width: 94%;
+}
+}

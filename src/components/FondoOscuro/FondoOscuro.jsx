@@ -13,7 +13,6 @@ export const FondoOscuro = () => {
               <span className="word_Profile"> Profile</span>=
               <span className="word_llave">{"{"}</span>
             </h3>
-            {/* <h3>{"const Profile = {"}</h3> */}
             <h3>
               <span className="word_attrib"> Name: </span>
               <span className="word_string">"Leonel Borges"</span>
