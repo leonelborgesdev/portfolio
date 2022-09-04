@@ -28,6 +28,7 @@
 .text_animation{
     text-align: start;
     margin-bottom: 10px;
+    font-size: 22px;
 }
 #dark .container_hi_send{
     color: #22d4d4;
@@ -109,7 +110,7 @@ section img#man{
 }
 .container_image img{
     border-radius: 50%;
-    width: 400px;
+    width: 500px;
 }
 .container_about_me_text > p{
     text-align: left;
@@ -205,6 +206,9 @@ section img#man{
         flex-wrap: wrap-reverse;
         justify-content: center;
         align-items: center;
+    }
+    .container_image img{
+        width: 400px;
     }
 }
 @media screen and (max-width: 900px) {

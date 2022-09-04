@@ -69,7 +69,7 @@ export const Home = () => {
         </div>
       </div>
       <div id="proyectos" className="separadores">
-        <h2>{language === "español" ? "Proyectos" : "Projects"}</h2>
+        <h1>{language === "español" ? "Proyectos" : "Projects"}</h1>
       </div>
       <div className="container_cards">
         <Card card={cards[0]} key={cards[0].title} id={"blue"} />
@@ -80,15 +80,15 @@ export const Home = () => {
         <Card card={cards[3]} key={cards[3].title} id={"purple"} />
       </div>
       <div id="habilidadesTecnicas" className="separadores">
-        <h2>
+        <h1>
           {language === "español" ? "Habilidades Tecnicas" : "Technical Skills"}
-        </h2>
+        </h1>
       </div>
       <div className="container_all_skills">
         <Skils />
       </div>
       <div id="habilidadesBlandas" className="separadores">
-        <h2>{language === "español" ? "Habilidades Blandas" : "SoftSkills"}</h2>
+        <h1>{language === "español" ? "Habilidades Blandas" : "SoftSkills"}</h1>
       </div>
       <div className="container_all_skills">
         <SoftSkills />
@@ -99,7 +99,7 @@ export const Home = () => {
         </div>
         <div className="container_correo" id={mode}>
           <div id="contact" className="separadores">
-            <h2>{language === "español" ? "Contactame" : "Contact me"}</h2>
+            <h1>{language === "español" ? "Contactame" : "Contact me"}</h1>
           </div>
           <div className="container_hi_send">
             <h4>😃¡Charlemos!</h4>
