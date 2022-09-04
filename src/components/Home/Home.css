@@ -25,7 +25,7 @@
     width: 50%;
     height: 100%;
 }
-.text_animation{
+.text_animation p{
     text-align: start;
     margin-bottom: 10px;
     font-size: 22px;
@@ -114,9 +114,6 @@ section img#man{
 }
 .container_about_me_text > p{
     text-align: left;
-    font-size: 1.2em;
-}
-.sec p{
     font-size: 1.2em;
 }
 .container_cards{

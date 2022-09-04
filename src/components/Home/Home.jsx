@@ -10,43 +10,6 @@ import ButonPdf from "../ButonPdf/ButonPdf";
 import { SoftSkills } from "../SoftSkills/SoftSkills";
 import { Contacto } from "../Contacto/Contacto";
 import { Mapa } from "../Mapa/Mapa";
-import { useState } from "react";
-
-import Typed from "typed.js";
-
-const TypedReactHooksDemo = () => {
-  const { about_me2, acerca_de_mi, language } = useSelector((state) => state);
-  let [acercaDeMi] = useState(language === "ingles" ? about_me2 : acerca_de_mi);
-  let [element] = useState("");
-  for (let i = 0; i < acercaDeMi.length; i++) {
-    if (i !== acercaDeMi.length - 1) {
-      element = element + " " + acercaDeMi[i] + "<br><br>";
-    } else {
-      element = element + " " + acercaDeMi[i];
-    }
-  }
-  // Create reference to store the DOM element containing the animation
-  const el = React.useRef(null);
-  // Create reference to store the Typed instance itself
-  const typed = React.useRef(null);
-
-  React.useEffect(() => {
-    const options = {
-      strings: [element],
-      typeSpeed: 10,
-    };
-
-    // elRef refers to the <span> rendered below
-    typed.current = new Typed(el.current, options);
-  }, [element]);
-
-  return (
-    <div className="type-wrap">
-      <span ref={el} />
-    </div>
-  );
-};
-document.getElementById("react-root");
 
 export const Home = () => {
   const { cards, language, mode } = useSelector((state) => state);
@@ -59,9 +22,45 @@ export const Home = () => {
         </div>
         <div className="container_about_me">
           <div className="container_about_me_text">
-            <div className="text_animation">
-              <TypedReactHooksDemo />
-            </div>
+            {language === "español" ? (
+              <div className="text_animation">
+                <p>{"Hola !!!😃"}</p>
+                <p>
+                  {
+                    "Me llamo Leonel Borges, soy desarrollador web, vivo en la ciudad de Bermejo, de Tarija Bolivia, mis hobbies son el voley, la natacion y los deportes. Soy Graduado Full Stack Developer, con aptitudes en Backend y Frontend. Me gusta programar, me gusta aprender, y dia a dia mejorar mis habilidades estudiando, practicando y participando en proyectos de tecnologia."
+                  }
+                </p>
+                <p>
+                  {
+                    "Fortalezas: El trabajo en equipo se me da muy bien, me adapto facilmente a los cambios, soy participativo, consulto y también doy asesoría a mis compañeros de equipo, si hay algo que no se, lo investigo y me esfuerzo mucho por encontrar la respuesta."
+                  }
+                </p>
+                <p>
+                  {
+                    "Experiencia: Por ahora mi experiencia es netamente academica, participando en proyectos individuales y grupales, como ser los proyectos en bootcamp en henry y otros, tambien he sido ayudante de catedra en la UAJMS, ayudando a los chicos con sus practicos, tareas y preparandolos para sus examenes de programacion en Java."
+                  }
+                </p>
+              </div>
+            ) : (
+              <div className="text_animation">
+                <p>{"Hi !!!😃"}</p>
+                <p>
+                  {
+                    "My name is Leonel Borges, I am a web developer, I live in the city of Bermejo, Tarija Bolivia, my hobbies are volleyball, swimming and sports. I am a Henry Full Stack Developer Graduate, with skills in Backend and Frontend. I like programming, I like to learn more every day and I try to improve my skills by studying, practicing and participating in technology projects."
+                  }
+                </p>
+                <p>
+                  {
+                    "Strengths: I am persevering, if there is something I don't know, I do everything possible to find the solution, I investigate the subject, I consult with my teammates, I accept advice, opinions and criticism with the idea of improving and finding the best possible solution. I work as a team, I help my colleagues if they need it so that the whole team can meet its objectives."
+                  }
+                </p>
+                <p>
+                  {
+                    "Experience: For now my experience is purely academic, participating in individual and group projects such as the projects in Henry and others, I have also been a teaching assistant at the UAJMS, helping the boys with their practices, homework and preparing them for their exams. Java programming."
+                  }
+                </p>
+              </div>
+            )}
           </div>
           <div className="container_image">
             <img src={Foto} alt="jpg" />

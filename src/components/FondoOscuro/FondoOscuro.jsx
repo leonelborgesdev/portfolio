@@ -2,30 +2,40 @@ import React from "react";
 
 import "./FondoOscuro.css";
 
+import Typed from "typed.js";
+
+const TypedReactHooksDemo = () => {
+  // Create reference to store the DOM element containing the animation
+  const el = React.useRef(null);
+  // Create reference to store the Typed instance itself
+  const typed = React.useRef(null);
+
+  React.useEffect(() => {
+    const options = {
+      strings: [
+        `      <h3>        <span class="word_const">const</span>        <span class="word_Profile"> Profile</span>=        <span class={"word_llave"}>{</span>      </h3>      <h3>        <span class="word_attrib"> Name: </span>        <span class="word_string">"Leonel Borges"</span>        <span class="word_Profile">,</span>      </h3>      <h3>        <span class="word_attrib"> Profesion: </span>        <span class="word_string">"Full Stack Developer"</span>        <span class="word_Profile">,</span></h3><h3><span class="word_llave">}</span></h3>`,
+      ],
+      typeSpeed: 20,
+    };
+    // elRef refers to the <span> rendered below
+    typed.current = new Typed(el.current, options);
+  }, []);
+
+  return (
+    <div className="type-wrap">
+      <span ref={el} />
+    </div>
+  );
+};
+document.getElementById("react-root");
+
 export const FondoOscuro = () => {
   return (
     <div className="container_dark_all">
       <div className="container_body">
         <div className="container_dark">
           <div className="title">
-            <h3>
-              <span className="word_const">const</span>
-              <span className="word_Profile"> Profile</span>=
-              <span className="word_llave">{"{"}</span>
-            </h3>
-            <h3>
-              <span className="word_attrib"> Name: </span>
-              <span className="word_string">"Leonel Borges"</span>
-              <span className="word_Profile">{","}</span>
-            </h3>
-            <h3>
-              <span className="word_attrib"> Profesion: </span>
-              <span className="word_string">"Full Stack Developer"</span>
-              <span className="word_Profile">{","}</span>
-            </h3>
-            <h3>
-              <span className="word_llave">{"}"}</span>
-            </h3>
+            <TypedReactHooksDemo />
           </div>
           <div className="bubbles">
             <span style={{ "--i": "11" }}></span>

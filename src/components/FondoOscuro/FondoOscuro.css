@@ -115,7 +115,7 @@
     .separadores h1{
         font-size: 45px;
     }
-    .text_animation{
+    .text_animation p{
         font-size: 15px;
     }
 }
@@ -127,7 +127,16 @@
     .separadores h1{
         font-size: 28px;
     }
-    .text_animation{
+    .text_animation p{
         font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .title h3,
+    .separadores h1{
+        font-size: 20px;
+    }
+    .text_animation p{
+        font-size: 10px;
     }
 }
