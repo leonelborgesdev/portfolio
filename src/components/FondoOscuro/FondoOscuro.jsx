@@ -13,7 +13,7 @@ const TypedReactHooksDemo = () => {
   React.useEffect(() => {
     const options = {
       strings: [
-        `      <h3>        <span class="word_const">const</span>        <span class="word_Profile"> Profile</span>=        <span class={"word_llave"}>{</span>      </h3>      <h3>        <span class="word_attrib"> Name: </span>        <span class="word_string">"Leonel Borges"</span>        <span class="word_Profile">,</span>      </h3>      <h3>        <span class="word_attrib"> Profesion: </span>        <span class="word_string">"Full Stack Developer"</span>        <span class="word_Profile">,</span></h3><h3><span class="word_llave">}</span></h3>`,
+        `<h3><span class="word_const">const</span><span class="word_Profile"> Profile</span>=<span class={"word_llave"}>{</span></h3><h3><span class="word_attrib"> Name: </span><span class="word_string">"Leonel Borges"</span><span class="word_Profile">,</span></h3><h3><span class="word_attrib"> Profesion: </span><span class="word_string">"Full Stack Developer"</span><span class="word_Profile">,</span></h3><h3><span class="word_llave">}</span></h3>`,
       ],
       typeSpeed: 20,
     };

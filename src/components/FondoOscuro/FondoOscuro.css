@@ -18,9 +18,16 @@
 #light .word_Profile{
     color: #000;
 }
-/* .word_attrib{
-    color: #00ffff;
-} */
+
+#dark .typed-cursor.typed-cursor--blink,
+#dark .typed-cursor{
+    color: #0c192c
+}
+#light .typed-cursor.typed-cursor--blink,
+#light .typed-cursor{
+    color: #fff
+}
+
 .word_string{
     color: #c55911;
 }
