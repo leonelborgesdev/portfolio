@@ -3,7 +3,7 @@ import "./SkillsTecnichals.css";
 
 export const SkillsTecnichals = () => {
   return (
-    <div>
+    <div className="container_skillsTecnichals_cards">
       <div className="card_skillTecnichal">
         Android
         <a

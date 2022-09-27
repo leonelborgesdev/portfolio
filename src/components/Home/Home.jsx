@@ -2,10 +2,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 import "./Home.css";
 import { Card } from "../Card/Card";
-import { Skils } from "../Skils/Skils";
 import { PageFooter } from "../Footer/PageFooter";
 import Foto from "../../assets/Foto.jpg";
 import ButonPdf from "../ButonPdf/ButonPdf";
+import { SoftSkills } from "../SoftSkills/SoftSkills";
 import { Contacto } from "../Contacto/Contacto";
 import { Mapa } from "../Mapa/Mapa";
 import { DarkMode } from "../DarkMode/DarkMode";
@@ -84,13 +84,13 @@ export const Home = () => {
         </h1>
       </div>
       <div className="container_all_skills">
-        <Skils />
+        <SkillsTecnichals />
       </div>
       <div id="habilidadesBlandas" className="separadores">
         <h1>{language === "español" ? "Habilidades Blandas" : "SoftSkills"}</h1>
       </div>
       <div className="container_all_skills">
-        <SkillsTecnichals />
+        <SoftSkills />
       </div>
       <div id="contactame" className="container_correo_mapa">
         <div className="container_map">

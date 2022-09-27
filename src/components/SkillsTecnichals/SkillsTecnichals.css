@@ -1,6 +1,26 @@
+.container_skillsTecnichals_cards{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0c192c;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 40px;
+}
 .card_skillTecnichal{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    border-radius: 20px;
+    height: 200px;
+    width: 180px;
+    transition: 1s;
+}
+#dark .card_skillTecnichal{
+    background: #000;
+    color: #fff;
 }
