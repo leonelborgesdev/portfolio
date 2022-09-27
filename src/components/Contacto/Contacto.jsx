@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 import "./Contacto.css";
 
 export const Contacto = () => {
-  const { mode } = useSelector((state) => state);
+  const { mode, language } = useSelector((state) => state);
   const form = useRef();
   const handleEnviarEmail = (e) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ export const Contacto = () => {
         <div className="container_body_contact">
           <div className="inputBox">
             <input type="text" required="required" name="name" />
-            <span>Nombre</span>
+            <span>{language === "español" ? "Nombre" : "Name"}</span>
           </div>
           <div className="inputBox">
             <input type="text" required="required" name="email" />
@@ -39,7 +39,7 @@ export const Contacto = () => {
           </div>
           <div className="inputBox">
             <textarea name="message" />
-            <span>Mensaje</span>
+            <span>{language === "español" ? "Mensaje" : "Messegger"}</span>
           </div>
           <div className="buton_submit_send">
             <input type="submit" />

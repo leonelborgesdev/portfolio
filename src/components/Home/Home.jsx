@@ -6,10 +6,10 @@ import { Skils } from "../Skils/Skils";
 import { PageFooter } from "../Footer/PageFooter";
 import Foto from "../../assets/Foto.jpg";
 import ButonPdf from "../ButonPdf/ButonPdf";
-import { SoftSkills } from "../SoftSkills/SoftSkills";
 import { Contacto } from "../Contacto/Contacto";
 import { Mapa } from "../Mapa/Mapa";
 import { DarkMode } from "../DarkMode/DarkMode";
+import { SkillsTecnichals } from "../SkillsTecnichals/SkillsTecnichals";
 
 export const Home = () => {
   const { cards, language, mode } = useSelector((state) => state);
@@ -90,7 +90,7 @@ export const Home = () => {
         <h1>{language === "español" ? "Habilidades Blandas" : "SoftSkills"}</h1>
       </div>
       <div className="container_all_skills">
-        <SoftSkills />
+        <SkillsTecnichals />
       </div>
       <div id="contactame" className="container_correo_mapa">
         <div className="container_map">
