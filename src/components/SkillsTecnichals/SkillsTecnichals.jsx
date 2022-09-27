@@ -5,31 +5,28 @@ export const SkillsTecnichals = () => {
   return (
     <div className="container_skillsTecnichals_cards">
       <div className="card_skillTecnichal">
-        Android
-        <a
-          href="https://developer.android.com"
-          target="_blank"
-          rel="noreferrer"
-        >
+        React
+        <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
           <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
-            alt="android"
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+            alt="react"
             width="40"
             height="40"
           />
         </a>
       </div>
       <div className="card_skillTecnichal">
-        Blender
-        <a href="https://www.blender.org/" target="_blank" rel="noreferrer">
+        Redux
+        <a href="https://redux.js.org" target="_blank" rel="noreferrer">
           <img
-            src="https://download.blender.org/branding/community/blender_community_badge_white.svg"
-            alt="blender"
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+            alt="redux"
             width="40"
             height="40"
           />
         </a>
       </div>
+      <div className="card_skillTecnichal">Html</div>
       <div className="card_skillTecnichal">
         Bootstrap
         <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
@@ -116,32 +113,6 @@ export const SkillsTecnichals = () => {
         </a>
       </div>
       <div className="card_skillTecnichal">
-        Java
-        <a href="https://www.java.com" target="_blank" rel="noreferrer">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-            alt="java"
-            width="40"
-            height="40"
-          />
-        </a>
-      </div>
-      <div className="card_skillTecnichal">
-        JavaScript
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-            alt="javascript"
-            width="40"
-            height="40"
-          />
-        </a>
-      </div>
-      <div className="card_skillTecnichal">
         Mongodb
         <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
           <img
@@ -197,33 +168,26 @@ export const SkillsTecnichals = () => {
         </a>
       </div>
       <div className="card_skillTecnichal">
-        React
-        <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+        Java
+        <a href="https://www.java.com" target="_blank" rel="noreferrer">
           <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-            alt="react"
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+            alt="java"
             width="40"
             height="40"
           />
         </a>
       </div>
       <div className="card_skillTecnichal">
-        ReactNative
-        <a href="https://reactnative.dev/" target="_blank" rel="noreferrer">
+        JavaScript
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
-            src="https://reactnative.dev/img/header_logo.svg"
-            alt="reactnative"
-            width="40"
-            height="40"
-          />
-        </a>
-      </div>
-      <div className="card_skillTecnichal">
-        Redux
-        <a href="https://redux.js.org" target="_blank" rel="noreferrer">
-          <img
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
-            alt="redux"
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+            alt="javascript"
             width="40"
             height="40"
           />
@@ -244,6 +208,43 @@ export const SkillsTecnichals = () => {
           />
         </a>
       </div>
+      {/* <div className="card_skillTecnichal">
+        Android
+        <a
+          href="https://developer.android.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
+            alt="android"
+            width="40"
+            height="40"
+          />
+        </a>
+      </div>
+      <div className="card_skillTecnichal">
+        Blender
+        <a href="https://www.blender.org/" target="_blank" rel="noreferrer">
+          <img
+            src="https://download.blender.org/branding/community/blender_community_badge_white.svg"
+            alt="blender"
+            width="40"
+            height="40"
+          />
+        </a>
+      </div>
+      <div className="card_skillTecnichal">
+        ReactNative
+        <a href="https://reactnative.dev/" target="_blank" rel="noreferrer">
+          <img
+            src="https://reactnative.dev/img/header_logo.svg"
+            alt="reactnative"
+            width="40"
+            height="40"
+          />
+        </a>
+      </div>
       <div className="card_skillTecnichal">
         Unity
         <a href="https://unity.com/" target="_blank" rel="noreferrer">
@@ -254,7 +255,7 @@ export const SkillsTecnichals = () => {
             height="40"
           />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
