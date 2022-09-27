@@ -7,8 +7,8 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #0c192c;
     overflow: hidden;
+    transition: 1s;
 }
 .layer{
     position: absolute;
@@ -29,17 +29,17 @@
     z-index: 3;
 }
 .layer.layer3{
-    background: #ff3161;
+    background: #00ffff;
     transform: skewX(-45deg) translateX(-200px);
     z-index: 5;
 }
 .layer.layer4{
-    background: #0c192c;
     transform: skewX(-45deg) translateX(-300px);
+    transition: 1s;
     z-index: 10;
 }
 .layer.layer5{
-    background: #ff3161;
+    background: #00ffff;
     transform: skewX(45deg) translateX(0px);
     z-index: 2;
 }
@@ -54,8 +54,8 @@
     z-index: 6;
 }
 .layer.layer8{
-    background: #0c192c;
     transform: skewX(45deg) translateX(-300px);
+    transition: 1s;
     z-index: 8;
 }
 .layer.layer9{
@@ -63,3 +63,159 @@
     transform: skewX(45deg) translateX(-300px);
     z-index: 10;
 }
+.Title_Portfolio{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 10px;
+    width: 100%;
+    flex-direction: column;
+    z-index: 15;
+}
+.Title_Portfolio h3{
+    font-weight: normal;
+    text-align: start;
+    font-size: 65px;
+    margin: 0px;
+    font-family: 'Saira', sans-serif;
+}
+#dark .layer.layer4{
+    background: #0c192c;
+}
+#light .layer.layer4{
+    background: #fff;
+}
+#dark .layer.layer8{
+    background: #0c192c;
+}
+#light .layer.layer8{
+    background: #fff;
+}
+#dark .containerBodyDarkMode section{    
+    background: #0c192c;
+}
+#light .containerBodyDarkMode section{    
+    background: #fff;
+}
+#dark .Title_Portfolio{
+    color: #00ffff;
+    transition: 1s;
+}
+#light .Title_Portfolio{
+    color: #20496a;
+    transition: 1s;
+}
+
+.word_const{
+    color: #245db3;
+}
+.word_llave{
+    color: #b324ac;
+}
+#dark .word_Profile{
+    color: #fff;
+}
+#light .word_Profile{
+    color: #000;
+}
+
+#dark .typed-cursor.typed-cursor--blink,
+#dark .typed-cursor{
+    color: #0c192c
+}
+#light .typed-cursor.typed-cursor--blink,
+#light .typed-cursor{
+    color: #fff
+}
+
+.word_string{
+    color: #c55911;
+}
+
+@media screen and (max-width: 900px) {
+    .bubbles span{
+        height: 10px;
+    }
+    .title h3,
+    .separadores h1{
+        font-size: 45px;
+    }
+    .text_animation p{
+        font-size: 15px;
+    }
+    .layer.layer1{
+        transform: skewX(-45deg) translateX(0);
+    }
+    .layer.layer2{
+        transform: skewX(-45deg) translateX(-50px);
+    }
+    .layer.layer3{
+        transform: skewX(-45deg) translateX(-100px);
+    }
+    .layer.layer4{
+        transform: skewX(-45deg) translateX(-150px);
+    }
+    .layer.layer5{
+        transform: skewX(45deg) translateX(50px);
+    }
+    .layer.layer6{
+        transform: skewX(45deg) translateX(0px);
+    }
+    .layer.layer7{
+        transform: skewX(45deg) translateX(-50px);
+    }
+    .layer.layer8{
+        transform: skewX(45deg) translateX(-100px);
+    }
+    .layer.layer9{
+        transform: skewX(45deg) translateX(-100px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .bubbles span{
+        height: 5px;
+    }
+    .Title_Portfolio h3,
+    .separadores h1{
+        font-size: 28px;
+    }
+    .text_animation p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .Title_Portfolio h3,
+    .separadores h1{
+        font-size: 20px;
+    }
+    .text_animation p{
+        font-size: 10px;
+    }
+    .layer.layer1{
+        transform: skewX(-45deg) translateX(-25px);
+    }
+    .layer.layer2{
+        transform: skewX(-45deg) translateX(-50px);
+    }
+    .layer.layer3{
+        transform: skewX(-45deg) translateX(-75px);
+    }
+    .layer.layer4{
+        transform: skewX(-45deg) translateX(-100px);
+    }
+    .layer.layer5{
+        transform: skewX(45deg) translateX(0px);
+    }
+    .layer.layer6{
+        transform: skewX(45deg) translateX(-25px);
+    }
+    .layer.layer7{
+        transform: skewX(45deg) translateX(-50px);
+    }
+    .layer.layer8{
+        transform: skewX(45deg) translateX(-75px);
+    }
+    .layer.layer9{
+        transform: skewX(45deg) translateX(-100px);
+    }
+} 

@@ -1,35 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
 
 .container_dark_all{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.word_const{
-    color: #245db3;
-}
-.word_llave{
-    color: #b324ac;
-}
-#dark .word_Profile{
-    color: #fff;
-}
-#light .word_Profile{
-    color: #000;
-}
-
-#dark .typed-cursor.typed-cursor--blink,
-#dark .typed-cursor{
-    color: #0c192c
-}
-#light .typed-cursor.typed-cursor--blink,
-#light .typed-cursor{
-    color: #fff
-}
-
-.word_string{
-    color: #c55911;
 }
 .container_body{
     min-height: 100vh;
@@ -146,4 +121,4 @@
     .text_animation p{
         font-size: 10px;
     }
-}
+} */
