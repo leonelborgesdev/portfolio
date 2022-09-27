@@ -5,7 +5,6 @@ import { Card } from "../Card/Card";
 import { Skils } from "../Skils/Skils";
 import { PageFooter } from "../Footer/PageFooter";
 import Foto from "../../assets/Foto.jpg";
-import { FondoOscuro } from "../FondoOscuro/FondoOscuro";
 import ButonPdf from "../ButonPdf/ButonPdf";
 import { SoftSkills } from "../SoftSkills/SoftSkills";
 import { Contacto } from "../Contacto/Contacto";
