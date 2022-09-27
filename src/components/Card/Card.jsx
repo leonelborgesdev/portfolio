@@ -34,7 +34,6 @@ export const Card = ({ card, id }) => {
                   : Countries
               }
               alt="png"
-              width={"280px"}
             />
           </div>
           <div className="details">
@@ -49,7 +48,6 @@ export const Card = ({ card, id }) => {
                   : Countries2
               }
               alt="png"
-              width={"380px"}
             />
             <h2>{card.title}</h2>
             <h3>{card.detail}</h3>
