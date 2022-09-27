@@ -10,12 +10,13 @@ import ButonPdf from "../ButonPdf/ButonPdf";
 import { SoftSkills } from "../SoftSkills/SoftSkills";
 import { Contacto } from "../Contacto/Contacto";
 import { Mapa } from "../Mapa/Mapa";
+import { DarkMode } from "../DarkMode/DarkMode";
 
 export const Home = () => {
   const { cards, language, mode } = useSelector((state) => state);
   return (
     <div id="inicio" className="container_home">
-      <FondoOscuro />
+      <DarkMode />
       <div id="about" className="sec">
         <div id="contact" className="separadores">
           <h1>{language === "español" ? "Acerca de Mi" : "About Me"}</h1>
