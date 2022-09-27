@@ -119,13 +119,9 @@
     color: #000;
 }
 
-#dark .typed-cursor.typed-cursor--blink,
-#dark .typed-cursor{
-    color: #0c192c
-}
-#light .typed-cursor.typed-cursor--blink,
-#light .typed-cursor{
-    color: #fff
+.typed-cursor.typed-cursor--blink,
+.typed-cursor{
+    color: transparent
 }
 
 .word_string{
