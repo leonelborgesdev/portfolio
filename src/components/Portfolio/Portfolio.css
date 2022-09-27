@@ -1,4 +1,6 @@
-.switch{
+.App_portfoliio{
+    overflow: hidden;
+}.switch{
     /* width: 100vw; */
     height: 100px;
     display: flex;
