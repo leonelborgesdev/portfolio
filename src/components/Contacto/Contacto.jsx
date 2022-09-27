@@ -42,7 +42,10 @@ export const Contacto = () => {
             <span>{language === "español" ? "Mensaje" : "Messegger"}</span>
           </div>
           <div className="buton_submit_send">
-            <input type="submit" />
+            <input
+              type="submit"
+              value={language === "español" ? "Enviar" : "Send"}
+            />
           </div>
         </div>
       </div>
