@@ -62,14 +62,14 @@ section::before{
     height: 200px;
     z-index: 10000;
 }
-/* #light .container_home section::before{
+#light .container_home section::before{
     background: linear-gradient(to top, #fff, transparent);
     transition: 1s;
 }
 #dark .container_home section::before{
     background: linear-gradient(to top, #0c192c, transparent);
     transition: 1s;
-} container_about_me_text*/
+}
 section img{
     position: absolute;
     top: 0;
