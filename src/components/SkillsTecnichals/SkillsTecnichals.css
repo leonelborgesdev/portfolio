@@ -5,7 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0c192c;
     min-height: 100vh;
     flex-wrap: wrap;
     gap: 40px;
@@ -23,4 +22,18 @@
 #dark .card_skillTecnichal{
     background: #000;
     color: #fff;
+    transition: 1s;
+}
+#light .card_skillTecnichal{
+    background: #c5c4c4;
+    color: #000;
+    transition: 1s;
+}
+#dark .container_skillsTecnichals_cards{
+    background: #0c192c;
+    transition: 1s;
+}
+#light .container_skillsTecnichals_cards{
+    background: #fff;
+    transition: 1s;
 }
