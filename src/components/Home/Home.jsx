@@ -101,16 +101,14 @@ export const Home = () => {
             <h1>{language === "español" ? "Contactame" : "Contact me"}</h1>
           </div>
           <div className="container_hi_send">
-            <h4>
-              😃¡{language === "español" ? "Charlemos" : "texto en ingles"}!
-            </h4>
+            <h4>😃¡{language === "español" ? "Charlemos" : "Lets chat"}!</h4>
             <h5>
-              👋🏻{language === "español" ? "Hola de Nuevo" : "texto en ingles"}
+              👋🏻{language === "español" ? "Hola de Nuevo" : "Hello again"}
             </h5>
             <h5>
               {language === "español"
                 ? "Enviame un correo en el siguiente formulario y con gusto lo leere"
-                : "texto en ingles"}
+                : "Send me an email in the following form and I will gladly read it"}
               🙂
             </h5>
           </div>
