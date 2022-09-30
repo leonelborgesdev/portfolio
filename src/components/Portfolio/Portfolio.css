@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
-    /* position: absolute; */
     height: 50px;
     width: 96%;
     top: 0;
@@ -85,4 +84,14 @@
 #dark .switchLanguaje label{
     color: #fff;
     background: #222;
+}
+@media screen and (max-width: 360px) {
+    .nav_opciones{
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100px;
+    }
+    .switch_bajar{
+        right: 0px;
+    }
 }
