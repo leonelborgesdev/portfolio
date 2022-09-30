@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    bottom: 0px;
+    top: 0px;
     right: 40px;
     position: fixed;
     z-index: 10001;
@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    bottom: 50px;
+    top: 50px;
     right: 40px;
     position: fixed;
     z-index: 10001;
@@ -42,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    bottom: 90px;
+    top: 90px;
     right: 40px;
     position: fixed;
     z-index: 10001;
