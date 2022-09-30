@@ -27,6 +27,24 @@ export const Portfolio = () => {
   return (
     <ThemeContext.Provider value={{ mode, toggleTheme }}>
       <div className="App_portfoliio" id={mode}>
+        <div className="nav_opciones">
+          <div className="switch">
+            <label>{mode === "light" ? "Ligth Mode" : "Dark Mode"}</label>
+            <ReactSwitch
+              onColor="#22d4d4"
+              onChange={toggleTheme}
+              checked={mode === "dark"}
+            />
+          </div>
+          <div className="switchLanguaje">
+            <label>{language === "español" ? "Español" : "Ingles"}</label>
+            <ReactSwitch
+              onColor="#22d4d4"
+              onChange={handleLanguage}
+              checked={language === "español"}
+            />
+          </div>
+        </div>
         <Home />
         <ul className="switch_bajar">
           <li>
@@ -35,22 +53,6 @@ export const Portfolio = () => {
             </a>
           </li>
         </ul>
-        <div className="switch">
-          <label>{mode === "light" ? "Ligth Mode" : "Dark Mode"}</label>
-          <ReactSwitch
-            onColor="#22d4d4"
-            onChange={toggleTheme}
-            checked={mode === "dark"}
-          />
-        </div>
-        <div className="switchLanguaje">
-          <label>{language === "español" ? "Español" : "Ingles"}</label>
-          <ReactSwitch
-            onColor="#22d4d4"
-            onChange={handleLanguage}
-            checked={language === "español"}
-          />
-        </div>
       </div>
     </ThemeContext.Provider>
   );

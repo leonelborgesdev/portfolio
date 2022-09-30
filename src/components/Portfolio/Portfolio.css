@@ -1,12 +1,39 @@
 .App_portfoliio{
     overflow: hidden;
-}.switch{
-    /* width: 100vw; */
+}
+.nav_opciones{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    /* position: absolute; */
+    height: 50px;
+    width: 96%;
+    top: 0;
+    z-index: 10001;
+    position: fixed;
+}
+.switch{
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    top: 0px;
+    z-index: 10001;
+}
+.switchLanguaje{    
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 10001;
+}
+.switch_bajar{    
+    width: 100px; 
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    bottom: 20px;
     right: 40px;
     position: fixed;
     z-index: 10001;
@@ -24,28 +51,6 @@
 #dark .switch label{
     color: #fff;
     background: #222;
-}
-.switchLanguaje{    
-    /* width: 100vw; */
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    top: 50px;
-    right: 40px;
-    position: fixed;
-    z-index: 10001;
-}
-.switch_bajar{    
-    width: 100px; 
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    top: 90px;
-    right: 40px;
-    position: fixed;
-    z-index: 10001;
 }
 .switch_bajar{    
     width: 100px; 
