@@ -43,6 +43,7 @@ export const DarkMode = () => {
         <div className="Title_Portfolio">
           <TypedReactHooksDemo />
         </div>
+        <div className="div_gradient"></div>
       </section>
     </div>
   );

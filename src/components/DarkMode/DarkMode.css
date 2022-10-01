@@ -10,6 +10,21 @@
     overflow: hidden;
     transition: 1s;
 }
+.div_gradient{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: 10000;
+    bottom: 0px;
+}
+#light .container_home .containerBodyDarkMode .div_gradient{
+    background: linear-gradient(to top, #fff, transparent);
+    transition: 1s;
+}
+#dark .container_home .containerBodyDarkMode .div_gradient{
+    background: linear-gradient(to top, #0c192c, transparent);
+    transition: 1s;
+} 
 .layer{
     position: absolute;
     top: 0;
@@ -70,6 +85,7 @@
     margin-left: 10px;
     width: 100%;
     flex-direction: column;
+    transition: 10s;
     z-index: 15;
 }
 .Title_Portfolio h3{
@@ -91,19 +107,11 @@
 #light .layer.layer8{
     background: #fff;
 }
-#dark .containerBodyDarkMode section{    
-    background: #0c192c;
-}
-#light .containerBodyDarkMode section{    
-    background: #fff;
-}
 #dark .Title_Portfolio{
     color: #00ffff;
-    transition: 1s;
 }
 #light .Title_Portfolio{
     color: #20496a;
-    transition: 1s;
 }
 
 .word_const{
