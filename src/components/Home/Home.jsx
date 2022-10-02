@@ -10,6 +10,7 @@ import { Contacto } from "../Contacto/Contacto";
 import { Mapa } from "../Mapa/Mapa";
 import { DarkMode } from "../DarkMode/DarkMode";
 import { SkillsTecnichals } from "../SkillsTecnichals/SkillsTecnichals";
+import { CardDevelopment } from "../CardDevelopment/CardDevelopment";
 
 export const Home = () => {
   const { cards, language, mode } = useSelector((state) => state);
@@ -77,6 +78,9 @@ export const Home = () => {
       <div className="container_cards">
         <Card card={cards[2]} key={cards[2].title} id={"grey"} />
         <Card card={cards[3]} key={cards[3].title} id={"purple"} />
+      </div>
+      <div className="container_cards">
+        <CardDevelopment />
       </div>
       <div id="habilidadesTecnicas" className="separadores">
         <h1>
