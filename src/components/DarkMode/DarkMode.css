@@ -34,20 +34,17 @@
     box-shadow: 10px 0 10px rgba(0, 0, 0, 0.25);
 }
 .layer.layer1{
-    background: linear-gradient(to bottom, #03a9f4, transparent);
-    /* background: #03a9f4; */
+    background: #03a9f4;
     transform: skewX(-45deg) translateX(0);
     z-index: 1;
 }
 .layer.layer2{
-    background: linear-gradient(to bottom, #fff, transparent);
-    /* background: #fff; */
+    background: #fff;
     transform: skewX(-45deg) translateX(-100px);
     z-index: 3;
 }
 .layer.layer3{
-    background: linear-gradient(to bottom, #00ffff, transparent);
-    /* background: #00ffff; */
+    background: #00ffff;
     transform: skewX(-45deg) translateX(-200px);
     z-index: 5;
 }
@@ -57,19 +54,19 @@
     z-index: 10;
 }
 .layer.layer5{
-    background: linear-gradient(to bottom, #00ffff, transparent);
+    background: linear-gradient(to bottom, #00ffff, #00ffff,transparent);
     /* background: #00ffff; */
     transform: skewX(45deg) translateX(0px);
     z-index: 2;
 }
 .layer.layer6{
-    background: linear-gradient(to bottom, #03a9f4, transparent);
+    background: linear-gradient(to bottom, #03a9f4, #03a9f4,transparent);
     /* background: #03a9f4; */
     transform: skewX(45deg) translateX(-100px);
     z-index: 4;
 }
 .layer.layer7{
-    background: linear-gradient(to bottom, #fff, transparent);
+    background: linear-gradient(to bottom, #fff, #fff,transparent);
     /* background: #fff; */
     transform: skewX(45deg) translateX(-200px);
     z-index: 6;
