@@ -5,7 +5,46 @@
     width: 380px;
     height: 500px;
     background: #fff;
-    box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.15), 0 20px 20px rgba(0, 0, 0, 0.15)
+    /* box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.15), 0 20px 20px rgba(0, 0, 0, 0.15); */
+    position: relative ;
+}
+.cardDevelopment span{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.cardDevelopment span::before{
+    content: 'En Desarrollo';
+    position: absolute;
+    background: #62baea;
+    width: 150%;
+    height: 40px;
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.1em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.521);
+    z-index: 1;
+}
+.cardDevelopment span::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+    background: #62baea;
+    box-shadow: 140px -140px #62baea;
 }
 .container_img_dev img{
     width: 350px;
