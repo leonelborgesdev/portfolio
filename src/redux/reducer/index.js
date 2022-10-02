@@ -53,6 +53,18 @@ const initialState = {
       ],
       link_deploy: "https://leonelcountries.vercel.app",
     },
+    {
+      id: "5",
+      color: "red",
+      title: "POKEAPP",
+      detail:
+        "Desarrollo de un SPA ( Single Page Application) encargada de crear, eliminar, listar, ordenar y filtrar la información de diferentes pokemons. Dicha información se obtiene desde una API ( PokeApi ) y de una Base de Datos Local",
+      description: [
+        "Frontend: React, Redux, JavaScript, CSS(PURO).",
+        "Backend: Node, Express, PostgreSql, Sequelize.",
+      ],
+      link_deploy: "En mantenimiento",
+    },
   ],
   about_me2: [
     "Hi !!!😃",

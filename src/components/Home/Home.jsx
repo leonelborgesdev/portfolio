@@ -80,7 +80,7 @@ export const Home = () => {
         <Card card={cards[3]} key={cards[3].title} id={"purple"} />
       </div>
       <div className="container_cards">
-        <CardDevelopment />
+        <CardDevelopment card={cards[4]} key={cards[4].title} id={"red"} />
       </div>
       <div id="habilidadesTecnicas" className="separadores">
         <h1>
