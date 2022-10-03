@@ -4,8 +4,9 @@
     justify-content: center;
     width: 380px;
     height: 500px;
-    background: #fff;
-    /* box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.15), 0 20px 20px rgba(0, 0, 0, 0.15); */
+    background: #eee8e8;
+    flex-direction: column;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.521);
     position: relative ;
 }
 .cardDevelopment span{

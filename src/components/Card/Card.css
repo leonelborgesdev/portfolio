@@ -134,6 +134,7 @@
     overflow: hidden;
     text-align: center;
     z-index: 1;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.521);
 }
 .card .details h2{
     font-size: 20px;
