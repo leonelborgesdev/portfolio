@@ -4,10 +4,51 @@
     justify-content: center;
     width: 380px;
     height: 500px;
-    background: #eee8e8;
+    background: #000;
     flex-direction: column;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.521);
     position: relative ;
+}
+
+.cardDevelopment a{
+    display: inline;
+    padding: 8px 20px;
+    color: #fff;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.cardDevelopment h2{
+    font-size: 20px;
+    margin: 0 10px;
+}
+.cardDevelopment h3{
+    font-size: 15px;
+}
+#dark .cardDevelopment h2,
+#dark .cardDevelopment h3{
+    color: #fff;
+}
+#light .cardDevelopment h2,
+#light .cardDevelopment h3{
+    color: #000;
+}
+#light .cardDevelopment{
+    background: rgb(197, 196, 196);
+}
+#dark .cardDevelopment{
+    background: #000;
+}
+#light .cardDevelopment{
+    background: rgb(197, 196, 196);
+}
+#red a{
+    background: #a00101;
+}
+#red h2{
+    color: #a00101;
 }
 .cardDevelopment span{
     position: absolute;
@@ -50,4 +91,20 @@
 .container_img_dev img{
     width: 350px;
     height: 220px;
+}
+
+@media screen and (max-width: 900px) {
+    .cardDevelopment{
+        width: 260px;
+        height: 400px;
+    }
+    .cardDevelopment h2{
+        font-size: 17px;
+    }
+    .cardDevelopment h3{
+        font-size: 12px;
+    }
+    .cardDevelopment a{
+        font-size: 12px;
+    }
 }

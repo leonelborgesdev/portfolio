@@ -11,7 +11,7 @@ import { useSelector } from "react-redux";
 export const CardDevelopment = ({ card, id }) => {
   const { language } = useSelector((state) => state);
   return (
-    <div className="cardDevelopment">
+    <div className="cardDevelopment" id={id}>
       <span></span>
       <div className="container_img_dev">
         <img
