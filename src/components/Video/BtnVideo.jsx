@@ -12,6 +12,7 @@ import BarberApp2 from "../../assets/BarberApp2.png";
 // import BarberApp7 from "../../assets/BarberApp7.png";
 import Countries2 from "../../assets/Countries2.png"; //Countries
 import marketplace2 from "../../assets/marketplace2.png";
+import pokemons from "../../assets/pokemons.png";
 import "./BtnVideo.css";
 
 export const BtnVideo = () => {
@@ -46,7 +47,9 @@ export const BtnVideo = () => {
                 ? BarberApp2
                 : card[0].id === "3"
                 ? marketplace2
-                : Countries2
+                : card[0].id === "4"
+                ? Countries2
+                : pokemons
             }
             alt="pr1"
           />

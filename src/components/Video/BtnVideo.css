@@ -47,6 +47,9 @@
 #purple .buton_back{
     background: #1F1D36;
 }
+#red .buton_back{
+    background: #a00101;
+}
 .btn_play{
     position: relative;
     cursor: pointer;
