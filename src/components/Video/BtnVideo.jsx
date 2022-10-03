@@ -62,10 +62,20 @@ export const BtnVideo = () => {
               {language === "español"
                 ? "Link del Proyecto: "
                 : "Project Link: "}
+              {card[0].link_deploy === "En mantenimiento" && (
+                <span>En Desarrollo</span>
+              )}
             </h4>
-            <a href={card[0].link_deploy} target={"_blank"} rel={"noreferrer"}>
-              {card[0].link_deploy}
-            </a>
+
+            {card[0].link_deploy !== "En mantenimiento" && (
+              <a
+                href={card[0].link_deploy}
+                target={"_blank"}
+                rel={"noreferrer"}
+              >
+                {card[0].link_deploy}
+              </a>
+            )}
           </div>
         </div>
         {/* <div className="btn_play" ref={btnPlayRef} onClick={handleAddClass}>
