@@ -36,7 +36,7 @@
     color: #000;
 }
 #light .cardDevelopment{
-    background: rgb(197, 196, 196);
+    background: #c5c4c4;
 }
 #dark .cardDevelopment{
     background: #000;
@@ -44,10 +44,10 @@
 #light .cardDevelopment{
     background: rgb(197, 196, 196);
 }
-#red a{
+#red .cardDevelopment a{
     background: #a00101;
 }
-#red h2{
+#red .cardDevelopment h2{
     color: #a00101;
 }
 .cardDevelopment span{

@@ -39,6 +39,20 @@
     transition: 1s ease-in-out;
     transform-origin: left;
 }
+#dark .card .details h2,
+#dark .card .details h3{
+    color: #fff;
+}
+#light .card .details h2,
+#light .card .details h3{
+    color: #000;
+}
+#light .card .details{
+    background: #c5c4c4;
+}
+#dark .card .details{
+    background: #000;
+}
 #dark .card .cover{
     background: #000;
 }
