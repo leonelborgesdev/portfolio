@@ -6,9 +6,9 @@ import { Home } from "./components/Home/Home";
 import { useSelector } from "react-redux";
 
 function App() {
-  const { language } = useSelector((state) => state);
+  const { language, mode } = useSelector((state) => state);
   return (
-    <div className="App">
+    <div className="App" id={mode}>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/:id" element={<BtnVideo />} />
