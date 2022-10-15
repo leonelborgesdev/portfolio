@@ -58,6 +58,7 @@ export const PageFooter = () => {
             </li>
           </ul>
           <ul className="menu">
+            <li className="menu_item">x</li>
             {menu_footer.map((item) => {
               return (
                 <li className="menu_item" key={menu_footer.indexOf(item)}>
