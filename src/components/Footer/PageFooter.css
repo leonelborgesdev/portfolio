@@ -129,5 +129,14 @@ footer .wave#wave4{
 @media screen and (max-width: 940px) {
     footer .menu{
         background: red;
+        width: 250px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1001;
     }
 }

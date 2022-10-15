@@ -60,7 +60,7 @@ export const PageFooter = () => {
           <ul className="menu">
             {menu_footer.map((item) => {
               return (
-                <li key={menu_footer.indexOf(item)}>
+                <li className="menu_item" key={menu_footer.indexOf(item)}>
                   <a href={`#${item.id}`}>{item.name}</a>
                 </li>
               );
