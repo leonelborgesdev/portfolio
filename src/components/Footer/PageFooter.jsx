@@ -67,7 +67,7 @@ export const PageFooter = () => {
                 </li>
               );
             })}
-            <li className="menu_item">
+            <li className="menu_item_op">
               <Portfolio />
             </li>
           </ul>
