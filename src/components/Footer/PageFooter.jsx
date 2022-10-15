@@ -7,6 +7,7 @@ import logo_facebook from "../../assets/logo-facebook.svg";
 import { IonIcon } from "@ionic/react";
 import { useSelector } from "react-redux";
 import { Portfolio } from "../Portfolio/Portfolio";
+import { useState } from "react";
 
 export const PageFooter = () => {
   const { menu_footer, language } = useSelector((state) => state);
