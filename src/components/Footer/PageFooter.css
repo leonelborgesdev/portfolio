@@ -128,7 +128,7 @@ footer .wave#wave4{
 }
 @media screen and (max-width: 940px) {
     footer .menu{
-        background: red;
+        background: #3586ff;
         width: 250px;
         height: 100vh;
         display: flex;
@@ -152,6 +152,6 @@ footer .wave#wave4{
         margin: 0px;
     }
     .menu_item:hover{
-        background: #3586ff;
+        background: #b3cffa;
     }
 }
