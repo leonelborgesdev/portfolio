@@ -10,6 +10,7 @@ import { Portfolio } from "../Portfolio/Portfolio";
 
 export const PageFooter = () => {
   const { menu_footer, language } = useSelector((state) => state);
+  const [sidebar, setSidebar] = useState(false);
   return (
     <div className="container_all_footer">
       <div className="body_footer">
@@ -58,7 +59,7 @@ export const PageFooter = () => {
               </a>
             </li>
           </ul>
-          <ul className="menu">
+          <ul className={sidebar ? "menu active" : "menu"}>
             <li className="menu_item_close">x</li>
             {menu_footer.map((item) => {
               return (
