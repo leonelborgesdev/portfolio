@@ -25,11 +25,12 @@ footer{
 footer .social_icon,
 footer .menu{
     position: relative;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    margin: 0px;
+    padding: 0px;
     flex-wrap: wrap;
 }
 footer .social_icon li,
@@ -123,5 +124,10 @@ footer .wave#wave4{
     }
     100%{
         background-position-x: 1000px;
+    }
+}
+@media screen and (max-width: 940px) {
+    footer .menu{
+        background: red;
     }
 }
