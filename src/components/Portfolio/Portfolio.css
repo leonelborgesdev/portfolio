@@ -95,3 +95,20 @@
         right: 0px;
     }
 } 
+@media screen and (max-width: 940px) {
+    
+    .nav_opciones {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+        height: 150px;
+        width: 96%;
+        position: relative;
+        flex-direction: column;
+    }
+    .switch label,
+    .switchLanguaje label{
+        background: transparent;
+    }
+}
