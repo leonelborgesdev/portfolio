@@ -45,7 +45,7 @@ export const Portfolio = () => {
             />
           </div>
         </div>
-        <Home />
+        {/* <Home /> */}
         <ul className="switch_bajar">
           <li>
             <a href="#menu">

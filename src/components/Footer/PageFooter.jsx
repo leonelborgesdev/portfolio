@@ -6,6 +6,7 @@ import logo_whatsapp from "../../assets/logo-whatsapp.svg";
 import logo_facebook from "../../assets/logo-facebook.svg";
 import { IonIcon } from "@ionic/react";
 import { useSelector } from "react-redux";
+import { Portfolio } from "../Portfolio/Portfolio";
 
 export const PageFooter = () => {
   const { menu_footer, language } = useSelector((state) => state);
@@ -66,6 +67,9 @@ export const PageFooter = () => {
                 </li>
               );
             })}
+            <li className="menu_item">
+              <Portfolio />
+            </li>
           </ul>
           <div className="footer_año">
             <p>
