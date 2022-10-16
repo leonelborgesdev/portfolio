@@ -8,12 +8,18 @@ import { IonIcon } from "@ionic/react";
 import { useSelector } from "react-redux";
 import { Portfolio } from "../Portfolio/Portfolio";
 import { useState } from "react";
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/ai";
 
 export const PageFooter = () => {
   const { menu_footer, language } = useSelector((state) => state);
   const [sidebar, setSidebar] = useState(false);
+  const showSidebar = (setSidebarVal, sidebarVar) => {
+    setSidebarVal(!sidebarVar);
+  };
   return (
     <div className="container_all_footer">
+      {console.log(sidebar)}
       <div className="body_footer">
         <footer>
           <div className="waves">
@@ -60,8 +66,23 @@ export const PageFooter = () => {
               </a>
             </li>
           </ul>
+          <ul>
+            <li>
+              <FaIcons.FaBars
+                onClick={() => {
+                  showSidebar(setSidebar, sidebar);
+                }}
+              />
+            </li>
+          </ul>
           <ul className={sidebar ? "menu active" : "menu"}>
-            <li className="menu_item_close">x</li>
+            <li className="menu_item_close">
+              <AiIcons.AiOutlineClose
+                onClick={() => {
+                  showSidebar(setSidebar, sidebar);
+                }}
+              />
+            </li>
             {menu_footer.map((item) => {
               return (
                 <li className="menu_item" key={menu_footer.indexOf(item)}>

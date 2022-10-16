@@ -139,6 +139,11 @@ footer .wave#wave4{
         top: 0;
         left: 0;
         z-index: 1001;
+        transition: 350ms;
+    }
+    .menu.active {
+        left: -250px;
+        transition: 350ms;
     }
     .menu_item{
         padding: 15px 5px;
