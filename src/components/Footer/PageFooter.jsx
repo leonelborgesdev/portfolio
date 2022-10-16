@@ -66,13 +66,14 @@ export const PageFooter = () => {
               </a>
             </li>
           </ul>
-          <ul className="contenedor_toogle">
+          <ul
+            className="contenedor_toogle"
+            onClick={() => {
+              showSidebar(setSidebar, sidebar);
+            }}
+          >
             <li>
-              <FaIcons.FaBars
-                onClick={() => {
-                  showSidebar(setSidebar, sidebar);
-                }}
-              />
+              <FaIcons.FaBars />
             </li>
           </ul>
           <ul className={sidebar ? "menu active" : "menu"}>
