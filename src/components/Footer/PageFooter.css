@@ -152,6 +152,11 @@ footer .wave#wave4{
         position: fixed;
         top: 0;
         left: 0;
+        background: #3586ff;
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin-left: 15px;
+        cursor: pointer;
     }
     .contenedor_toogle li{
         width: 80%;
