@@ -145,6 +145,13 @@ footer .wave#wave4{
         left: -250px;
         transition: 350ms;
     }
+    .contenedor_toogle li{
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        color: #fff;
+        text-decoration: none;
+    }
     .menu_item{
         padding: 15px 5px;
         width: 220px;

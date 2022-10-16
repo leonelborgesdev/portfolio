@@ -66,7 +66,7 @@ export const PageFooter = () => {
               </a>
             </li>
           </ul>
-          <ul>
+          <ul className="contenedor_toogle">
             <li>
               <FaIcons.FaBars
                 onClick={() => {
