@@ -145,6 +145,14 @@ footer .wave#wave4{
         left: -250px;
         transition: 350ms;
     }
+    .contenedor_toogle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
     .contenedor_toogle li{
         width: 80%;
         display: flex;
