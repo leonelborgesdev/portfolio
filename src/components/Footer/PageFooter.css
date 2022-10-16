@@ -150,13 +150,13 @@ footer .wave#wave4{
         align-items: center;
         justify-content: center;
         position: fixed;
-        top: 0;
-        left: 0;
+        top: 0px;
+        left: 10px;
         background: #3586ff;
         border-radius: 5px;
         padding: 10px 15px;
-        margin: 15px;
         cursor: pointer;
+        z-index: 20;
     }
     .contenedor_toogle:hover{
         background: #81b2fc;
