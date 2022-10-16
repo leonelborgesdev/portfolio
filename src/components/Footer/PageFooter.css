@@ -155,7 +155,7 @@ footer .wave#wave4{
         background: #3586ff;
         border-radius: 5px;
         padding: 10px 15px;
-        margin-left: 15px;
+        margin: 15px;
         cursor: pointer;
     }
     .contenedor_toogle:hover{
@@ -168,9 +168,28 @@ footer .wave#wave4{
         color: #fff;
         text-decoration: none;
     }
+    .menu_item_close{
+        color: #fff;
+        width: 92%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .button_close{
+        cursor: pointer;
+        padding: 10px 15px;
+        background-color: #227afd;
+        border-radius: 5px;
+    }
+    .button_close:hover{
+        background-color: #98bff8;
+    }
     .menu_item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 15px 5px;
-        width: 220px;
+        width: 90%;
         border-radius: 4px;
         cursor: pointer;
     }

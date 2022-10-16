@@ -76,9 +76,10 @@ export const PageFooter = () => {
               <FaIcons.FaBars />
             </li>
           </ul>
-          <ul className={sidebar ? "menu active" : "menu"}>
+          <div className={sidebar ? "menu active" : "menu"}>
             <li className="menu_item_close">
               <AiIcons.AiOutlineClose
+                className="button_close"
                 onClick={() => {
                   showSidebar(setSidebar, sidebar);
                 }}
@@ -94,7 +95,7 @@ export const PageFooter = () => {
             <li className="menu_item_op">
               <Portfolio />
             </li>
-          </ul>
+          </div>
           <div className="footer_año">
             <p>
               {language === "español"
