@@ -137,12 +137,12 @@ footer .wave#wave4{
         align-items: center;
         position: fixed;
         top: 0;
-        left: 0;
         z-index: 1001;
+        left: -250px;
         transition: 350ms;
     }
     .menu.active {
-        left: -250px;
+        left: 0;
         transition: 350ms;
     }
     .contenedor_toogle{
@@ -157,6 +157,9 @@ footer .wave#wave4{
         padding: 10px 15px;
         margin-left: 15px;
         cursor: pointer;
+    }
+    .contenedor_toogle:hover{
+        background: #81b2fc;
     }
     .contenedor_toogle li{
         width: 80%;
