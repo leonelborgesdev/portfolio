@@ -1,6 +1,5 @@
 import React from "react";
 import { createContext } from "react";
-import { Home } from "../Home/Home";
 import ReactSwitch from "react-switch";
 import "./Portfolio.css";
 import { useDispatch, useSelector } from "react-redux";
