@@ -27,7 +27,8 @@ footer{
    flex-direction: column;
 }
 footer .social_icon,
-footer .menu{
+footer .menu,
+.opciones_menu{
     position: relative;
     width: 90%;
     display: flex;
@@ -36,6 +37,9 @@ footer .menu{
     margin: 0px;
     padding: 0px;
     flex-wrap: wrap;
+}
+footer .menu{
+    flex-direction: column;
 }
 footer .social_icon li,
 footer .menu li{

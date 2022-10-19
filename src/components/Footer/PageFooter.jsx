@@ -77,21 +77,23 @@ export const PageFooter = () => {
             </li>
           </ul>
           <div className={sidebar ? "menu active" : "menu"}>
-            <li className="menu_item_close">
-              <AiIcons.AiOutlineClose
-                className="button_close"
-                onClick={() => {
-                  showSidebar(setSidebar, sidebar);
-                }}
-              />
-            </li>
-            {menu_footer.map((item) => {
-              return (
-                <li className="menu_item" key={menu_footer.indexOf(item)}>
-                  <a href={`#${item.id}`}>{item.name}</a>
-                </li>
-              );
-            })}
+            <div className="opciones_menu">
+              <li className="menu_item_close">
+                <AiIcons.AiOutlineClose
+                  className="button_close"
+                  onClick={() => {
+                    showSidebar(setSidebar, sidebar);
+                  }}
+                />
+              </li>
+              {menu_footer.map((item) => {
+                return (
+                  <li className="menu_item" key={menu_footer.indexOf(item)}>
+                    <a href={`#${item.id}`}>{item.name}</a>
+                  </li>
+                );
+              })}
+            </div>
             <li className="menu_item_op">
               <Portfolio />
             </li>
