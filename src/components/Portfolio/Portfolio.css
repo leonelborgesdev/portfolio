@@ -4,27 +4,25 @@
 .nav_opciones{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: row;
     height: 50px;
-    width: 96%;
-    top: 0;
+    width: 50px;
     z-index: 10001;
-    position: fixed;
 }
 .switch{
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    z-index: 10001;
+    z-index: 100010;
 }
 .switchLanguaje{    
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    z-index: 10001;
+    z-index: 100010;
 }
 .switch_bajar{    
     width: 50px; 
