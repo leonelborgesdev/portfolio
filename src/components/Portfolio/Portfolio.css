@@ -91,11 +91,6 @@
     color: #fff;
     background: #222;
 }
-@media screen and (max-width: 940px) {
-    .switch_bajar{
-        display: none;
-    }
-}
 @media screen and (max-width: 360px) {
     .nav_opciones{
         flex-direction: column;
@@ -107,7 +102,9 @@
     }
 } 
 @media screen and (max-width: 940px) {
-    
+    .switch_bajar{
+        display: none;
+    }
     .nav_opciones {
         display: flex;
         align-items: center;
