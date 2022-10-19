@@ -19,7 +19,7 @@ footer{
    position: relative;
    width: 100%;
    background: #3586ff;
-   min-height: 150px;
+   min-height: 100px;
    /* padding: 20px ; */
    display: flex;
    justify-content: center;
@@ -138,7 +138,7 @@ footer .wave#wave4{
     footer .menu{
         background: #3586ff;
         width: 250px;
-        height: 100vh;
+        height: 150vh;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;

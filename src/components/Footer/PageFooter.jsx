@@ -89,7 +89,14 @@ export const PageFooter = () => {
               {menu_footer.map((item) => {
                 return (
                   <li className="menu_item" key={menu_footer.indexOf(item)}>
-                    <a href={`#${item.id}`}>{item.name}</a>
+                    <a
+                      href={`#${item.id}`}
+                      onClick={() => {
+                        showSidebar(setSidebar, sidebar);
+                      }}
+                    >
+                      {item.name}
+                    </a>
                   </li>
                 );
               })}
