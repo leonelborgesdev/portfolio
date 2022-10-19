@@ -4,7 +4,8 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.menu_item_close{
+.menu_item_close,
+.contenedor_toogle{
     display: none;
 }
 .body_footer{
