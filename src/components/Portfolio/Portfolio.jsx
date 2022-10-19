@@ -45,13 +45,11 @@ export const Portfolio = () => {
           </div>
         </div>
         {/* <Home /> */}
-        <ul className="switch_bajar">
-          <li>
-            <a href="#menu">
-              <IonIcon src={arrow_down_outline} />
-            </a>
-          </li>
-        </ul>
+        <div className="switch_bajar">
+          <a href="#menu">
+            <IonIcon src={arrow_down_outline} />
+          </a>
+        </div>
       </div>
     </ThemeContext.Provider>
   );
