@@ -30,11 +30,11 @@ footer .social_icon,
 footer .menu,
 .opciones_menu{
     position: relative;
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px;
+    margin: 5px;
     padding: 0px;
     flex-wrap: wrap;
 }
@@ -144,10 +144,16 @@ footer .wave#wave4{
         flex-direction: column;
         align-items: center;
         position: fixed;
+        margin: 0px;
         top: 0;
         z-index: 1001;
         left: -250px;
         transition: 350ms;
+    }
+    footer .menu li a{
+        opacity: 1;
+        width: 100%;
+        height: 100%;
     }
     .menu.active {
         left: 0;
@@ -195,13 +201,16 @@ footer .wave#wave4{
     .menu_item{
         display: flex;
         align-items: center;
-        justify-content: center;
-        padding: 15px 5px;
-        width: 90%;
+        justify-content: center;    
+        width: 92%;
+        height: 50px;
         border-radius: 4px;
         cursor: pointer;
     }
     footer .menu li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         height: 100%;
         margin: 0px;
