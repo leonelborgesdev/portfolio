@@ -19,7 +19,7 @@ footer{
    position: relative;
    width: 100%;
    background: #3586ff;
-   min-height: 100px;
+   min-height: 150px;
    /* padding: 20px ; */
    display: flex;
    justify-content: center;
