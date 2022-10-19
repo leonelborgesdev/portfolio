@@ -28,7 +28,7 @@ export const Portfolio = () => {
       <div className="App_portfoliio" id={mode}>
         <div className="nav_opciones">
           <div className="switch">
-            <label>{mode === "light" ? "Ligth Mode" : "Dark Mode"}</label>
+            <label>{language === "light" ? "Ligth Mode" : "Dark Mode"}</label>
             <ReactSwitch
               onColor="#22d4d4"
               onChange={toggleTheme}
