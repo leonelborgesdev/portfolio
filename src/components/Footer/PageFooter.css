@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .menu_item_close{
-    visibility: none;
+    display: none;
 }
 .body_footer{
     display: flex;
