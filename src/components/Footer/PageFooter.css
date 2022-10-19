@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.menu_item_close{
+    visibility: none;
+}
 .body_footer{
     display: flex;
     justify-content: flex-end;
