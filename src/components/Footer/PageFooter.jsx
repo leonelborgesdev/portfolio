@@ -19,7 +19,6 @@ export const PageFooter = () => {
   };
   return (
     <div className="container_all_footer">
-      {console.log(sidebar)}
       <div className="body_footer">
         <footer>
           <div className="waves">
