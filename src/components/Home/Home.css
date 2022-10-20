@@ -110,6 +110,10 @@ section img#man{
 }
 .container_image img{
     border-radius: 50%;
+    box-shadow: 0px 0px 0px 14.5px #32638b50,
+    0px 0px 0px 9.5px #32638b50,
+    0px 0px 0px 5.5px #32638b50,
+    0px 0px 0px 1.5px #32638b50;
     width: 500px;
 }
 .container_about_me_text > p{
