@@ -195,10 +195,10 @@
         font-size: 15px;
     }
     .card .details h3{
-        font-size: 12px;
+        font-size: 10px;
     }
     .card .details a{
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 @media screen and (max-width: 360px) {
@@ -210,9 +210,9 @@
         font-size: 10px;
     }
     .card .details h3{
-        font-size: 10px;
+        font-size: 8px;
     }
     .card .details a{
-        font-size: 10px;
+        font-size: 8px;
     }
 }
