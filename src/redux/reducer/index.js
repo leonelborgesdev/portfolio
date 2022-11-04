@@ -39,7 +39,7 @@ const initialState = {
         "Frontend: React, Redux, TypeScript, CSS, MaterialUI.",
         "Backend: Node, Express, Mongodb, Mongoose, Sequelize.",
       ],
-      link_deploy: "https://mundomarket.vercel.app/",
+      link_deploy: "https://appmundomarket.vercel.app/",
     },
     {
       id: "4",
