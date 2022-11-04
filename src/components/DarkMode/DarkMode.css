@@ -187,7 +187,7 @@
         font-size: 28px;
     }
     .text_animation p{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 400px) {
@@ -196,7 +196,7 @@
         font-size: 20px;
     }
     .text_animation p{
-        font-size: 10px;
+        font-size: 12px;
     }
     .layer.layer1{
         transform: skewX(-45deg) translateX(-25px);
