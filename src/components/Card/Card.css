@@ -188,7 +188,7 @@
 }
 @media screen and (max-width: 600px) {
     .card{
-        width: 220px;
+        width: 180px;
         height: 320px;
     }
     .card .details h2{
