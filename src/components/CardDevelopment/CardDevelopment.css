@@ -93,7 +93,9 @@
     width: 350px;
     height: 220px;
 }
-
+.container_img_dev{
+    width: 100%;
+}
 @media screen and (max-width: 900px) {
     .cardDevelopment{
         width: 260px;
@@ -132,12 +134,12 @@
         box-shadow: 103px -103px #62baea;
     }
     .cardDevelopment{
-        width: 180px;
-        height: 320px;
+        width: 260px;
+        height: 360px;
     }
     .container_img_dev img{
-        width: 210px;
-        height: 120px;
+        width: 90%;
+        height: 140px;
     }
     .cardDevelopmenth2{
         font-size: 15px;
