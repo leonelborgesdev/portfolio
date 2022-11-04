@@ -193,10 +193,10 @@
 @media screen and (max-width: 400px) {
     .Title_Portfolio h3,
     .separadores h1{
-        font-size: 20px;
+        font-size: 28px;
     }
     .text_animation p{
-        font-size: 12px;
+        font-size: 14px;
     }
     .layer.layer1{
         transform: skewX(-45deg) translateX(-25px);
