@@ -14,6 +14,7 @@ import Countries2 from "../../assets/Countries2.png"; //Countries
 import marketplace2 from "../../assets/marketplace2.png";
 import pokemons from "../../assets/pokemons.png";
 import "./BtnVideo.css";
+import { Carrusel } from "../Carrusel/Carrusel";
 
 export const BtnVideo = () => {
   const { cards, language, mode } = useSelector((state) => state);
@@ -38,6 +39,7 @@ export const BtnVideo = () => {
     <div className="container_all_video" id={mode}>
       <div className="container_body_video" id={card[0].color}>
         <div className="detail">
+          <Carrusel />
           <h1>{card[0].title}</h1>
           <img
             src={
