@@ -15,7 +15,7 @@ export const Carrusel = () => {
     if (card[0].images?.length > 0) {
       const intervalId = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % card[0].images.length);
-      }, 3000); // Cambia el tiempo de transición según tus necesidades
+      }, 1400); // Cambia el tiempo de transición según tus necesidades
 
       return () => clearInterval(intervalId);
     }

@@ -17,6 +17,9 @@
     align-items: center;
     flex-direction: column;
 }
+.detail h1{
+    margin: 5px;
+}
 .detail img,
 .detail h4,
 .detail h5{

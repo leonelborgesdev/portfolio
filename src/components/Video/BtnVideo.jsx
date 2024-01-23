@@ -39,22 +39,8 @@ export const BtnVideo = () => {
     <div className="container_all_video" id={mode}>
       <div className="container_body_video" id={card[0].color}>
         <div className="detail">
-          <Carrusel />
           <h1>{card[0].title}</h1>
-          <img
-            src={
-              card[0].id === "1"
-                ? breeds2
-                : card[0].id === "2"
-                ? BarberApp2
-                : card[0].id === "3"
-                ? marketplace2
-                : card[0].id === "4"
-                ? Countries2
-                : pokemons
-            }
-            alt="pr1"
-          />
+          <Carrusel />
           <h4>{card[0].detail}</h4>
           {card[0].description.map((descriptio, index) => (
             <h5 key={index}>{descriptio}</h5>

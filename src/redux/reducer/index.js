@@ -13,7 +13,16 @@ const initialState = {
         "Backend: Node, Express, PostgreSql, Sequelize.",
       ],
       link_deploy: "https://leonelbreeds.vercel.app/",
-      images: [],
+      images: [
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/3a703014-944c-4472-ae2b-b47c02febd4a",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/1f0c0ea2-c764-46fb-b913-f10beea434e8",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/e078251a-0899-4f93-a24f-7180fe47ebf8",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/e48ebee6-112c-4949-a7e6-3607b338838d",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/1a3747d7-ab1d-4c4f-8691-abe08bc814a0",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/8821dcb6-2f65-436d-a24f-74148a7d4d80",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/5c221ba5-fd28-4dd9-bd2e-3e2ee523704e",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/db9c08da-c672-4377-9b8f-f3ad0fecfaf1",
+      ],
     },
     {
       id: "2",
@@ -28,7 +37,14 @@ const initialState = {
         "Frontend Graphics: Char.js",
       ],
       link_deploy: "http://barber-app-henry.herokuapp.com",
-      images: [],
+      images: [
+        "https://github.com/leonelborgesdev/leonelborgesdev/assets/95236206/173a4733-ed7c-424b-aede-6c87b054d624",
+        "https://github.com/leonelborgesdev/leonelborgesdev/assets/95236206/a2b0d113-4e62-4db0-aa96-13487e8c8bd2",
+        "https://github.com/leonelborgesdev/leonelborgesdev/assets/95236206/340759a6-66a8-4866-b425-264b6c37fe23",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/513a5206-e31c-4819-beab-06859bc70224",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/bf7500cb-31e3-44cc-9dc9-bbbf2a0d9d4d",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/abcc931d-d263-4c1e-a77c-eeac9354e716",
+      ],
     },
     {
       id: "3",
@@ -42,7 +58,9 @@ const initialState = {
         "Backend: Node, Express, Mongodb, Mongoose, Sequelize.",
       ],
       link_deploy: "https://appmundomarket.vercel.app/",
-      images: [],
+      images: [
+        "https://github.com/leonelborgesdev/leonelborgesdev/assets/95236206/5f5a1768-c207-4e4f-b304-3108a8112ec4",
+      ],
     },
     {
       id: "4",
@@ -77,7 +95,9 @@ const initialState = {
         "Backend: Node, Express, PostgreSql, Sequelize.",
       ],
       link_deploy: "En mantenimiento",
-      images: [],
+      images: [
+        "https://github.com/leonelborgesdev/leonelborgesdev/assets/95236206/27f093d7-e9a4-424d-ae61-fb0321c5f176",
+      ],
     },
   ],
   about_me2: [
