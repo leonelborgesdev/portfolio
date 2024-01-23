@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import "./Carrusel.css";
+import { useEffect } from "react";
 
 export const Carrusel = () => {
   const { cards } = useSelector((state) => state);
