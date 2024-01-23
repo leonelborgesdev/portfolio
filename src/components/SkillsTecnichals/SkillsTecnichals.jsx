@@ -9,8 +9,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
             alt="react"
-            width="50"
-            height="50"
           />
         </a>
         React
@@ -20,8 +18,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
             alt="redux"
-            width="50"
-            height="50"
           />
         </a>
         Redux
@@ -35,8 +31,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
             alt="html"
-            width="50"
-            height="50"
           />
         </a>
         Html
@@ -46,8 +40,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
             alt="bootstrap"
-            width="50"
-            height="50"
           />
         </a>
         Bootstrap
@@ -57,8 +49,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://www.chartjs.org/media/logo-title.svg"
             alt="chartjs"
-            width="50"
-            height="50"
           />
         </a>
         Char.js
@@ -72,8 +62,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
             alt="css3"
-            width="50"
-            height="50"
           />
         </a>
         CSS3
@@ -83,8 +71,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
             alt="express"
-            width="50"
-            height="50"
           />
         </a>
         Express
@@ -94,8 +80,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
             alt="git"
-            width="50"
-            height="50"
           />
         </a>
         Git
@@ -105,8 +89,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg"
             alt="heroku"
-            width="50"
-            height="50"
           />
         </a>
         Heroku
@@ -117,12 +99,7 @@ export const SkillsTecnichals = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            src="https://midu.dev/images/tags/vercel.png"
-            alt="vercel"
-            width="50"
-            height="50"
-          />
+          <img src="https://midu.dev/images/tags/vercel.png" alt="vercel" />
         </a>
         Vercel
       </div>
@@ -131,8 +108,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
             alt="mongodb"
-            width="50"
-            height="50"
           />
         </a>
         Mongodb
@@ -142,8 +117,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
             alt="nodejs"
-            width="50"
-            height="50"
           />
         </a>
         Node.js
@@ -153,8 +126,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
             alt="photoshop"
-            width="50"
-            height="50"
           />
         </a>
         PhotoShop
@@ -164,8 +135,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
             alt="postgresql"
-            width="50"
-            height="50"
           />
         </a>
         Postgresql
@@ -175,8 +144,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
             alt="postman"
-            width="50"
-            height="50"
           />
         </a>
         Postman
@@ -186,8 +153,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
             alt="java"
-            width="50"
-            height="50"
           />
         </a>
         Java
@@ -201,8 +166,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
             alt="javascript"
-            width="50"
-            height="50"
           />
         </a>
         JavaScript
@@ -216,8 +179,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
             alt="typescript"
-            width="50"
-            height="50"
           />
         </a>
         Typescript
@@ -232,8 +193,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg"
             alt="android"
-            width="50"
-            height="50"
           />
         </a>
       </div>
@@ -243,8 +202,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://download.blender.org/branding/community/blender_community_badge_white.svg"
             alt="blender"
-            width="50"
-            height="50"
           />
         </a>
       </div>
@@ -254,8 +211,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://reactnative.dev/img/header_logo.svg"
             alt="reactnative"
-            width="50"
-            height="50"
           />
         </a>
       </div>
@@ -265,8 +220,6 @@ export const SkillsTecnichals = () => {
           <img
             src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"
             alt="unity"
-            width="50"
-            height="50"
           />
         </a>
       </div> */}

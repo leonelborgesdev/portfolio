@@ -12,7 +12,8 @@ const initialState = {
         "Frontend: React, Redux, JavaScript, CSS(PURO).",
         "Backend: Node, Express, PostgreSql, Sequelize.",
       ],
-      link_deploy: "https://leonelbreeds.vercel.app/",
+      // link_deploy: "https://leonelbreeds.vercel.app/",
+      link_deploy: "https://github.com/leonelborgesdev/Pi_Dogs.git",
       images: [
         "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/3a703014-944c-4472-ae2b-b47c02febd4a",
         "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/1f0c0ea2-c764-46fb-b913-f10beea434e8",
@@ -36,7 +37,9 @@ const initialState = {
         "Backend: Node, Express, PostgreSql, Sequelize.",
         "Frontend Graphics: Char.js",
       ],
-      link_deploy: "http://barber-app-henry.herokuapp.com",
+      // link_deploy: "http://barber-app-henry.herokuapp.com",
+      link_deploy:
+        "https://github.com/leonelborgesdev/Proyecto-Final-BarberApp",
       images: [
         "https://github.com/leonelborgesdev/leonelborgesdev/assets/95236206/173a4733-ed7c-424b-aede-6c87b054d624",
         "https://github.com/leonelborgesdev/leonelborgesdev/assets/95236206/a2b0d113-4e62-4db0-aa96-13487e8c8bd2",
@@ -57,7 +60,8 @@ const initialState = {
         "Frontend: React, Redux, TypeScript, CSS, MaterialUI.",
         "Backend: Node, Express, Mongodb, Mongoose, Sequelize.",
       ],
-      link_deploy: "https://appmundomarket.vercel.app/",
+      // link_deploy: "https://appmundomarket.vercel.app/",
+      link_deploy: "https://github.com/leonelborgesdev/mundomarket",
       images: [
         "https://github.com/leonelborgesdev/leonelborgesdev/assets/95236206/5f5a1768-c207-4e4f-b304-3108a8112ec4",
       ],
@@ -72,7 +76,8 @@ const initialState = {
         "Frontend: React, Redux, JavaScript, CSS(PURO).",
         "Backend: Node, Express, PostgreSql, Sequelize.",
       ],
-      link_deploy: "https://leonelcountries.vercel.app",
+      // link_deploy: "https://leonelcountries.vercel.app",
+      link_deploy: "https://github.com/leonelborgesdev/PI-Countries",
       images: [
         "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/7ea05a24-6707-4633-8533-73eb52e31287",
         "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/a17b7043-9f09-4a80-adeb-14a859a3ec91",
@@ -94,7 +99,7 @@ const initialState = {
         "Frontend: React, Redux, JavaScript, CSS(PURO).",
         "Backend: Node, Express, PostgreSql, Sequelize.",
       ],
-      link_deploy: "En mantenimiento",
+      link_deploy: "https://github.com/leonelborgesdev/Pi_Pokemons",
       images: [
         "https://github.com/leonelborgesdev/leonelborgesdev/assets/95236206/27f093d7-e9a4-424d-ae61-fb0321c5f176",
       ],

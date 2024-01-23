@@ -19,6 +19,10 @@
     width: 180px;
     transition: 1s;
 }
+.card_skillTecnichal a img{
+    width: 50px;
+    height: 50px;
+}
 #dark .card_skillTecnichal{
     background: #000;
     color: #fff;
