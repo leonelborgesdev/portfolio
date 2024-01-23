@@ -13,6 +13,7 @@ const initialState = {
         "Backend: Node, Express, PostgreSql, Sequelize.",
       ],
       link_deploy: "https://leonelbreeds.vercel.app/",
+      images: [],
     },
     {
       id: "2",
@@ -27,6 +28,7 @@ const initialState = {
         "Frontend Graphics: Char.js",
       ],
       link_deploy: "http://barber-app-henry.herokuapp.com",
+      images: [],
     },
     {
       id: "3",
@@ -40,6 +42,7 @@ const initialState = {
         "Backend: Node, Express, Mongodb, Mongoose, Sequelize.",
       ],
       link_deploy: "https://appmundomarket.vercel.app/",
+      images: [],
     },
     {
       id: "4",
@@ -52,6 +55,16 @@ const initialState = {
         "Backend: Node, Express, PostgreSql, Sequelize.",
       ],
       link_deploy: "https://leonelcountries.vercel.app",
+      images: [
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/7ea05a24-6707-4633-8533-73eb52e31287",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/a17b7043-9f09-4a80-adeb-14a859a3ec91",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/0484539f-c7e4-4c62-ac96-ed244ea18352",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/300aa2b1-7048-446a-96b5-b47b9fe70d2e",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/fcf33e98-54be-44a7-b6a8-acc98f4186c8",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/1304ee19-063d-4056-a6b7-6a8bd3a47051",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/d59b3698-6c85-400e-b62f-52512faede51",
+        "https://github.com/leonelborgesdev/CarruselImagenesInfinitoEjemplo/assets/95236206/5386143d-3991-412f-9cfd-bdad85482938",
+      ],
     },
     {
       id: "5",
@@ -64,6 +77,7 @@ const initialState = {
         "Backend: Node, Express, PostgreSql, Sequelize.",
       ],
       link_deploy: "En mantenimiento",
+      images: [],
     },
   ],
   about_me2: [
