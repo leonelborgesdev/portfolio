@@ -19,7 +19,7 @@ export const Carrusel = () => {
 
       return () => clearInterval(intervalId);
     }
-  }, [currentIndex]); //
+  }, [currentIndex, card]); //
   return (
     <div className="carousel-container">
       {console.log(card[0].images.length)}
