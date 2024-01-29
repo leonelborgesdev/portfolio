@@ -102,6 +102,7 @@ const initialState = {
       link_deploy: "https://github.com/leonelborgesdev/Pi_Pokemons",
       images: [
         "https://github.com/leonelborgesdev/portfolio/assets/95236206/73c13f5f-8e7e-4850-9210-e47a10586751",
+        "https://github.com/leonelborgesdev/portfolio/assets/95236206/937913e1-5f72-4d4b-8d95-c6a2da113c1d",
       ],
     },
   ],
