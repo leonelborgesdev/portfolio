@@ -103,6 +103,7 @@ const initialState = {
       images: [
         "https://github.com/leonelborgesdev/portfolio/assets/95236206/73c13f5f-8e7e-4850-9210-e47a10586751",
         "https://github.com/leonelborgesdev/portfolio/assets/95236206/937913e1-5f72-4d4b-8d95-c6a2da113c1d",
+        "https://github.com/leonelborgesdev/portfolio/assets/95236206/76cf6f33-4fe4-4c8a-a295-31deb2def93e",
       ],
     },
   ],
