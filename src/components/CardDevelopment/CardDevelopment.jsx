@@ -1,5 +1,4 @@
 import React from "react";
-import pokemons from "../../assets/pokemons.png";
 import breeds from "../../assets/breeds.png";
 import BarberApp from "../../assets/BarberApp.png";
 import Countries from "../../assets/Countries.png";
@@ -25,7 +24,7 @@ export const CardDevelopment = ({ card, id }) => {
                 ? marketplace
                 : card.id === "4"
                 ? Countries
-                : pokemons
+                : "https://github.com/leonelborgesdev/portfolio/assets/95236206/73c13f5f-8e7e-4850-9210-e47a10586751"
             }
             alt="png"
           />
