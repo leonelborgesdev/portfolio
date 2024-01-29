@@ -108,6 +108,7 @@ const initialState = {
         "https://github.com/leonelborgesdev/portfolio/assets/95236206/1514ab43-771e-4621-b18e-5c52f302a87a",
         "https://github.com/leonelborgesdev/portfolio/assets/95236206/739eefc4-de43-41f5-a33f-941376c1232a",
         "https://github.com/leonelborgesdev/portfolio/assets/95236206/a2535773-8563-4a96-ae91-bfd0b0975869",
+        "https://github.com/leonelborgesdev/portfolio/assets/95236206/017758f9-d38a-4a33-84e3-61ee7e5d1164",
       ],
     },
   ],
